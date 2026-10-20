@@ -1,0 +1,44 @@
+{
+  "slug": "affiche-yoroi-orelsan",
+  "titre": "Affiche Yoroï — Orelsan",
+  "description": "Dans le cadre d’un cours de design graphique en BUT MMI, il nous était demandé de créer une affiche sur le sujet de notre choix. Étant un grand admirateur des créations d’Orelsan, tant par sa musique que par les créations cinématographiques de son frère Clément Cotentin (« Ne montre jamais ça à personne »), avec Gringe (« Comment c’est loin »), la série « Bloqués » ou le film « Yoroï » (2025) réalisé par David Tomaszewski. Dans cette composition, j’ai voulu mélanger le style graphique de la scénographie de son dernier album « La fuite en avant » et le style vestimentaire d’Orelsan, en utilisant des éléments graphiques variés et des typographies japonaises stylisées.",
+  "categorie": "etudiant",
+  "tags": [
+    "Design Graphique",
+    "Affiche",
+    "Orelsan",
+    "Yoroï",
+    "Cinéma",
+    "BUT MMI"
+  ],
+  "competences": [
+    "Composition graphique complexe",
+    "Illustrator et Photoshop",
+    "Typographie créative",
+    "Direction artistique"
+  ],
+  "images": [
+    "projets/etudiant/affiche-yoroi-orelsan/affiche-yoroi.webp"
+  ],
+  "reflexion": {
+    "contexte": "Projet de design graphique en BUT MMI autour de l'univers visuel d'un artiste marquant.",
+    "difficultes": "Harmoniser des univers visuels multiples (scénographie, cinéma, streetwear, inspiration japonaise) sans surcharger la composition.",
+    "reussites": "Une identité visuelle singulière et mature, saluée pour son audace typographique.",
+    "apprentissages": "Approfondissement du storytelling visuel et maîtrise des déclinaisons A3 / grand format."
+  },
+  "etapes": [
+    {
+      "titre": "01. Analyse de l'univers d'Orelsan",
+      "desc": "Extraction de la palette chromatique et des références cinématographiques."
+    },
+    {
+      "titre": "02. Cadrage et composition",
+      "desc": "Positionnement de la figure centrale et intégration des glyphes."
+    },
+    {
+      "titre": "03. Finalisation des textures",
+      "desc": "Ajout de grain éditorial et réglages des contrastes d'encre."
+    }
+  ],
+  "lien": null
+}

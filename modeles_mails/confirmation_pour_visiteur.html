@@ -1,0 +1,263 @@
+<!-- 
+  ═════════════════════════════════════════════════════════════════════════════
+  MODÈLE 2 : ACCUSÉ DE RÉCEPTION POUR LE VISITEUR (DA ÉDITORIALE & RESPONSIVE)
+  ═════════════════════════════════════════════════════════════════════════════
+  À coller dans l'éditeur de template EmailJS (Template 2 ou Auto-Reply).
+
+  Configuration dans EmailJS :
+  • Template Name : Confirmation Visiteur (Auto-Reply)
+  • Subject       : Confirmation de réception — Sacha GUITTER
+  • To Email      : {{email}}
+  • Reply-To      : sachaguitterphoto@gmail.com
+  ═════════════════════════════════════════════════════════════════════════════
+-->
+<!DOCTYPE html>
+<html lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Confirmation de réception — Sacha GUITTER</title>
+    <!--[if mso]>
+    <style type="text/css">
+        table {border-collapse:collapse;border-spacing:0;margin:0;}
+        div, td {padding:0;}
+        div {margin:0 !important;}
+    </style>
+    <![endif]-->
+    <style type="text/css">
+        /* Styles de base */
+        body {
+            margin: 0 !important;
+            padding: 0 !important;
+            -webkit-text-size-adjust: 100% !important;
+            -ms-text-size-adjust: 100% !important;
+            background-color: #F8F8F8 !important;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            color: #000000;
+        }
+        table, td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+            border-collapse: collapse;
+        }
+        img {
+            -ms-interpolation-mode: bicubic;
+            border: 0;
+            outline: none;
+            text-decoration: none;
+            display: block;
+        }
+        a {
+            color: #2E5C8A;
+            text-decoration: underline;
+        }
+
+        /* Responsive Mobile Queries */
+        @media only screen and (max-width: 620px) {
+            .email-wrapper {
+                width: 100% !important;
+                padding: 12px 8px !important;
+            }
+            .email-card {
+                width: 100% !important;
+                border-width: 1px !important;
+            }
+            .header-cell {
+                padding: 26px 18px !important;
+            }
+            .body-cell {
+                padding: 24px 18px !important;
+            }
+            .footer-cell {
+                padding: 20px 18px !important;
+            }
+            .mobile-title {
+                font-size: 22px !important;
+                line-height: 1.15 !important;
+            }
+            .mobile-col {
+                display: block !important;
+                width: 100% !important;
+                padding-right: 0 !important;
+                padding-bottom: 12px !important;
+            }
+            .btn-action {
+                display: block !important;
+                width: 100% !important;
+                text-align: center !important;
+                box-sizing: border-box !important;
+                padding: 16px 20px !important;
+            }
+        }
+    </style>
+</head>
+<body style="margin: 0; padding: 0; background-color: #F8F8F8; color: #000000;">
+
+    <!-- Conteneur d'arrière-plan externe (Gris Passe-Partout) -->
+    <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color: #F8F8F8; width: 100%;">
+        <tr>
+            <td align="center" class="email-wrapper" style="padding: 40px 16px;">
+                
+                <!-- CARTE ÉDITORIALE PRINCIPALE (Angles droits stricts, filet 2px noir) -->
+                <table role="presentation" width="100%" class="email-card" border="0" cellspacing="0" cellpadding="0" style="max-width: 620px; width: 100%; background-color: #FFFFFF; border: 2px solid #000000; border-radius: 0px !important; margin: 0 auto;">
+                    
+                    <!-- EN-TÊTE DE MARQUE ÉDITORIAL (Noir d'Encre & Typographie Blanche) -->
+                    <tr>
+                        <td class="header-cell" style="background-color: #000000; padding: 36px 32px 30px 32px; border-bottom: 2px solid #000000;">
+                            <p style="margin: 0 0 6px 0; font-size: 11px; text-transform: uppercase; letter-spacing: 3px; color: #CCCCCC; font-weight: 700;">
+                                PORTFOLIO PHOTOGRAPHIQUE & CRÉATIF
+                            </p>
+                            <h1 class="mobile-title" style="margin: 0; font-size: 28px; font-weight: 900; color: #FFFFFF; text-transform: uppercase; letter-spacing: 1.5px; line-height: 1.1;">
+                                SACHA GUITTER
+                            </h1>
+                            <p style="margin: 8px 0 0 0; font-size: 12px; text-transform: uppercase; letter-spacing: 1.5px; color: #999999;">
+                                Photographie · Direction Artistique · BUT MMI
+                            </p>
+                        </td>
+                    </tr>
+
+                    <!-- CORPS DU MESSAGE -->
+                    <tr>
+                        <td class="body-cell" style="padding: 36px 32px; background-color: #FFFFFF;">
+                            
+                            <!-- Salutations éditoriales -->
+                            <h2 style="margin: 0 0 16px 0; font-size: 18px; font-weight: 800; color: #000000; text-transform: uppercase; letter-spacing: 0.5px;">
+                                BONJOUR {{firstname}},
+                            </h2>
+                            <p style="margin: 0 0 16px 0; font-size: 15px; line-height: 1.7; color: #404040;">
+                                Merci pour votre démarche ! J'ai bien reçu votre message concernant : <strong>{{subject}}</strong>.
+                            </p>
+                            <p style="margin: 0 0 28px 0; font-size: 15px; line-height: 1.7; color: #404040;">
+                                Je prends le temps d'étudier votre demande avec soin et je reviendrai vers vous dans les plus brefs délais pour en discuter ensemble.
+                            </p>
+
+                            <!-- 01 / RÉCAPITULATIF DU MESSAGE -->
+                            <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-bottom: 32px;">
+                                <tr>
+                                    <td style="border-bottom: 1px solid #000000; padding-bottom: 8px;">
+                                        <span style="font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 2px; color: #000000;">
+                                            01 / RÉCAPITULATIF DE VOTRE DEMANDE
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-top: 14px;">
+                                        <div style="background-color: #F8F8F8; border: 1px solid #000000; border-left: 5px solid #000000; padding: 20px;">
+                                            <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 1px; font-weight: 800; color: #707070; margin-bottom: 6px;">
+                                                OBJET SÉLECTIONNÉ :
+                                            </div>
+                                            <div style="font-size: 14px; font-weight: 800; color: #000000; text-transform: uppercase; margin-bottom: 14px;">
+                                                {{subject}}
+                                            </div>
+                                            <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 1px; font-weight: 800; color: #707070; margin-bottom: 6px;">
+                                                VOTRE MESSAGE :
+                                            </div>
+                                            <div style="font-size: 14px; line-height: 1.7; color: #222222; font-style: italic; white-space: pre-wrap; word-break: break-word;">
+                                                « {{message}} »
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- 02 / COORDONNÉES DIRECTES -->
+                            <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-bottom: 32px;">
+                                <tr>
+                                    <td style="border-bottom: 1px solid #000000; padding-bottom: 8px;">
+                                        <span style="font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 2px; color: #000000;">
+                                            02 / COORDONNÉES DIRECTES & ÉCHANGES
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-top: 14px;">
+                                        <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <!-- Colonne 1 -->
+                                                <td class="mobile-col" valign="top" style="width: 50%; padding-right: 12px;">
+                                                    <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color: #F8F8F8; border: 1px solid #000000; padding: 16px;">
+                                                        <tr>
+                                                            <td>
+                                                                <div style="font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; color: #707070;">EMAIL DIRECT</div>
+                                                                <div style="font-size: 13px; font-weight: 700; margin-top: 4px;">
+                                                                    <a href="mailto:sachaguitterphoto@gmail.com" style="color: #2E5C8A; text-decoration: underline;">sachaguitterphoto@gmail.com</a>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="padding-top: 12px;">
+                                                                <div style="font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; color: #707070;">TÉLÉPHONE</div>
+                                                                <div style="font-size: 14px; font-weight: 800; color: #000000; margin-top: 4px;">
+                                                                    07 49 61 09 90
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <!-- Colonne 2 -->
+                                                <td class="mobile-col" valign="top" style="width: 50%;">
+                                                    <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color: #F8F8F8; border: 1px solid #000000; padding: 16px;">
+                                                        <tr>
+                                                            <td>
+                                                                <div style="font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; color: #707070;">INSTAGRAM</div>
+                                                                <div style="font-size: 13px; font-weight: 700; margin-top: 4px;">
+                                                                    <a href="https://instagram.com/sacha_gttr" target="_blank" rel="noopener noreferrer" style="color: #2E5C8A; text-decoration: underline;">@sacha_gttr</a>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="padding-top: 12px;">
+                                                                <div style="font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; color: #707070;">LOCALISATION</div>
+                                                                <div style="font-size: 13px; font-weight: 800; color: #000000; margin-top: 4px;">
+                                                                    Laval, Sablé-sur-Sarthe(France)
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- BOUTON D'ACTION (Angle droit, noir massif) -->
+                            <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td align="center">
+                                        <a href="https://sachaguitter.github.io/portfolio_v3/" class="btn-action" target="_blank" rel="noopener noreferrer" style="display: inline-block; width: 100%; box-sizing: border-box; background-color: #000000; color: #FFFFFF; font-size: 13px; font-weight: 800; text-transform: uppercase; letter-spacing: 2px; text-decoration: none; padding: 18px 24px; text-align: center; border: 2px solid #000000; border-radius: 0px !important;">
+                                            DÉCOUVRIR LE PORTFOLIO EN LIGNE &rarr;
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+
+                        </td>
+                    </tr>
+
+                    <!-- PIED DE PAGE ÉDITORIAL -->
+                    <tr>
+                        <td class="footer-cell" style="background-color: #F8F8F8; padding: 24px 32px; border-top: 2px solid #000000;">
+                            <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td class="mobile-col" style="font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: #404040; line-height: 1.5;">
+                                        <strong>SACHA GUITTER</strong> · PORTFOLIO ÉDITORIAL<br>
+                                        Photographie · Direction Artistique · BUT MMI
+                                    </td>
+                                    <td class="mobile-col" align="right" style="font-size: 11px; text-transform: uppercase; letter-spacing: 1px;">
+                                        <a href="https://sachaguitter.github.io/portfolio_v3/" style="color: #000000; font-weight: 700; text-decoration: underline;">sachaguitter.github.io &uarr;</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                </table>
+
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>

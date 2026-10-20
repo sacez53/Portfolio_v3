@@ -1,0 +1,45 @@
+{
+  "slug": "travail-photographique-dorothea-lange",
+  "titre": "Travail photographique — Dorothea Lange",
+  "description": "Dans le cadre d’un cours d’anglais en première année de BUT MMI, nous avons travaillé avec l’ensemble de la promotion et notre professeure d’anglais sur les photographies emblématiques de Dorothea Lange. À partir de cette étude documentaire et sociale, nous avons réalisé des prises de vue sur des thèmes proches des luttes et sujets de Dorothea Lange (isolement, vieillesse, dignité du quotidien). J'ai choisi d'aborder la solitude de la vieillesse en faisant poser ma grand-mère. Durant l'exposition à l'IUT de Laval, la professeure m’a également confié la couverture photographique de l’événement.",
+  "categorie": "etudiant",
+  "tags": [
+    "Photographie Documentaire",
+    "Portrait",
+    "Exposition",
+    "Dorothea Lange",
+    "BUT MMI"
+  ],
+  "competences": [
+    "Cadrage studio et reportage",
+    "Éclairage doux",
+    "Tirage grand format d'exposition",
+    "Couverture événementielle"
+  ],
+  "images": [
+    "projets/etudiant/travail-photographique-dorothea-lange/dorothea-lange-01.webp",
+    "projets/etudiant/travail-photographique-dorothea-lange/dorothea-lange-02.webp",
+    "projets/etudiant/travail-photographique-dorothea-lange/dorothea-lange-03.webp"
+  ],
+  "reflexion": {
+    "contexte": "Projet pédagogique transversal mêlant anglais, culture photographique et exposition publique à l'IUT de Laval.",
+    "difficultes": "Créer une image émouvante qui raconte une histoire sans tomber dans le mélodrame, avec un noir et blanc profond et nuancé.",
+    "reussites": "Mon image a été imprimée en très grand format et exposée publiquement, et j'ai documenté avec fierté le vernissage de l'exposition.",
+    "apprentissages": "Compréhension de la démarche humaniste de Dorothea Lange et travail sur la transmission d'un message universel par le regard."
+  },
+  "etapes": [
+    {
+      "titre": "01. Étude stylistique",
+      "desc": "Analyse des cadrages et de la lumière naturelle de Dorothea Lange."
+    },
+    {
+      "titre": "02. Prise de vue",
+      "desc": "Séance intimiste avec ma grand-mère, recherche de la vérité des expressions."
+    },
+    {
+      "titre": "03. Exposition et Vernissage",
+      "desc": "Tirage d'art grand format et photoreportage de l'exposition à l'IUT."
+    }
+  ],
+  "lien": null
+}

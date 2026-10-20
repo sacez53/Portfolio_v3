@@ -1,0 +1,64 @@
+/* ══════════════════════════════════════════════════════════════
+   SPECIAL GOTHIC - POLICES OFFICIELLES DU PORTFOLIO PAPIER (SIL OFL 1.1)
+   ══════════════════════════════════════════════════════════════ */
+
+/* Police Variable (Largeur & Graisse variables) */
+@font-face {
+  font-family: 'Special Gothic';
+  src: url('../fonts/Special_Gothic/SpecialGothic-VariableFont_wdth,wght.ttf') format('truetype-variations'),
+       url('../fonts/Special_Gothic/SpecialGothic-VariableFont_wdth,wght.ttf') format('truetype');
+  font-weight: 300 900;
+  font-stretch: 75% 125%;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Statiques ciblées pour compatibilité maximale */
+@font-face {
+  font-family: 'Special Gothic';
+  src: url('../fonts/Special_Gothic/static/SpecialGothic-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Special Gothic';
+  src: url('../fonts/Special_Gothic/static/SpecialGothic-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Special Gothic';
+  src: url('../fonts/Special_Gothic/static/SpecialGothic-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Special Gothic';
+  src: url('../fonts/Special_Gothic/static/SpecialGothic-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Version Expanded (Titrages monumentaux) */
+@font-face {
+  font-family: 'Special Gothic Expanded';
+  src: url('../fonts/Special_Gothic_Expanded_One/SpecialGothicExpandedOne-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Special Gothic Expanded';
+  src: url('../fonts/Special_Gothic/static/SpecialGothic_Expanded-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}

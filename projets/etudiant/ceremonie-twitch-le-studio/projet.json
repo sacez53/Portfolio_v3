@@ -1,0 +1,45 @@
+{
+  "slug": "ceremonie-twitch-le-studio",
+  "titre": "Cérémonie Twitch — Le Studio",
+  "description": "Une cérémonie diffusée en direct sur Twitch est organisée chaque année au sein de notre IUT par l'association étudiante Le Studio (la Cérémonie des Walid / Nuit des MMI). Pour l’édition 2026, j’ai été invité par l’association Le Studio à couvrir cette soirée prestigieuse en photo. J’ai pu mettre à profit mes capacités de prise de vue de scène et de portrait pour permettre aux lauréats et aux organisateurs de conserver un souvenir impérissable de cet événement marquant, auquel j'avais moi-même soumis une de mes réalisations photographiques.",
+  "categorie": "etudiant",
+  "tags": [
+    "Twitch Live",
+    "Cérémonie",
+    "Le Studio",
+    "Prestige",
+    "Scène",
+    "BUT MMI"
+  ],
+  "competences": [
+    "Photo de plateau TV / Live stream",
+    "Discrétion pendant le direct",
+    "Portrait de scène",
+    "Gestion des lumières d'ambiance"
+  ],
+  "images": [
+    "projets/etudiant/ceremonie-twitch-le-studio/ceremonie-twitch-01.webp",
+    "projets/etudiant/ceremonie-twitch-le-studio/ceremonie-twitch-02.webp"
+  ],
+  "reflexion": {
+    "contexte": "Événement phare de l'IUT de Laval retransmis en direct sur Internet devant des centaines de spectateurs.",
+    "difficultes": "Se déplacer sur le plateau sans entrer dans le champ des caméras du direct Twitch et composer avec les spots du décor.",
+    "reussites": "Des photos élégantes immortalisant la remise des trophées et l'émotion des lauréats.",
+    "apprentissages": "Rigueur des tournages audiovisuels en direct et synchronisation avec les équipes régie."
+  },
+  "etapes": [
+    {
+      "titre": "01. Repérage du plateau TV",
+      "desc": "Définition des angles autorisés hors champ caméra."
+    },
+    {
+      "titre": "02. Couverture de la cérémonie",
+      "desc": "Capture des remises de prix et des réactions en temps réel."
+    },
+    {
+      "titre": "03. Archivage d'excellence",
+      "desc": "Traitement haut de gamme pour les lauréats et la communication institutionnelle."
+    }
+  ],
+  "lien": null
+}

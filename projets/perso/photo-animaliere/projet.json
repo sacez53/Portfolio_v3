@@ -1,0 +1,50 @@
+{
+  "slug": "photo-animaliere",
+  "titre": "La Photo Animalière",
+  "description": "Au cœur de la nature, la photographie animalière est ma passion originelle. À travers l'affût, la patience et l'observation silencieuse des chevreuils, des oiseaux et des écureuils, je cherche à figer la grâce de la faune sauvage sans jamais la déranger.",
+  "categorie": "perso",
+  "tags": [
+    "Photographie",
+    "Animalier",
+    "Nature",
+    "Affût",
+    "Faune Sauvage"
+  ],
+  "competences": [
+    "Affût en milieu naturel",
+    "Téléobjectif",
+    "Gestion de la lumière naturelle",
+    "Patience et Discrétion",
+    "Lightroom"
+  ],
+  "images": [
+    "projets/perso/photo-animaliere/ecureuil-roux-acouder-etoile.webp",
+    "projets/perso/photo-animaliere/chevreuil-1.webp",
+    "projets/perso/photo-animaliere/chevreuil-2.webp",
+    "projets/perso/photo-animaliere/mesange-bleue.webp",
+    "projets/perso/photo-animaliere/fauvette.webp",
+    "projets/perso/photo-animaliere/rouge-gorge.webp",
+    "projets/perso/photo-animaliere/renard.webp"
+  ],
+  "reflexion": {
+    "contexte": "Prises de vue réalisées au cœur des forêts et bocages de la Sarthe et de la Mayenne.",
+    "difficultes": "Anticiper les déplacements rapides des animaux, maîtriser le bruit au déclenchement et composer avec une lumière souvent changeante sous la canopée.",
+    "reussites": "Des attitudes spontanées capturées sans artifice, comme l'écureuil roux accoudé ou les regards perçants des chevreuils.",
+    "apprentissages": "Maîtrise des focales longues, travail sur la vitesse d'obturation et respect absolu des biotopes naturels."
+  },
+  "etapes": [
+    {
+      "titre": "01. Repérage",
+      "desc": "Analyse des coulées et des zones de passage dans les sous-bois."
+    },
+    {
+      "titre": "02. L'Affût",
+      "desc": "Installation matinale avant le lever du soleil pour une immersion totale."
+    },
+    {
+      "titre": "03. Éditing et Retouche",
+      "desc": "Traitement colorimétrique doux et naturel sous Lightroom."
+    }
+  ],
+  "lien": null
+}

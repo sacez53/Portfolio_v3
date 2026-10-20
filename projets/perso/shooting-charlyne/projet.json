@@ -1,0 +1,50 @@
+{
+  "slug": "shooting-charlyne",
+  "titre": "Shooting Portrait — Charlyne",
+  "description": "Shooting portrait en lumière naturelle réalisé dans le jardin public de Sablé-sur-Sarthe avec Charlyne. Exercice centré sur la complicité avec le sujet, l'aisance dans la pose et la recherche de lumières douces filtrées par les arbres pour sublimer le regard et les expressions naturelles.",
+  "categorie": "perso",
+  "tags": [
+    "Photographie",
+    "Portrait",
+    "Charlyne",
+    "Lumière Naturelle",
+    "Sablé-sur-Sarthe"
+  ],
+  "competences": [
+    "Direction de modèle",
+    "Lumière naturelle & ombres douces",
+    "Focale fixe portrait",
+    "Développement RAW & Retouche"
+  ],
+  "images": [
+    "projets/perso/shooting-charlyne/charlyne-01.webp",
+    "projets/perso/shooting-charlyne/charlyne-02.webp",
+    "projets/perso/shooting-charlyne/charlyne-03.webp",
+    "projets/perso/shooting-charlyne/charlyne-04.webp",
+    "projets/perso/shooting-charlyne/charlyne-05.webp",
+    "projets/perso/shooting-charlyne/charlyne-06.webp",
+    "projets/perso/shooting-charlyne/charlyne-07.webp",
+    "projets/perso/shooting-charlyne/charlyne-08.webp"
+  ],
+  "reflexion": {
+    "contexte": "Shooting en extérieur au jardin public de Sablé-sur-Sarthe, orienté création de contenu et valorisation d'expression.",
+    "difficultes": "Mettre le sujet à l'aise dès les premières prises et trouver des poses vivantes et spontanées sans artifice.",
+    "reussites": "Une série chaleureuse, des regards captés avec authenticité et un bel équilibre entre sujet et arrière-plan végétal.",
+    "apprentissages": "Approfondissement du guidage bienveillant du modèle et exploitation des contre-jours en sous-bois."
+  },
+  "etapes": [
+    {
+      "titre": "01. Cadrage & Dialogue",
+      "desc": "Échange préalable sur les tenues, les poses et le style d'image recherché."
+    },
+    {
+      "titre": "02. Prise de vue en lumière douce",
+      "desc": "Repérage des spots ombragés du parc pour éviter les lumières directes trop dures."
+    },
+    {
+      "titre": "03. Étalonnage & Tirage numérique",
+      "desc": "Développement colorimétrique délicat sous Lightroom pour préserver la carnation et les tons naturels."
+    }
+  ],
+  "lien": null
+}

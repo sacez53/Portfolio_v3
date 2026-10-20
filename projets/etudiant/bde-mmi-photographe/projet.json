@@ -1,0 +1,47 @@
+{
+  "slug": "bde-mmi-photographe",
+  "titre": "Photographe du BDE MMI Laval",
+  "description": "En tant qu’étudiant, je suis membre actif du Bureau des Étudiants de ma formation (BDE MMI Laval). Mon rôle officiel est celui de photographe : je suis en charge de créer les images pendant les événements que nous organisons tout au long de l'année universitaire. Qu'il s'agisse de soirées thématiques, de journées d'intégration, de cérémonies de parrainage-marrainage ou de moments conviviaux dans le hall de notre bâtiment, je documente la vie étudiante sous son angle le plus vivant et fédérateur.",
+  "categorie": "etudiant",
+  "tags": [
+    "BDE MMI",
+    "Vie Étudiante",
+    "Reportage",
+    "Soirées",
+    "IUT de Laval"
+  ],
+  "competences": [
+    "Photo sociale et festive",
+    "Flash déporté / synchro lente",
+    "Traitement express pour réseaux sociaux",
+    "Esprit d'équipe"
+  ],
+  "images": [
+    "projets/etudiant/bde-mmi-photographe/bde-mmi-01.webp",
+    "projets/etudiant/bde-mmi-photographe/bde-mmi-02.webp",
+    "projets/etudiant/bde-mmi-photographe/bde-mmi-03.webp",
+    "projets/etudiant/bde-mmi-photographe/bde-mmi-04.webp",
+    "projets/etudiant/bde-mmi-photographe/bde-mmi-05.webp"
+  ],
+  "reflexion": {
+    "contexte": "Rôle associatif au cœur de la promotion BUT MMI à Laval.",
+    "difficultes": "Photographier dans des conditions de lumière festive très changeantes tout en restant réactif et bienveillant avec tous les étudiants.",
+    "reussites": "Des centaines d'images plébiscitées par la promotion, servant directement à la communication du BDE sur Instagram.",
+    "apprentissages": "Développement de l'aisance relationnelle, rapidité d'exécution et régularité dans la production de contenu média."
+  },
+  "etapes": [
+    {
+      "titre": "01. Briefing d'événement",
+      "desc": "Coordination avec l'équipe du bureau sur les moments clés du rassemblement."
+    },
+    {
+      "titre": "02. Shooting immersif",
+      "desc": "Présence au cœur de l'action pour saisir les éclats de rire et la convivialité."
+    },
+    {
+      "titre": "03. Livraison rapide",
+      "desc": "Tri et retouche nocturne pour diffusion immédiate dès le lendemain."
+    }
+  ],
+  "lien": null
+}

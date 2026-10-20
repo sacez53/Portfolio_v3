@@ -1,0 +1,45 @@
+{
+  "slug": "canette-tyztea-blender",
+  "titre": "Marque Tyztea et Modélisation 3D",
+  "description": "Dans le cadre d’un cours de design graphique, il nous était demandé de créer une marque de boisson complète. Pour ce projet, je me suis inspiré du concept des thés glacés en canette. La marque a pour nom Tyztea. Cette boisson est un thé pêche-raisin, j’ai donc axé les couleurs sur des nuances subtiles de raisin et de pêche. Pour ce projet, j’ai appris à utiliser le logiciel Blender pour modéliser et réaliser un rendu photoréaliste en 3 dimensions de ma canette.",
+  "categorie": "etudiant",
+  "tags": [
+    "Design 3D",
+    "Blender",
+    "Packaging",
+    "Identité de Marque",
+    "BUT MMI"
+  ],
+  "competences": [
+    "Modélisation 3D Blender",
+    "Texturing et Shading",
+    "Design de packaging",
+    "Mise en lumière studio virtuelle"
+  ],
+  "images": [
+    "projets/etudiant/canette-tyztea-blender/canette-tyztea-3d.webp",
+    "projets/etudiant/canette-tyztea-blender/tyztea-affiche.webp",
+    "projets/etudiant/canette-tyztea-blender/tyztea-design.webp"
+  ],
+  "reflexion": {
+    "contexte": "Création de marque et initiation à la 3D dans le cursus BUT MMI.",
+    "difficultes": "Appréhender l'interface de Blender, mapper correctement l'étiquette 2D sur le cylindre métallique et simuler la condensation et les reflets d'aluminium.",
+    "reussites": "Un rendu 3D ultra-réaliste valorisant le produit sous tous les angles.",
+    "apprentissages": "Découverte des matériaux PBR (Physically Based Rendering), de l'éclairage trois points sous Cycles/Eevee et de la chaîne packaging 2D vers 3D."
+  },
+  "etapes": [
+    {
+      "titre": "01. Design de l'étiquette 2D",
+      "desc": "Création du logo Tyztea et choix de la palette pêche-raisin."
+    },
+    {
+      "titre": "02. Modélisation 3D dans Blender",
+      "desc": "Construction du maillage de la canette aluminium et application des shaders métalliques."
+    },
+    {
+      "titre": "03. Rendu studio et Affiche promotionnelle",
+      "desc": "Éclairage virtuel, calcul du rendu et mise en page de l'affiche publicitaire."
+    }
+  ],
+  "lien": null
+}

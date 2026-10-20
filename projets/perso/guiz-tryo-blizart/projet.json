@@ -1,0 +1,50 @@
+{
+  "slug": "guiz-tryo-blizart",
+  "titre": "Guiz (Tryo) — Bliz'art Festival",
+  "description": "Durant l’été 2025, j’ai eu la chance d’aller voir Guiz, membre du groupe de musique Tryo, en concert et de pouvoir échanger avec lui après son concert. Après avoir partagé avec lui ma passion pour la photographie, il m’a proposé de choisir dans les dates de sa tournée une représentation où je pourrais venir faire des images. J’ai donc choisi sa date au Bliz’art Festival. Durant ce concert, j’ai pu découvrir et approfondir la prise de vue de scène et de live musical.",
+  "categorie": "perso",
+  "tags": [
+    "Concert",
+    "Live",
+    "Festival",
+    "Musique",
+    "Tryo",
+    "Basse Lumière"
+  ],
+  "competences": [
+    "Photo de spectacle",
+    "Gestion des lumières de scène",
+    "Vitesse d'obturation élevée",
+    "Sens du tempo musical"
+  ],
+  "images": [
+    "projets/perso/guiz-tryo-blizart/guiz-tryo-01.webp",
+    "projets/perso/guiz-tryo-blizart/guiz-tryo-02.webp",
+    "projets/perso/guiz-tryo-blizart/guiz-tryo-03.webp",
+    "projets/perso/guiz-tryo-blizart/guiz-tryo-04.webp",
+    "projets/perso/guiz-tryo-blizart/guiz-tryo-05.webp",
+    "projets/perso/guiz-tryo-blizart/guiz-tryo-06.webp",
+    "projets/perso/guiz-tryo-blizart/guiz-tryo-07.webp"
+  ],
+  "reflexion": {
+    "contexte": "Accréditation exclusive accordée directement par l'artiste Guiz pour le Bliz'art Festival.",
+    "difficultes": "Éclairages de scène saturés et très changeants (spots LED, contre-jours violents, fumée) et artistes en mouvement permanent.",
+    "reussites": "Des clichés intenses saisissant l'énergie brute du guitariste et la communion avec le public.",
+    "apprentissages": "Maîtrise de la montée en sensibilité ISO, mesure spot de la lumière et anticipation des refrains et solos."
+  },
+  "etapes": [
+    {
+      "titre": "01. Préparation et Réglages",
+      "desc": "Repérage de la scène et calibrage des profils basse lumière."
+    },
+    {
+      "titre": "02. Prise de vue en fosse et coulisses",
+      "desc": "Cadrages variés, des plans larges d'ambiance aux gros plans serrés sur l'instrument."
+    },
+    {
+      "titre": "03. Éditing de scène",
+      "desc": "Travail minutieux sur les contrastes et les teintes pour préserver la magie du show."
+    }
+  ],
+  "lien": null
+}

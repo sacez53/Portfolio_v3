@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sacha GUITTER — Portfolio Photographie & Direction Artistique</title>
+    
+    <!-- SEO & Métadonnées -->
+    <meta name="description" content="Portfolio officiel de Sacha GUITTER, photographe et étudiant en BUT MMI. Photographie animalière, portrait, événementiel et design éditorial.">
+    <meta name="keywords" content="Sacha Guitter, photographe, portfolio, photographie animalière, portrait, événement, BUT MMI Laval, design éditorial, tirages">
+    <meta name="author" content="Sacha GUITTER">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#FFFFFF">
+    
+    <!-- Open Graph & Twitter Cards -->
+    <meta property="og:title" content="Sacha GUITTER — Portfolio Photographie">
+    <meta property="og:description" content="Photographie animalière, portrait, événementiel et direction artistique.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="image/titre/sacha_cover.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sacha GUITTER — Portfolio Photographie">
+    <meta name="twitter:description" content="Photographie animalière, portrait, événementiel et direction artistique.">
+    <meta name="twitter:image" content="image/titre/sacha_cover.webp">
+
+    <!-- Preload image LCP -->
+    <link rel="preload" as="image" href="image/titre/sacha_cover.webp" type="image/webp">
+
+    <!-- Favicon -->
+    <link rel="icon" href="image/ico/mesange.png" type="image/png">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style/fonts.css">
+    <link rel="stylesheet" href="style/design-tokens.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+
+    <!-- Scripts avec chargement différé -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
+    <script src="script/email.config.js" defer></script>
+    <script src="script/nav.js" defer></script>
+    <script src="script/scroll.js" defer></script>
+    <script src="script/contact.js" defer></script>
+    <script src="script/carte.js" defer></script>
+    <script src="script/projets.js" defer></script>
+    <script src="script/infos.js" defer></script>
+    <script src="script/cursor.js" defer></script>
+</head>
+<body>
+
+    <!-- Lien d'évitement clavier pour l'accessibilité -->
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+    <!-- ══════════════════════════════════════════════════════════════
+         NAVIGATION PRINCIPALE EFFICACE (Top Bar Fixe & Moderne)
+         ══════════════════════════════════════════════════════════════ -->
+    <header class="main-navbar-header" id="top">
+        <nav class="nav-container" aria-label="Navigation principale">
+            <a href="#top" class="nav-brand" aria-label="Haut de page — Sacha Guitter">
+                <img src="image/ico/mesange.png" alt="" width="104" height="65" class="nav-brand-icon" aria-hidden="true">
+                <span class="nav-brand-name">SACHA GUITTER</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#chapitre-1" class="nav-link"><span class="nav-link-num">01.</span>À PROPOS</a></li>
+                <li><a href="#chapitre-2" class="nav-link"><span class="nav-link-num">02.</span>PHOTOS</a></li>
+                <li><a href="#chapitre-3" class="nav-link"><span class="nav-link-num">03.</span>ARTS & PRINT</a></li>
+                <li><a href="#chapitre-4" class="nav-link"><span class="nav-link-num">04.</span>MMI</a></li>
+                <li><a href="#chapitre-5" class="nav-link"><span class="nav-link-num">05.</span>MERCI</a></li>
+            </ul>
+            <div class="nav-action">
+                <a href="#chapitre-5" class="nav-cta-btn">ME CONTACTER</a>
+            </div>
+            <!-- Bouton Hamburger Mobile -->
+            <button class="nav-burger-btn" id="nav-burger-btn" aria-label="Ouvrir le menu de navigation" aria-expanded="false" aria-controls="mobile-nav-drawer">
+                <span class="burger-box" aria-hidden="true">
+                    <span class="burger-bar"></span>
+                    <span class="burger-bar"></span>
+                    <span class="burger-bar"></span>
+                </span>
+                <span class="burger-label">MENU</span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Tiroir / Drawer Menu Mobile Éditorial -->
+    <div class="mobile-nav-drawer" id="mobile-nav-drawer" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Menu principal">
+        <div class="mobile-drawer-backdrop" id="mobile-drawer-backdrop"></div>
+        <div class="mobile-drawer-content">
+            <div class="mobile-drawer-header">
+                <a href="#top" class="mobile-drawer-brand" aria-label="Haut de page — Sacha Guitter">
+                    <img src="image/ico/mesange.png" alt="" width="28" height="18" class="nav-brand-icon" aria-hidden="true">
+                    <span class="nav-brand-name">SACHA GUITTER</span>
+                </a>
+                <button class="mobile-drawer-close" id="mobile-drawer-close" aria-label="Fermer le menu de navigation">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+
+            <nav class="mobile-drawer-nav" aria-label="Navigation mobile">
+                <ul class="mobile-drawer-links">
+                    <li>
+                        <a href="#chapitre-1" class="mobile-drawer-link">
+                            <span class="mobile-link-num">01.</span>
+                            <span class="mobile-link-text">À PROPOS DE MOI</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#chapitre-2" class="mobile-drawer-link">
+                            <span class="mobile-link-num">02.</span>
+                            <span class="mobile-link-text">LES PHOTOS ET MOI</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#chapitre-3" class="mobile-drawer-link">
+                            <span class="mobile-link-num">03.</span>
+                            <span class="mobile-link-text">LES ARTS ET MOI</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#chapitre-4" class="mobile-drawer-link">
+                            <span class="mobile-link-num">04.</span>
+                            <span class="mobile-link-text">MES ÉTUDES ET MOI</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#chapitre-5" class="mobile-drawer-link">
+                            <span class="mobile-link-num">05.</span>
+                            <span class="mobile-link-text">UN TRÈS GRAND MERCI</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="mobile-drawer-footer">
+                <a href="#chapitre-5" class="mobile-drawer-cta">ME CONTACTER</a>
+                <div class="mobile-drawer-contact-info">
+                    <a href="mailto:sachaguitterphoto@gmail.com" class="info-email">sachaguitterphoto@gmail.com</a>
+                    <a href="tel:+33749610990" class="info-phone">+33 7 49 61 09 90</a>
+                </div>
+                <div class="mobile-drawer-extra-links">
+                    <a href="da.html">Direction Artistique Papier ↗</a>
+                    <a href="html/mentions-legales.html">Mentions légales</a>
+                    <a href="html/politique-confidentialite.html">Confidentialité</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════════════════
+         LA COUVERTURE DU PORTFOLIO
+         ══════════════════════════════════════════════════════════════ -->
+    <header class="hero-wrapper" aria-label="Couverture du Portfolio">
+        <div class="container hero-meta-bar">
+            <span>Portfolio Éditorial · Tirages & Archives</span>
+            <span id="hero-live-clock" aria-live="off" aria-atomic="true">LAVAL, FRANCE</span>
+        </div>
+
+        <div class="container hero-visual-stage">
+            <!-- Photographie N&B de Sacha au téléobjectif avec fondu -->
+            <div class="hero-photo-container">
+                <img src="image/titre/sacha_cover.webp" alt="Sacha Guitter en pleine prise de vue" width="2040" height="2040" class="hero-photo-img" fetchpriority="high">
+            </div>
+
+            <!-- Ligne supérieure avec le nom, le filet noir et la mésange emblème -->
+            <div class="hero-line-top">
+                <span class="hero-author-name">SACHA GUITTER</span>
+                <div class="hero-hairline-right">
+                    <img src="image/ico/mesange.png" alt="Mésange bleue emblème du portfolio" width="104" height="65" class="hero-bird" aria-hidden="true">
+                </div>
+            </div>
+
+            <!-- Titre monumental central : PORTFOLIO -->
+            <div class="hero-title-monumental">
+                <h1 class="hero-title-text">PORTFOLIO</h1>
+            </div>
+
+            <!-- Ligne inférieure avec filet noir et mention -->
+            <div class="hero-line-bottom">
+                <div class="hero-hairline-left"></div>
+                <span class="hero-role-title">BUT MMI - PHOTOGRAPHE</span>
+            </div>
+        </div>
+
+        <div class="container hero-footer-cta">
+            <span class="hero-footer-edition">Édition Numérique Format A4 Paysage</span>
+            <a href="#chapitre-1" class="hero-scroll-btn" aria-label="Découvrir les travaux">
+                Découvrir les travaux ↓
+            </a>
+        </div>
+    </header>
+
+    <main id="main-content">
+
+        <!-- ══════════════════════════════════════════════════════════════
+             CHAPITRE 1 — A PROPOS DE MOI
+             ══════════════════════════════════════════════════════════════ -->
+        <section id="chapitre-1" class="section reveal" aria-label="1. A propos de moi">
+            <div class="container chapter-break">
+                <span class="chapter-number">1.</span>
+                <h2 class="chapter-title">A PROPOS DE MOI</h2>
+                <div class="chapter-subtitle">Parcours · Démarche photographique · Identité</div>
+            </div>
+
+            <div id="presentation" class="container">
+                <div class="about-paper-spread">
+                    <!-- Case 1 & 3 : En haut la photo terrain / En bas la suite du parcours -->
+                    <div class="about-paper-col">
+                        <div class="about-photo-frame">
+                            <img src="image/edito/apropos_terrain.webp" alt="Sacha Guitter en affût photographique avec téléobjectif et trépied" width="1600" height="884" loading="lazy">
+                        </div>
+                        <p class="about-body-paper">
+                            Si vous parcourez ce portfolio, c'est que vous êtes curieux de découvrir mon univers créatif. J'ai conçu ce document comme un véritable voyage au cœur de mes passions et de mon savoir-faire. Vous y explorerez mes réalisations audiovisuelles, mes projets graphiques destinés à l'impression (print), et vous pourrez en apprendre davantage sur les enjeux de ma formation en BUT MMI. L'ensemble des créations personnelles présentées ici n'est pas qu'une simple galerie : c'est le reflet de mon évolution, de ma curiosité et des différentes compétences techniques et artistiques que j'ai acquises. Je vous souhaite une excellente exploration !
+                        </p>
+                    </div>
+
+                    <!-- Case 2 & 4 : En haut le texte d'introduction / En bas le portrait d'enfance -->
+                    <div class="about-paper-col">
+                        <p class="about-lead-paper">
+                            Bonjour et bienvenue ! Je m'appelle Sacha GUITTER, je suis étudiant en BUT Métiers du Multimédia et de l'Internet (MMI) et grand passionné de la nature, ce qui m'a naturellement poussé à devenir photographe animalier amateur. À travers l'objectif de mon appareil comme derrière mon écran, j'aime capturer et transmettre des émotions.
+                        </p>
+
+                        <div class="about-photo-frame about-photo-portrait-small">
+                            <img src="image/edito/apropos_enfant.webp" alt="Sacha Guitter enfant, naissance d'un regard" width="803" height="1152" loading="lazy">
+                        </div>
+
+                        <div class="about-meta-paper">
+                            <div class="about-meta-paper-item">
+                                <span class="about-meta-paper-label">Cursus</span>
+                                <span class="about-meta-paper-value">BUT MMI (IUT Laval)</span>
+                            </div>
+                            <div class="about-meta-paper-item">
+                                <span class="about-meta-paper-label">Bassin</span>
+                                <span class="about-meta-paper-value">Laval / Sablé (72)</span>
+                            </div>
+                            <div class="about-meta-paper-item">
+                                <span class="about-meta-paper-label">Spécialité</span>
+                                <span class="about-meta-paper-value">Photo & Tirage Print</span>
+                            </div>
+                            <div class="about-meta-paper-item">
+                                <span class="about-meta-paper-label">Vocation</span>
+                                <span class="about-meta-paper-value">Créatif Visuel</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════════════════
+             CHAPITRE 2 — LES PHOTOS ET MOI
+             ══════════════════════════════════════════════════════════════ -->
+        <section id="chapitre-2" class="section reveal" aria-label="2. Les photos et moi">
+            <div class="container chapter-break">
+                <span class="chapter-number">2.</span>
+                <h2 class="chapter-title">LES PHOTOS ET MOI</h2>
+                <div class="chapter-subtitle">A. Animalière · B. Portrait · C. Événements</div>
+            </div>
+
+            <!-- Sous-section A. La photo animalière -->
+            <div id="section-animalier" class="container subsection-break reveal">
+                <div class="subsection-header">
+                    <h3 class="subsection-title">A. LA PHOTO ANIMALIÈRE</h3>
+                    <span class="subsection-page-num">SÉRIE ANIMALIÈRE</span>
+                </div>
+                <div class="subsection-lead-text">
+                    <p>La photographie animalière est pour moi une école de la patience et de l'observation. À l'affût dans les forêts et marais de la Sarthe et de la Mayenne, chaque prise de vue est une rencontre singulière avec la faune sauvage dans son milieu naturel.</p>
+                </div>
+                <div class="galerie-grid-1">
+                    <a href="html/projet.html?slug=photo-animaliere" class="project-card-visual aspect-wide" aria-label="Consulter la série Photo Animalière">
+                        <div class="project-visual-media">
+                            <img src="projets/perso/photo-animaliere/ecureuil-roux-acouder-etoile.webp" alt="Série photographique animalière" width="1920" height="1354" loading="lazy" class="project-visual-img">
+                        </div>
+                        <div class="project-visual-overlay">
+                            <div class="project-visual-meta">
+                                <span class="project-visual-fig">FIG. 01</span>
+                                <span class="project-visual-separator">—</span>
+                                <span class="project-visual-title">LA PHOTO ANIMALIÈRE</span>
+                            </div>
+                            <div class="project-visual-arrow" aria-hidden="true">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Sous-section B. La photo portrait -->
+            <div id="section-portrait" class="container subsection-break reveal">
+                <div class="subsection-header">
+                    <h3 class="subsection-title">B. LA PHOTO PORTRAIT</h3>
+                    <span class="subsection-page-num">SÉRIE PORTRAIT</span>
+                </div>
+                <div class="subsection-lead-text">
+                    <p>Au sein de mon parcours créatif, la photographie de portrait occupe une place singulière. C'est l'exercice où la relation humaine prime sur la technique : savoir mettre à l'aise, capter une expression fugitive, sculpter les ombres et les lumières naturelles ou de studio.</p>
+                </div>
+
+                <!-- Citation sculptée dans le blanc -->
+                <div class="editorial-quote-spread reveal">
+                    <blockquote class="quote-paper-sculpted">
+                        « Chaque visage raconte une histoire unique. Le portrait est pour moi une façon de rendre l'éphémère inoubliable. »
+                    </blockquote>
+                    <span class="quote-paper-caption">Extrait de la Série Portrait</span>
+                </div>
+
+                <div class="galerie-grid-2">
+                    <!-- FIG. 02 : Série I -->
+                    <a href="html/projet.html?slug=photo-portrait" class="project-card-visual" aria-label="Consulter la Série I Photo Portrait">
+                        <div class="project-visual-media">
+                            <img src="projets/perso/photo-portrait/portrait-01.webp" alt="Série photographique portrait — Série I" width="1920" height="1280" loading="lazy" class="project-visual-img">
+                        </div>
+                        <div class="project-visual-overlay">
+                            <div class="project-visual-meta">
+                                <span class="project-visual-fig">FIG. 02</span>
+                                <span class="project-visual-separator">—</span>
+                                <span class="project-visual-title">PORTRAIT — SÉRIE I</span>
+                            </div>
+                            <div class="project-visual-arrow" aria-hidden="true">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- FIG. 03 : Charlyne -->
+                    <a href="html/projet.html?slug=shooting-charlyne" class="project-card-visual" aria-label="Consulter le Shooting Portrait Charlyne">
+                        <div class="project-visual-media">
+                            <img src="projets/perso/shooting-charlyne/charlyne-01.webp" alt="Shooting Portrait Charlyne à Sablé-sur-Sarthe" width="1920" height="1280" loading="lazy" class="project-visual-img">
+                        </div>
+                        <div class="project-visual-overlay">
+                            <div class="project-visual-meta">
+                                <span class="project-visual-fig">FIG. 03</span>
+                                <span class="project-visual-separator">—</span>
+                                <span class="project-visual-title">PORTRAIT — CHARLYNE</span>
+                            </div>
+                            <div class="project-visual-arrow" aria-hidden="true">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Sous-section C. La photo d'événement -->
+            <div id="section-evenement" class="container subsection-break reveal">
+                <div class="subsection-header">
+                    <h3 class="subsection-title">C. LA PHOTO D'ÉVÉNEMENT</h3>
+                    <span class="subsection-page-num">SÉRIE REPORTAGE</span>
+                </div>
+                <div class="subsection-lead-text">
+                    <p>La photo d’événement, pour moi c'est l'art de capturer l'énergie du moment présent sans jamais la perturber. Du concert live aux marches solidaires, il faut anticiper les mouvements, s'adapter instantanément à une lumière changeante et saisir l'émotion brute.</p>
+                </div>
+
+                <!-- Citation sculptée -->
+                <div class="editorial-quote-spread reveal">
+                    <blockquote class="quote-paper-sculpted">
+                        « Le bonheur, c'est d'apprécier les choses simples de la vie. »
+                    </blockquote>
+                    <span class="quote-paper-caption">Extrait de la Série Événements (Octobre Rose)</span>
+                </div>
+
+                <div class="galerie-grid-3">
+                    <!-- FIG. 04 : Octobre Rose -->
+                    <a href="html/projet.html?slug=octobre-rose-sille" class="project-card-visual" aria-label="Consulter Octobre Rose">
+                        <div class="project-visual-media">
+                            <img src="projets/perso/octobre-rose-sille/octobre-rose-01.webp" alt="Octobre Rose Sillé-le-Guillaume" width="1920" height="1280" loading="lazy" class="project-visual-img">
+                        </div>
+                        <div class="project-visual-overlay">
+                            <div class="project-visual-meta">
+                                <span class="project-visual-fig">FIG. 04</span>
+                                <span class="project-visual-separator">—</span>
+                                <span class="project-visual-title">OCTOBRE ROSE — SILLÉ-LE-GUILLAUME</span>
+                            </div>
+                            <div class="project-visual-arrow" aria-hidden="true">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- FIG. 05 : Guiz Tryo -->
+                    <a href="html/projet.html?slug=guiz-tryo-blizart" class="project-card-visual" aria-label="Consulter Guiz Festival Bliz'art">
+                        <div class="project-visual-media">
+                            <img src="projets/perso/guiz-tryo-blizart/guiz-tryo-01.webp" alt="Guiz Tryo en concert au Bliz'art Festival" width="1280" height="1920" loading="lazy" class="project-visual-img">
+                        </div>
+                        <div class="project-visual-overlay">
+                            <div class="project-visual-meta">
+                                <span class="project-visual-fig">FIG. 05</span>
+                                <span class="project-visual-separator">—</span>
+                                <span class="project-visual-title">GUIZ TRYO — FESTIVAL BLIZ'ART</span>
+                            </div>
+                            <div class="project-visual-arrow" aria-hidden="true">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- FIG. 06 : Gala de Danse -->
+                    <a href="html/projet.html?slug=gala-danse-sille" class="project-card-visual" aria-label="Consulter Gala de Danse">
+                        <div class="project-visual-media">
+                            <img src="projets/perso/gala-danse-sille/gala-danse-01.webp" alt="Gala de Danse Sillé-le-Guillaume" width="1920" height="1280" loading="lazy" class="project-visual-img">
+                        </div>
+                        <div class="project-visual-overlay">
+                            <div class="project-visual-meta">
+                                <span class="project-visual-fig">FIG. 06</span>
+                                <span class="project-visual-separator">—</span>
+                                <span class="project-visual-title">GALA DE DANSE — SILLÉ-LE-GUILLAUME</span>
+                            </div>
+                            <div class="project-visual-arrow" aria-hidden="true">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════════════════
+             CHAPITRE 3 — LES ARTS ET MOI
+             ══════════════════════════════════════════════════════════════ -->
+        <section id="chapitre-3" class="section reveal" aria-label="3. Les arts et moi">
+            <div class="container chapter-break">
+                <span class="chapter-number">3.</span>
+                <h2 class="chapter-title">LES ARTS ET MOI</h2>
+                <div class="chapter-subtitle">A. Le Print et le Web · B. L'Art Draw</div>
+            </div>
+
+            <!-- Sous-section A. Le print et le web -->
+            <div id="section-print-web" class="container subsection-break reveal">
+                <div class="subsection-header">
+                    <h3 class="subsection-title">A. LE PRINT ET LE WEB</h3>
+                    <span class="subsection-page-num">CRÉATION PRINT</span>
+                </div>
+
+                <!-- Note d'intention éditoriale sur l'art de l'affiche -->
+                <div class="editorial-callout-note">
+                    <p class="editorial-callout-text">
+                        « Une affiche n'est pas qu'un simple support papier, c'est un véritable outil d'expression qui doit interpeller instantanément et faire comprendre au spectateur le message transmis de façon efficace. Créer une affiche, c'est relever le défi de traduire une idée complexe en un visuel clair et mémorable. Mon objectif est de créer une véritable alchimie entre l'impact visuel brut et la fluidité du message. »
+                    </p>
+                    <span class="editorial-callout-caption">Note d'intention Print & Design</span>
+                </div>
+
+                <div class="galerie-grid-1">
+                    <a href="html/projet.html?slug=affiche-trail" class="project-card-visual aspect-wide" aria-label="Consulter l'Affiche Trail">
+                        <div class="project-visual-media">
+                            <img src="projets/etudiant/affiche-trail/affichetrail.webp" alt="Affiche Trail — Création Graphique & Typographique" width="1358" height="1920" loading="lazy" class="project-visual-img">
+                        </div>
+                        <div class="project-visual-overlay">
+                            <div class="project-visual-meta">
+                                <span class="project-visual-fig">FIG. 07</span>
+                                <span class="project-visual-separator">—</span>
+                                <span class="project-visual-title">AFFICHE TRAIL — CRÉATION GRAPHIQUE</span>
+                            </div>
+                            <div class="project-visual-arrow" aria-hidden="true">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Sous-section B. L'art draw : Affiches Personnelles -->
+            <div id="section-draw-paint" class="container subsection-break reveal">
+                <div class="subsection-header">
+                    <h3 class="subsection-title">B. L'ART DRAW</h3>
+                    <span class="subsection-page-num">AFFICHES PERSO</span>
+                </div>
+                <div class="subsection-lead-text">
+                    <p>Recherches graphiques et hommages au design automobile de haute précision : composition modulaire, silhouettes iconiques et contrastes chromatiques audacieux.</p>
+                </div>
+
+                <div class="galerie-grid-2">
+                    <!-- FIG. 08 : Porsche GT3 RS -->
+                    <a href="html/projet.html?slug=affiches-perso" class="project-card-visual" aria-label="Consulter l'Affiche Perso Porsche 911 GT3 RS">
+                        <div class="project-visual-media">
+                            <img src="projets/perso/affiches-perso/porsche-gt3rs-profil.webp" alt="Affiche Personnelle — Porsche 911 GT3 RS" width="1575" height="2362" loading="lazy" class="project-visual-img">
+                        </div>
+                        <div class="project-visual-overlay">
+                            <div class="project-visual-meta">
+                                <span class="project-visual-fig">FIG. 08</span>
+                                <span class="project-visual-separator">—</span>
+                                <span class="project-visual-title">AFFICHE PERSO — PORSCHE 911 GT3 RS</span>
+                            </div>
+                            <div class="project-visual-arrow" aria-hidden="true">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- FIG. 09 : BMW M2 -->
+                    <a href="html/projet.html?slug=affiches-perso" class="project-card-visual" aria-label="Consulter l'Affiche Perso BMW M2">
+                        <div class="project-visual-media">
+                            <img src="projets/perso/affiches-perso/bmw-m2.webp" alt="Affiche Personnelle — BMW M2" width="1577" height="2365" loading="lazy" class="project-visual-img">
+                        </div>
+                        <div class="project-visual-overlay">
+                            <div class="project-visual-meta">
+                                <span class="project-visual-fig">FIG. 09</span>
+                                <span class="project-visual-separator">—</span>
+                                <span class="project-visual-title">AFFICHE PERSO — BMW M2</span>
+                            </div>
+                            <div class="project-visual-arrow" aria-hidden="true">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════════════════
+             CHAPITRE 4 — MES ÉTUDES ET MOI
+             ══════════════════════════════════════════════════════════════ -->
+        <section id="chapitre-4" class="section reveal" aria-label="4. Mes études et moi">
+            <div class="container chapter-break">
+                <span class="chapter-number">4.</span>
+                <h2 class="chapter-title">MES ÉTUDES ET MOI</h2>
+                <div class="chapter-subtitle">A. MMI · B. À côté de MMI</div>
+            </div>
+
+            <!-- Sous-section A. BUT MMI -->
+            <div id="section-mmi" class="container subsection-break reveal">
+                <div class="subsection-header">
+                    <h3 class="subsection-title">A. BUT MMI</h3>
+                    <span class="subsection-page-num">PROJETS MMI</span>
+                </div>
+                <div class="subsection-lead-text">
+                    <p>Réalisations universitaires et projets tutorés au sein du département Métiers du Multimédia et de l'Internet de l'IUT de Laval : direction artistique, modélisation 3D et démarche d'auteur.</p>
+                </div>
+
+                <div class="galerie-grid-3">
+                    <!-- FIG. 10 : Affiche Yoroï Orelsan -->
+                    <a href="html/projet.html?slug=affiche-yoroi-orelsan" class="project-card-visual" aria-label="Consulter l'Affiche Yoroï Orelsan">
+                        <div class="project-visual-media">
+                            <img src="projets/etudiant/affiche-yoroi-orelsan/affiche-yoroi.webp" alt="Affiche Yoroï Orelsan" width="1920" height="1358" loading="lazy" class="project-visual-img">
+                        </div>
+                        <div class="project-visual-overlay">
+                            <div class="project-visual-meta">
+                                <span class="project-visual-fig">FIG. 10</span>
+                                <span class="project-visual-separator">—</span>
+                                <span class="project-visual-title">AFFICHE YOROÏ — ORELSAN</span>
+                            </div>
+                            <div class="project-visual-arrow" aria-hidden="true">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- FIG. 11 : Canette Tyztea 3D -->
+                    <a href="html/projet.html?slug=canette-tyztea-blender" class="project-card-visual" aria-label="Consulter Canette Tyztea Blender 3D">
+                        <div class="project-visual-media">
+                            <img src="projets/etudiant/canette-tyztea-blender/canette-tyztea-3d.webp" alt="Modélisation 3D canette Tyztea sur Blender" width="1920" height="1080" loading="lazy" class="project-visual-img">
+                        </div>
+                        <div class="project-visual-overlay">
+                            <div class="project-visual-meta">
+                                <span class="project-visual-fig">FIG. 11</span>
+                                <span class="project-visual-separator">—</span>
+                                <span class="project-visual-title">CANETTE TYZTEA & 3D BLENDER</span>
+                            </div>
+                            <div class="project-visual-arrow" aria-hidden="true">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- FIG. 12 : Dorothea Lange -->
+                    <a href="html/projet.html?slug=travail-photographique-dorothea-lange" class="project-card-visual" aria-label="Consulter Travail Dorothea Lange">
+                        <div class="project-visual-media">
+                            <img src="projets/etudiant/travail-photographique-dorothea-lange/dorothea-lange-01.webp" alt="Travail photographique d'après Dorothea Lange" width="1920" height="1281" loading="lazy" class="project-visual-img">
+                        </div>
+                        <div class="project-visual-overlay">
+                            <div class="project-visual-meta">
+                                <span class="project-visual-fig">FIG. 12</span>
+                                <span class="project-visual-separator">—</span>
+                                <span class="project-visual-title">DOROTHEA LANGE — EXERCICE PHOTOGRAPHIQUE</span>
+                            </div>
+                            <div class="project-visual-arrow" aria-hidden="true">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Sous-section B. À côté de MMI -->
+            <div id="section-cote-mmi" class="container subsection-break reveal">
+                <div class="subsection-header">
+                    <h3 class="subsection-title">B. À CÔTÉ DE MMI</h3>
+                    <span class="subsection-page-num">VIE ASSOCIATIVE</span>
+                </div>
+                <div class="subsection-lead-text">
+                    <p>Engagements associatifs, couverture d'événements étudiants et projets audiovisuels menés en parallèle de la formation.</p>
+                </div>
+
+                <div class="galerie-grid-2">
+                    <!-- FIG. 13 : Photographe BDE MMI Laval -->
+                    <a href="html/projet.html?slug=bde-mmi-photographe" class="project-card-visual" aria-label="Consulter Photographe BDE MMI Laval">
+                        <div class="project-visual-media">
+                            <img src="projets/etudiant/bde-mmi-photographe/bde-mmi-01.webp" alt="Photographe BDE MMI Laval" width="1920" height="1280" loading="lazy" class="project-visual-img">
+                        </div>
+                        <div class="project-visual-overlay">
+                            <div class="project-visual-meta">
+                                <span class="project-visual-fig">FIG. 13</span>
+                                <span class="project-visual-separator">—</span>
+                                <span class="project-visual-title">BDE MMI LAVAL — COUVERTURE ÉVÉNEMENTIELLE</span>
+                            </div>
+                            <div class="project-visual-arrow" aria-hidden="true">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- FIG. 14 : Cérémonie Twitch Le Studio -->
+                    <a href="html/projet.html?slug=ceremonie-twitch-le-studio" class="project-card-visual" aria-label="Consulter Cérémonie Twitch Le Studio">
+                        <div class="project-visual-media">
+                            <img src="projets/etudiant/ceremonie-twitch-le-studio/ceremonie-twitch-01.webp" alt="Cérémonie Twitch Le Studio" width="1280" height="1920" loading="lazy" class="project-visual-img">
+                        </div>
+                        <div class="project-visual-overlay">
+                            <div class="project-visual-meta">
+                                <span class="project-visual-fig">FIG. 14</span>
+                                <span class="project-visual-separator">—</span>
+                                <span class="project-visual-title">CÉRÉMONIE TWITCH — LE STUDIO</span>
+                            </div>
+                            <div class="project-visual-arrow" aria-hidden="true">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════════════════
+             CHAPITRE 5 — UN TRÈS GRAND MERCI
+             ══════════════════════════════════════════════════════════════ -->
+        <section id="chapitre-5" class="section reveal" aria-label="5. Un très grand merci">
+            <div class="container chapter-break">
+                <span class="chapter-number">5.</span>
+                <h2 class="chapter-title">UN TRÈS GRAND MERCI</h2>
+                <div class="chapter-subtitle">Prendre Contact · Échanges · Commandes</div>
+            </div>
+
+            <div id="contact" class="container">
+            <div class="contact-grid">
+                <form class="contact-form" action="#contact" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstname">Prénom</label>
+                            <input type="text" id="firstname" name="firstname" autocomplete="given-name" required placeholder="Votre prénom">
+                        </div>
+                        <div class="form-group">
+                            <label for="lastname">Nom</label>
+                            <input type="text" id="lastname" name="lastname" autocomplete="family-name" required placeholder="Votre nom">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Adresse électronique</label>
+                        <input type="email" id="email" name="email" autocomplete="email" required placeholder="exemple@domaine.fr">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Objet de votre démarche</label>
+                        <select id="subject" name="subject" required>
+                            <option value="" disabled selected>Sélectionnez un sujet</option>
+                            <option value="stage">Recherche de stage (BUT MMI)</option>
+                            <option value="photo">Shooting photo / Portrait personnel</option>
+                            <option value="evenement">Couverture d'événement / Festival</option>
+                            <option value="design">Projet Graphique & Éditorial</option>
+                            <option value="other">Autre demande</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required placeholder="Détaillez votre projet ou votre demande..."></textarea>
+                    </div>
+                    <!-- Anti-spam Honeypot -->
+                    <div class="form-group" style="display:none;" aria-hidden="true">
+                        <label for="website">Laissez ce champ vide</label>
+                        <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+                    </div>
+                    <button type="submit" class="submit-btn">ENVOYER LE MESSAGE</button>
+                    <p class="form-rgpd-notice" style="margin-top: 1rem; font-size: 0.78rem; color: var(--text-muted); line-height: 1.5;">
+                        Les informations recueillies via ce formulaire sont uniquement destinées au traitement de votre demande par Sacha GUITTER. Elles ne sont ni cédées ni revendues. Consultez la <a href="html/politique-confidentialite.html" style="color: inherit; text-decoration: underline;">politique de confidentialité</a>.
+                    </p>
+                </form>
+
+                <div class="contact-map" aria-label="Carte de localisation Sablé-sur-Sarthe et Laval">
+                    <div id="mapid"></div>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ══════════════════════════════════════════════════════════════
+         SORTIE INVERSÉE / THE END
+         ══════════════════════════════════════════════════════════════ -->
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <!-- Typographie monumentale THE END -->
+            <div class="footer-the-end-monumental" aria-hidden="true">
+                THE END
+            </div>
+
+            <div class="footer-top">
+                <h2 class="footer-cta">Sacha GUITTER — Photographe & Créatif</h2>
+                <a href="#top" class="footer-back-top" aria-label="Retour en haut de page">Retour en haut ↑</a>
+            </div>
+            
+            <!-- Menus déroulants épurés & accessibles -->
+            <div class="footer-dropdowns-group">
+                <!-- Menu 1 : Navigation -->
+                <details class="footer-dropdown" open>
+                    <summary class="footer-summary">
+                        <span class="footer-summary-title">
+                            <span class="footer-summary-num">01.</span>
+                            Navigation
+                        </span>
+                        <svg class="footer-dropdown-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </summary>
+                    <div class="footer-dropdown-content">
+                        <ul class="footer-dropdown-links">
+                            <li><a href="#chapitre-1">1. À propos de moi</a></li>
+                            <li><a href="#chapitre-2">2. Les photos et moi</a></li>
+                            <li><a href="#chapitre-3">3. Les arts et moi</a></li>
+                            <li><a href="#chapitre-4">4. Mes études et moi</a></li>
+                            <li><a href="#chapitre-5">5. Un très grand merci</a></li>
+                        </ul>
+                    </div>
+                </details>
+
+                <!-- Menu 2 : Contact -->
+                <details class="footer-dropdown" open>
+                    <summary class="footer-summary">
+                        <span class="footer-summary-title">
+                            <span class="footer-summary-num">02.</span>
+                            Contact direct
+                        </span>
+                        <svg class="footer-dropdown-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </summary>
+                    <div class="footer-dropdown-content">
+                        <ul class="footer-dropdown-links">
+                            <li><a href="mailto:sachaguitterphoto@gmail.com" class="info-email">sachaguitterphoto@gmail.com</a></li>
+                            <li><a href="tel:+33749610990" class="info-phone">+33 7 49 61 09 90</a></li>
+                            <li><span class="info-location">Laval — Sablé-sur-Sarthe (53 / 72)</span></li>
+                        </ul>
+                    </div>
+                </details>
+
+                <!-- Menu 3 : Liens & Légal -->
+                <details class="footer-dropdown" open>
+                    <summary class="footer-summary">
+                        <span class="footer-summary-title">
+                            <span class="footer-summary-num">03.</span>
+                            Réseaux & Légal
+                        </span>
+                        <svg class="footer-dropdown-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </summary>
+                    <div class="footer-dropdown-content">
+                        <ul class="footer-dropdown-links">
+                            <li><a href="https://www.linkedin.com/in/sachaguitter" class="info-linkedin" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></li>
+                            <li><a href="https://instagram.com/sacha.guitter.photo" class="info-instagram" target="_blank" rel="noopener noreferrer">Instagram ↗</a></li>
+                            <li><a href="da.html">Direction Artistique Papier ↗</a></li>
+                            <li><a href="html/mentions-legales.html">Mentions légales</a></li>
+                            <li><a href="html/politique-confidentialite.html">Confidentialité</a></li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2025–2026 Sacha GUITTER · Tous droits réservés</p>
+                <p>Direction Artistique & Développement Front-End · BUT MMI</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bouton flottant retour en haut -->
+    <a href="#" class="btn-retour-haut" aria-label="Retour en haut de page">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+    </a>
+
+</body>
+</html>

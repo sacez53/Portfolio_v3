@@ -1,0 +1,46 @@
+{
+  "slug": "affiches-perso",
+  "titre": "Affiches Personnelles — Porsche 911 GT3 RS & BMW M2",
+  "description": "Série d'affiches graphiques et automobiles réalisées à titre personnel. À travers ces compositions vectorielles et photographiques, j'explore le design automobile de haute précision : silhouettes emblématiques de la Porsche 911 GT3 RS et de la BMW M2, typographies éditoriales épurées, contrastes chromatiques audacieux et composition minimale inspirée des affiches d'art contemporain et des magazines de course automobile.",
+  "categorie": "perso",
+  "tags": [
+    "Affiches Perso",
+    "Design Graphique",
+    "Automobile",
+    "Porsche",
+    "BMW",
+    "Éditorial"
+  ],
+  "competences": [
+    "Design vectoriel",
+    "Direction artistique automobile",
+    "Composition typographique",
+    "Retouche & Traitement numérique"
+  ],
+  "images": [
+    "projets/perso/affiches-perso/porsche-gt3rs-profil.webp",
+    "projets/perso/affiches-perso/porsche-gt3rs-arriere.webp",
+    "projets/perso/affiches-perso/bmw-m2.webp"
+  ],
+  "reflexion": {
+    "contexte": "Travaux personnels d'expérimentation visuelle et d'hommage au design automobile d'exception.",
+    "difficultes": "Trouver le juste équilibre entre la complexité des lignes de carrosserie et un minimalisme graphique percutant.",
+    "reussites": "Une identité visuelle racée, des affiches au format print prêtes pour l'édition et une harmonie des rouges, noirs et blancs.",
+    "apprentissages": "Perfectionnement des techniques de détourage fin, maîtrise des contrastes et affûtage de la sensibilité éditoriale."
+  },
+  "etapes": [
+    {
+      "titre": "01. Sélection des modèles & cadrages",
+      "desc": "Choix des angles et lignes iconiques des bolides GT3 RS et M2."
+    },
+    {
+      "titre": "02. Travail typographique & composition",
+      "desc": "Intégration de typographies sans-serif géométriques, grilles suisses et données techniques."
+    },
+    {
+      "titre": "03. Étalonnage & Rendu print",
+      "desc": "Contrôle des profils colorimétriques et mise en page éditoriale prête pour le tirage grand format."
+    }
+  ],
+  "lien": null
+}

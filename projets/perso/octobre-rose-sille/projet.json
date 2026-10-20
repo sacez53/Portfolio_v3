@@ -1,0 +1,49 @@
+{
+  "slug": "octobre-rose-sille",
+  "titre": "Octobre Rose — Sillé-le-Guillaume",
+  "description": "Dans le cadre de l’action contre le cancer du sein, d’Octobre Rose à Sillé-le-Guillaume, j’ai été invité à documenter les différents événements de la journée. D’un parcours de course à pied le matin à la remise du chèque des profits de la journée en passant par une marche douce. J’ai voulu dans ce projet montrer la cohésion d’une population pour une cause qui est chère au cœur d’un grand nombre de personnes.",
+  "categorie": "perso",
+  "tags": [
+    "Reportage",
+    "Événementiel",
+    "Octobre Rose",
+    "Engagement",
+    "Sport"
+  ],
+  "competences": [
+    "Photo de reportage",
+    "Instantanéité",
+    "Gestion du mouvement",
+    "Cohérence de série"
+  ],
+  "images": [
+    "projets/perso/octobre-rose-sille/octobre-rose-01.webp",
+    "projets/perso/octobre-rose-sille/octobre-rose-02.webp",
+    "projets/perso/octobre-rose-sille/octobre-rose-03.webp",
+    "projets/perso/octobre-rose-sille/octobre-rose-04.webp",
+    "projets/perso/octobre-rose-sille/octobre-rose-05.webp",
+    "projets/perso/octobre-rose-sille/octobre-rose-06.webp",
+    "projets/perso/octobre-rose-sille/octobre-rose-07.webp"
+  ],
+  "reflexion": {
+    "contexte": "Couverture photographique bénévole de la journée caritative d'Octobre Rose à Sillé-le-Guillaume.",
+    "difficultes": "Suivre des événements variés (course, marche, remises protocolaires) dans des conditions météo et de luminosité très diverses.",
+    "reussites": "Raconter l'élan de solidarité et la joie collective à travers une galerie humaine et chaleureuse.",
+    "apprentissages": "Réactivité face aux imprévus du direct et capacité à se fondre dans la foule pour capturer des émotions vraies."
+  },
+  "etapes": [
+    {
+      "titre": "01. Matinée Sportive",
+      "desc": "Couverture dynamique de la course et de la marche solidaire."
+    },
+    {
+      "titre": "02. Moments Protocolaires",
+      "desc": "Prise de vue de la remise de chèque et des rassemblements."
+    },
+    {
+      "titre": "03. Sélection et Éditing",
+      "desc": "Traitement colorimétrique harmonieux avec mise en valeur du rose emblématique."
+    }
+  ],
+  "lien": null
+}

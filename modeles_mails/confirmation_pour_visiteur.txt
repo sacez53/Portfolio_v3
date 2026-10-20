@@ -1,0 +1,34 @@
+PORTFOLIO PHOTOGRAPHIQUE & CRÉATIF · SACHA GUITTER
+===================================================================
+CONFIRMATION DE RÉCEPTION — SACHA GUITTER
+===================================================================
+
+BONJOUR {{firstname}},
+
+Merci pour votre démarche ! J'ai bien reçu votre message concernant :
+"{{subject}}".
+
+Je prends le temps d'étudier votre demande avec soin et je reviendrai vers vous
+dans les plus brefs délais pour en discuter ensemble.
+
+01 / RÉCAPITULATIF DE VOTRE DEMANDE
+-------------------------------------------------------------------
+OBJET SÉLECTIONNÉ : {{subject}}
+
+VOTRE MESSAGE :
+« {{message}} »
+-------------------------------------------------------------------
+
+02 / COORDONNÉES DIRECTES & ÉCHANGES
+-------------------------------------------------------------------
+• Email direct : sachaguitterphoto@gmail.com
+• Téléphone    : 06 43 00 24 53
+• Instagram    : https://instagram.com/sacha_gttr (@sacha_gttr)
+• Localisation : Angoulême / Limoges (France)
+
+DÉCOUVRIR LE PORTFOLIO EN LIGNE :
+https://sachaguitter.github.io/portfolio_v3/
+
+===================================================================
+SACHA GUITTER · PORTFOLIO ÉDITORIAL
+Photographie · Direction Artistique · BUT MMI

@@ -1,0 +1,24 @@
+PORTFOLIO · SACHA GUITTER
+===================================================================
+NOUVEAU CONTACT TRANSMIS [#DIRECT]
+===================================================================
+
+01 / INFORMATIONS DE L'EXPÉDITEUR
+-------------------------------------------------------------------
+NOM & PRÉNOM : {{name}}
+EMAIL        : {{email}}
+DÉMARCHE     : #{{subject}}
+
+02 / MESSAGE TRANSMIS
+-------------------------------------------------------------------
+{{message}}
+-------------------------------------------------------------------
+
+03 / ACTION DIRECTE
+Pour répondre directement à {{name}} :
+mailto:{{email}}?subject=RE:{{subject}}
+
+===================================================================
+SACHA GUITTER · PORTFOLIO WEB
+Photographie · Direction Artistique · BUT MMI
+https://sachaguitter.github.io/portfolio_v3/

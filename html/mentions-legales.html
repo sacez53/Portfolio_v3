@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentions Légales — Sacha GUITTER</title>
+    <meta name="description" content="Mentions légales du portfolio de Sacha GUITTER, étudiant en BUT MMI, photographe et créatif.">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="author" content="Sacha GUITTER">
+    <meta name="theme-color" content="#FFFFFF">
+    
+    <link rel="icon" href="../image/ico/mesange.png" type="image/png">
+    <link rel="stylesheet" href="../style/fonts.css">
+    <link rel="stylesheet" href="../style/design-tokens.css">
+    <link rel="stylesheet" href="../style/style.css">
+
+    <script src="../script/scroll.js" defer></script>
+    <script src="../script/nav.js" defer></script>
+    <script src="../script/infos.js" defer></script>
+    <script src="../script/cursor.js" defer></script>
+    <style>
+        .legal-page {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 6.5rem var(--container-pad) 5rem;
+        }
+
+        .legal-header {
+            border-bottom: 2px solid #000000;
+            padding-bottom: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .legal-article {
+            border: 1px solid #000000;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            background: #FFFFFF;
+        }
+
+        .legal-article-num {
+            font-family: var(--font-display);
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #000000;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .legal-article h2 {
+            font-family: var(--font-display);
+            font-size: 1.25rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            color: #000000;
+        }
+
+        .legal-article p {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        .legal-article p + p { margin-top: 0.75rem; }
+
+        .legal-info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        @media (max-width: 640px) {
+            .legal-page {
+                padding: 2rem var(--container-pad) 4.5rem;
+            }
+            .legal-header {
+                padding-bottom: 1.25rem;
+                margin-bottom: 1.75rem;
+            }
+            .legal-header h1 {
+                font-size: clamp(1.75rem, 6vw, 2.5rem);
+                margin-bottom: 0.5rem;
+            }
+            .legal-article {
+                padding: 1.25rem 1rem;
+                margin-bottom: 1.25rem;
+            }
+            .legal-info-grid { grid-template-columns: 1fr; }
+        }
+
+        .legal-info-item {
+            background: var(--bg-alt);
+            border: 1px solid #000000;
+            padding: 1rem;
+        }
+
+        .legal-info-item dt {
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: #777777;
+            margin-bottom: 0.25rem;
+        }
+
+        .legal-info-item dd {
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: #000000;
+        }
+    </style>
+</head>
+<body class="has-bottom-nav">
+
+    <!-- Skip link -->
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+    <!-- Nav -->
+    <nav class="top-nav" aria-label="Navigation principale" style="opacity: 1; pointer-events: auto; transform: translateX(-50%) translateY(0);">
+        <ul>
+            <li>
+                <a href="../index.html" aria-label="Accueil">
+                    <svg class="nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                    <span class="nav-text">Accueil</span>
+                </a>
+            </li>
+            <li>
+                <a href="../index.html#presentation" aria-label="À propos">
+                    <svg class="nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                    <span class="nav-text">À propos</span>
+                </a>
+            </li>
+            <li>
+                <a href="../index.html#chapitre-2" aria-label="Projets">
+                    <svg class="nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+                    <span class="nav-text">Projets</span>
+                </a>
+            </li>
+            <li>
+                <a href="../index.html#contact" aria-label="Contact">
+                    <svg class="nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    <span class="nav-text">Contact</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <main id="main-content" class="legal-page">
+        <header class="legal-header">
+            <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); font-weight: 600;">Information juridique</span>
+            <h1 style="font-family: var(--font-display); font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 900; text-transform: uppercase; margin: 0.5rem 0;">Mentions Légales</h1>
+            <p style="font-size: 0.85rem; text-transform: uppercase; color: var(--text-muted);">Dernière mise à jour : Mai 2026</p>
+        </header>
+
+        <!-- Article 1 : Éditeur du site -->
+        <article class="legal-article">
+            <span class="legal-article-num">Article 01</span>
+            <h2>Éditeur de la publication</h2>
+            <p>Le présent site est édité à titre individuel et non commercial dans le cadre d'un portfolio étudiant et professionnel :</p>
+            <dl class="legal-info-grid">
+                <div class="legal-info-item">
+                    <dt>Nom & Prénom</dt>
+                    <dd>GUITTER Sacha</dd>
+                </div>
+                <div class="legal-info-item">
+                    <dt>Statut</dt>
+                    <dd>Étudiant BUT MMI</dd>
+                </div>
+                <div class="legal-info-item">
+                    <dt>Adresse e-mail</dt>
+                    <dd><a href="mailto:sachaguitterphoto@gmail.com" class="info-email" style="text-decoration: underline;">sachaguitterphoto@gmail.com</a></dd>
+                </div>
+                <div class="legal-info-item">
+                    <dt>Téléphone</dt>
+                    <dd><a href="tel:+33749610990" class="info-phone" style="text-decoration: underline;">+33 7 49 61 09 90</a></dd>
+                </div>
+                <div class="legal-info-item">
+                    <dt>Localité</dt>
+                    <dd class="info-location">France</dd>
+                </div>
+                <div class="legal-info-item">
+                    <dt>Directeur de la publication</dt>
+                    <dd>Sacha GUITTER</dd>
+                </div>
+            </dl>
+        </article>
+
+        <!-- Article 2 : Hébergement -->
+        <article class="legal-article">
+            <span class="legal-article-num">Article 02</span>
+            <h2>Hébergement & Infrastructure</h2>
+            <p>Le site est hébergé par les serveurs de l'Université du Mans :</p>
+            <dl class="legal-info-grid">
+                <div class="legal-info-item">
+                    <dt>Hébergeur</dt>
+                    <dd>Université du Mans (IUT de Laval)</dd>
+                </div>
+                <div class="legal-info-item">
+                    <dt>Adresse</dt>
+                    <dd>Avenue Messiaen, 72085 Le Mans Cedex 9</dd>
+                </div>
+                <div class="legal-info-item">
+                    <dt>Site internet</dt>
+                    <dd><a href="https://www.univ-lemans.fr" target="_blank" rel="noopener noreferrer" style="text-decoration: underline;">univ-lemans.fr ↗</a></dd>
+                </div>
+                <div class="legal-info-item">
+                    <dt>Serveurs</dt>
+                    <dd>France (Union Européenne)</dd>
+                </div>
+            </dl>
+        </article>
+
+        <!-- Article 3 : Propriété intellectuelle -->
+        <article class="legal-article">
+            <span class="legal-article-num">Article 03</span>
+            <h2>Propriété intellectuelle & Droits d'auteur</h2>
+            <p>L'ensemble des contenus présents sur ce site (photographies, textes, logotypes, maquettes, typographies, design éditorial et code source) sont protégés par le Code de la propriété intellectuelle français et les conventions internationales relatives aux droits d'auteur.</p>
+            <p>Toute reproduction, représentation, diffusion, adaptation ou exploitation, totale ou partielle, sans l'accord préalable écrit de Sacha GUITTER est strictement interdite et constitue une contrefaçon sanctionnée par les articles L.335-2 et suivants du Code de la propriété intellectuelle.</p>
+        </article>
+
+        <div style="margin-top: 3rem;">
+            <a href="../index.html" style="font-family: var(--font-display); font-weight: 700; text-transform: uppercase; text-decoration: underline;">← Retour au portfolio</a>
+        </div>
+    </main>
+
+    <!-- Footer inversé -->
+    <footer class="site-footer">
+        <div class="container footer-bottom" style="border: none; padding-top: 0;">
+            <p>© 2025–2026 Sacha GUITTER · Mentions Légales</p>
+            <a href="../index.html" style="color: #fff; text-decoration: underline;">Accueil ↑</a>
+        </div>
+    </footer>
+
+</body>
+</html>
