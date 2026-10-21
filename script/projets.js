@@ -364,6 +364,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Initialisation de la Lightbox
         setupLightbox();
+
+        // Initialisation de la modale de navigation rapide entre projets
+        if (typeof initProjectNavigationModal === 'function') {
+            initProjectNavigationModal(projects, slug);
+        }
     }
 
     /* ─────────────────────────────────────────────
