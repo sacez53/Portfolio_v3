@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
     }
 
-    // 2. Bouton retour en haut — visibilité + smooth scroll
+    // 2. Boutons retour en haut & nom (SACHA GUITTER) — visibilité + défilement fluide
     const backToTopBtns = document.querySelectorAll('.btn-retour-haut');
     backToTopBtns.forEach(btn => {
         const toggleVisibility = () => {
@@ -35,13 +35,41 @@ document.addEventListener("DOMContentLoaded", () => {
         };
         window.addEventListener('scroll', toggleVisibility, { passive: true });
         toggleVisibility();
+    });
 
-        btn.addEventListener('click', (e) => {
-            if (btn.getAttribute('href') === '#') {
-                e.preventDefault();
-                window.scrollTo({ top: 0, behavior: prefersReducedMotion ? 'auto' : 'smooth' });
-            }
+    // Fonction universelle pour remonter en haut de page
+    function scrollToTop(e) {
+        if (e && e.preventDefault) {
+            e.preventDefault();
+        }
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: prefersReducedMotion ? 'auto' : 'smooth'
         });
+
+        if (window.history && window.history.pushState) {
+            window.history.pushState(null, '', '#top');
+        }
+    }
+
+    // Gestion du clic pour remonter en haut :
+    // - Clic sur le logo / nom ("SACHA GUITTER") dans la navbar fixe (.nav-brand)
+    // - Clic sur le nom dans le menu mobile (.mobile-drawer-brand)
+    // - Clic sur "RETOUR AU DÉBUT" dans le footer (.footer-back-top)
+    // - Clic sur le bouton flottant de retour en haut (.btn-retour-haut)
+    // - Tout lien ciblant #top ou #
+    document.addEventListener('click', (e) => {
+        const link = e.target.closest('a[href="#top"], a[href="#"], .btn-retour-haut, .footer-back-top, .nav-brand, .mobile-drawer-brand');
+        if (!link) return;
+
+        const href = link.getAttribute('href');
+        // Ne pas intercepter les liens menant vers une autre page (ex: ../index.html)
+        if (href && !href.startsWith('#') && href !== '') {
+            return;
+        }
+
+        scrollToTop(e);
     });
 
     // 3. Live Clock dans la meta bar

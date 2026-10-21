@@ -46,7 +46,8 @@
     <script src="script/infos.js" defer></script>
     <script src="script/cursor.js" defer></script>
 </head>
-<body>
+<body id="top">
+    <div id="top-anchor" style="position: absolute; top: 0; left: 0; width: 1px; height: 1px; pointer-events: none;" aria-hidden="true"></div>
 
     <!-- Lien d'évitement clavier pour l'accessibilité -->
     <a href="#main-content" class="skip-link">Aller au contenu principal</a>
@@ -54,7 +55,7 @@
     <!-- ══════════════════════════════════════════════════════════════
          NAVIGATION PRINCIPALE EFFICACE (Top Bar Fixe & Moderne)
          ══════════════════════════════════════════════════════════════ -->
-    <header class="main-navbar-header" id="top">
+    <header class="main-navbar-header">
         <nav class="nav-container" aria-label="Navigation principale">
             <a href="#top" class="nav-brand" aria-label="Haut de page — Sacha Guitter">
                 <img src="image/ico/mesange.png" alt="" width="104" height="65" class="nav-brand-icon" aria-hidden="true">
@@ -307,9 +308,9 @@
 
                 <div class="galerie-grid-2">
                     <!-- FIG. 02 : Série I -->
-                    <a href="html/projet.html?slug=photo-portrait" class="project-card-visual" aria-label="Consulter la Série I Photo Portrait">
+                    <a href="html/projet.html?slug=photo-portrait" class="project-card-visual aspect-poster" aria-label="Consulter la Série I Photo Portrait">
                         <div class="project-visual-media">
-                            <img src="projets/perso/photo-portrait/portrait-01.webp" alt="Série photographique portrait — Série I" width="1920" height="1280" loading="lazy" class="project-visual-img">
+                            <img src="projets/perso/photo-portrait/portrait-01.webp" alt="Série photographique portrait — Série I" width="1280" height="1920" loading="lazy" class="project-visual-img">
                         </div>
                         <div class="project-visual-overlay">
                             <div class="project-visual-meta">
@@ -324,9 +325,9 @@
                     </a>
 
                     <!-- FIG. 03 : Charlyne -->
-                    <a href="html/projet.html?slug=shooting-charlyne" class="project-card-visual" aria-label="Consulter le Shooting Portrait Charlyne">
+                    <a href="html/projet.html?slug=shooting-charlyne" class="project-card-visual aspect-poster" aria-label="Consulter le Shooting Portrait Charlyne">
                         <div class="project-visual-media">
-                            <img src="projets/perso/shooting-charlyne/charlyne-01.webp" alt="Shooting Portrait Charlyne à Sablé-sur-Sarthe" width="1920" height="1280" loading="lazy" class="project-visual-img">
+                            <img src="projets/perso/shooting-charlyne/charlyne-01.webp" alt="Shooting Portrait Charlyne à Sablé-sur-Sarthe" width="1280" height="1920" loading="lazy" class="project-visual-img">
                         </div>
                         <div class="project-visual-overlay">
                             <div class="project-visual-meta">
@@ -441,7 +442,7 @@
                 </div>
 
                 <div class="galerie-grid-1">
-                    <a href="html/projet.html?slug=affiche-trail" class="project-card-visual aspect-wide" aria-label="Consulter l'Affiche Trail">
+                    <a href="html/projet.html?slug=affiche-trail" class="project-card-visual aspect-poster" aria-label="Consulter l'Affiche Trail">
                         <div class="project-visual-media">
                             <img src="projets/etudiant/affiche-trail/affichetrail.webp" alt="Affiche Trail — Création Graphique & Typographique" width="1358" height="1920" loading="lazy" class="project-visual-img">
                         </div>
@@ -471,7 +472,7 @@
 
                 <div class="galerie-grid-2">
                     <!-- FIG. 08 : Porsche GT3 RS -->
-                    <a href="html/projet.html?slug=affiches-perso" class="project-card-visual" aria-label="Consulter l'Affiche Perso Porsche 911 GT3 RS">
+                    <a href="html/projet.html?slug=affiches-perso" class="project-card-visual aspect-poster" aria-label="Consulter l'Affiche Perso Porsche 911 GT3 RS">
                         <div class="project-visual-media">
                             <img src="projets/perso/affiches-perso/porsche-gt3rs-profil.webp" alt="Affiche Personnelle — Porsche 911 GT3 RS" width="1575" height="2362" loading="lazy" class="project-visual-img">
                         </div>
@@ -488,7 +489,7 @@
                     </a>
 
                     <!-- FIG. 09 : BMW M2 -->
-                    <a href="html/projet.html?slug=affiches-perso" class="project-card-visual" aria-label="Consulter l'Affiche Perso BMW M2">
+                    <a href="html/projet.html?slug=affiches-perso" class="project-card-visual aspect-poster" aria-label="Consulter l'Affiche Perso BMW M2">
                         <div class="project-visual-media">
                             <img src="projets/perso/affiches-perso/bmw-m2.webp" alt="Affiche Personnelle — BMW M2" width="1577" height="2365" loading="lazy" class="project-visual-img">
                         </div>
@@ -593,9 +594,9 @@
 
                 <div class="galerie-grid-2">
                     <!-- FIG. 13 : Photographe BDE MMI Laval -->
-                    <a href="html/projet.html?slug=bde-mmi-photographe" class="project-card-visual" aria-label="Consulter Photographe BDE MMI Laval">
+                    <a href="html/projet.html?slug=bde-mmi-photographe" class="project-card-visual aspect-poster" aria-label="Consulter Photographe BDE MMI Laval">
                         <div class="project-visual-media">
-                            <img src="projets/etudiant/bde-mmi-photographe/bde-mmi-01.webp" alt="Photographe BDE MMI Laval" width="1920" height="1280" loading="lazy" class="project-visual-img">
+                            <img src="projets/etudiant/bde-mmi-photographe/bde-mmi-01.webp" alt="Photographe BDE MMI Laval" width="1280" height="1920" loading="lazy" class="project-visual-img">
                         </div>
                         <div class="project-visual-overlay">
                             <div class="project-visual-meta">
@@ -610,7 +611,7 @@
                     </a>
 
                     <!-- FIG. 14 : Cérémonie Twitch Le Studio -->
-                    <a href="html/projet.html?slug=ceremonie-twitch-le-studio" class="project-card-visual" aria-label="Consulter Cérémonie Twitch Le Studio">
+                    <a href="html/projet.html?slug=ceremonie-twitch-le-studio" class="project-card-visual aspect-poster" aria-label="Consulter Cérémonie Twitch Le Studio">
                         <div class="project-visual-media">
                             <img src="projets/etudiant/ceremonie-twitch-le-studio/ceremonie-twitch-01.webp" alt="Cérémonie Twitch Le Studio" width="1280" height="1920" loading="lazy" class="project-visual-img">
                         </div>

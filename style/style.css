@@ -13,6 +13,7 @@
 html {
   color-scheme: light;
   scroll-behavior: smooth;
+  scroll-padding-top: 4.5rem;
   background-color: var(--bg);
   color: var(--text);
   font-size: 16px;
@@ -1222,6 +1223,12 @@ body.mobile-menu-open {
 
 .project-card-visual.aspect-poster {
   aspect-ratio: 3 / 4;
+}
+
+.galerie-grid-1 .project-card-visual.aspect-poster {
+  max-width: 580px;
+  margin-inline: auto;
+  width: 100%;
 }
 
 @media (max-width: 480px) {
