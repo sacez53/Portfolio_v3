@@ -51,6 +51,32 @@ document.addEventListener("DOMContentLoaded", () => {
             document.querySelectorAll('.info-kardeme').forEach(el => {
                 if (el.tagName === 'A') el.href = data.socials.kardeme;
             });
+
+            // Mettre à jour les liens de téléchargement de CV
+            if (data.cv && data.cv.url) {
+                const cvHref = isSubpage ? '../' + data.cv.url : data.cv.url;
+                document.querySelectorAll('.info-cv-link').forEach(el => {
+                    if (el.tagName === 'A') {
+                        el.href = cvHref;
+                        if (data.cv.filename) {
+                            el.setAttribute('download', data.cv.filename);
+                        }
+                    }
+                });
+            }
+
+            // Mettre à jour les liens de téléchargement du Portfolio Papier
+            if (data.portfolioPapier && data.portfolioPapier.url) {
+                const paperHref = isSubpage ? '../' + data.portfolioPapier.url : data.portfolioPapier.url;
+                document.querySelectorAll('.info-paper-portfolio-link').forEach(el => {
+                    if (el.tagName === 'A') {
+                        el.href = paperHref;
+                        if (data.portfolioPapier.filename) {
+                            el.setAttribute('download', data.portfolioPapier.filename);
+                        }
+                    }
+                });
+            }
         })
         .catch(error => console.error("Erreur lors du chargement des informations :", error));
 });

@@ -3,6 +3,7 @@
   "titre": "Cérémonie Twitch — Le Studio",
   "description": "Une cérémonie diffusée en direct sur Twitch est organisée chaque année au sein de notre IUT par l'association étudiante Le Studio (la Cérémonie des Walid / Nuit des MMI). Pour l’édition 2026, j’ai été invité par l’association Le Studio à couvrir cette soirée prestigieuse en photo. J’ai pu mettre à profit mes capacités de prise de vue de scène et de portrait pour permettre aux lauréats et aux organisateurs de conserver un souvenir impérissable de cet événement marquant, auquel j'avais moi-même soumis une de mes réalisations photographiques.",
   "categorie": "etudiant",
+  "status": "en_cours",
   "tags": [
     "Twitch Live",
     "Cérémonie",
@@ -30,15 +31,21 @@
   "etapes": [
     {
       "titre": "01. Repérage du plateau TV",
-      "desc": "Définition des angles autorisés hors champ caméra."
+      "desc": "Définition des angles autorisés hors champ caméra.",
+      "status": "completed",
+      "done": true
     },
     {
       "titre": "02. Couverture de la cérémonie",
-      "desc": "Capture des remises de prix et des réactions en temps réel."
+      "desc": "Capture des remises de prix et des réactions en temps réel.",
+      "status": "completed",
+      "done": true
     },
     {
       "titre": "03. Archivage d'excellence",
-      "desc": "Traitement haut de gamme pour les lauréats et la communication institutionnelle."
+      "desc": "Traitement haut de gamme pour les lauréats et la communication institutionnelle.",
+      "status": "completed",
+      "done": true
     }
   ],
   "lien": null

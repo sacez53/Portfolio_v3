@@ -76,9 +76,8 @@ Le portfolio s'articule autour d'un parcours fluide et immersif :
 - Transmission instantanée des messages depuis le client sans nécessiter d'infrastructure backend PHP complexe.
 - Validation des champs en temps réel, retour visuel à l'envoi et modèles d'emails professionnels (notification admin et confirmation au visiteur) stockés dans `modeles_mails/`.
 
-### 🖱️ 5. Micro-Interactions & Curseur Magnétique
-- Curseur sur-mesure (`script/cursor.js`) s'adaptant à l'élément survolé (liens, images, boutons interactifs).
-- Défilement fluide, barre de progression de lecture et menu burger animé pour les écrans mobiles.
+### 🖱️ 5. Micro-Interactions & Navigation
+- Défilement fluide, animations d'apparition progressives et menu burger animé pour les écrans mobiles.
 
 ---
 
@@ -139,7 +138,7 @@ portfolio_v3_web/
 ├── script/                       # Scripts JavaScript modulaires
 │   ├── carte.js                  # Initialisation et configuration Leaflet
 │   ├── contact.js                # Validation et soumission formulaire EmailJS
-│   ├── cursor.js                 # Effet de curseur interactif
+│   ├── cursor.js                 # Curseur personnalisé (désactivé)
 │   ├── email.config.js           # Identifiants de connexion EmailJS
 │   ├── infos.js                  # Injection dynamique des coordonnées
 │   ├── nav.js                    # Menu mobile et barre de navigation

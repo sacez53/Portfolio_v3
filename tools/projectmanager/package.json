@@ -1,0 +1,29 @@
+{
+  "name": "projectmanager",
+  "version": "2.3.0",
+  "description": "Gestionnaire Desktop GUI & CLI de projets éditoriaux et photographiques pour le portfolio Sacha Guitter",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "bundle": "esbuild index.js --bundle --platform=node --outfile=bundle.js --format=cjs",
+    "sea": "node --experimental-sea-config sea-config.json",
+    "build:exe": "powershell -ExecutionPolicy Bypass -File ./build.ps1",
+    "test": "node index.js --help"
+  },
+  "keywords": [
+    "portfolio",
+    "manager",
+    "cli",
+    "sea",
+    "photography",
+    "projects"
+  ],
+  "author": "Sacha Guitter",
+  "license": "MIT",
+  "dependencies": {
+    "@inquirer/prompts": "^8.4.3",
+    "chalk": "^5.6.2",
+    "esbuild": "^0.28.0"
+  }
+}

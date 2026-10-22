@@ -3,6 +3,7 @@
   "titre": "Shooting Portrait — Charlyne",
   "description": "Shooting portrait en lumière naturelle réalisé dans le jardin public de Sablé-sur-Sarthe avec Charlyne. Exercice centré sur la complicité avec le sujet, l'aisance dans la pose et la recherche de lumières douces filtrées par les arbres pour sublimer le regard et les expressions naturelles.",
   "categorie": "perso",
+  "status": "en_cours",
   "tags": [
     "Photographie",
     "Portrait",
@@ -35,15 +36,21 @@
   "etapes": [
     {
       "titre": "01. Cadrage & Dialogue",
-      "desc": "Échange préalable sur les tenues, les poses et le style d'image recherché."
+      "desc": "Échange préalable sur les tenues, les poses et le style d'image recherché.",
+      "status": "completed",
+      "done": true
     },
     {
       "titre": "02. Prise de vue en lumière douce",
-      "desc": "Repérage des spots ombragés du parc pour éviter les lumières directes trop dures."
+      "desc": "Repérage des spots ombragés du parc pour éviter les lumières directes trop dures.",
+      "status": "completed",
+      "done": true
     },
     {
       "titre": "03. Étalonnage & Tirage numérique",
-      "desc": "Développement colorimétrique délicat sous Lightroom pour préserver la carnation et les tons naturels."
+      "desc": "Développement colorimétrique délicat sous Lightroom pour préserver la carnation et les tons naturels.",
+      "status": "completed",
+      "done": true
     }
   ],
   "lien": null

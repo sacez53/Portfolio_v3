@@ -3,6 +3,7 @@
   "titre": "Guiz (Tryo) — Bliz'art Festival",
   "description": "Durant l’été 2025, j’ai eu la chance d’aller voir Guiz, membre du groupe de musique Tryo, en concert et de pouvoir échanger avec lui après son concert. Après avoir partagé avec lui ma passion pour la photographie, il m’a proposé de choisir dans les dates de sa tournée une représentation où je pourrais venir faire des images. J’ai donc choisi sa date au Bliz’art Festival. Durant ce concert, j’ai pu découvrir et approfondir la prise de vue de scène et de live musical.",
   "categorie": "perso",
+  "status": "en_cours",
   "tags": [
     "Concert",
     "Live",
@@ -35,15 +36,21 @@
   "etapes": [
     {
       "titre": "01. Préparation et Réglages",
-      "desc": "Repérage de la scène et calibrage des profils basse lumière."
+      "desc": "Repérage de la scène et calibrage des profils basse lumière.",
+      "status": "completed",
+      "done": true
     },
     {
       "titre": "02. Prise de vue en fosse et coulisses",
-      "desc": "Cadrages variés, des plans larges d'ambiance aux gros plans serrés sur l'instrument."
+      "desc": "Cadrages variés, des plans larges d'ambiance aux gros plans serrés sur l'instrument.",
+      "status": "completed",
+      "done": true
     },
     {
       "titre": "03. Éditing de scène",
-      "desc": "Travail minutieux sur les contrastes et les teintes pour préserver la magie du show."
+      "desc": "Travail minutieux sur les contrastes et les teintes pour préserver la magie du show.",
+      "status": "completed",
+      "done": true
     }
   ],
   "lien": null

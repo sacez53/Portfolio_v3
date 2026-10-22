@@ -3,6 +3,7 @@
   "titre": "Photographe du BDE MMI Laval",
   "description": "En tant qu’étudiant, je suis membre actif du Bureau des Étudiants de ma formation (BDE MMI Laval). Mon rôle officiel est celui de photographe : je suis en charge de créer les images pendant les événements que nous organisons tout au long de l'année universitaire. Qu'il s'agisse de soirées thématiques, de journées d'intégration, de cérémonies de parrainage-marrainage ou de moments conviviaux dans le hall de notre bâtiment, je documente la vie étudiante sous son angle le plus vivant et fédérateur.",
   "categorie": "etudiant",
+  "status": "en_cours",
   "tags": [
     "BDE MMI",
     "Vie Étudiante",
@@ -32,15 +33,21 @@
   "etapes": [
     {
       "titre": "01. Briefing d'événement",
-      "desc": "Coordination avec l'équipe du bureau sur les moments clés du rassemblement."
+      "desc": "Coordination avec l'équipe du bureau sur les moments clés du rassemblement.",
+      "status": "completed",
+      "done": true
     },
     {
       "titre": "02. Shooting immersif",
-      "desc": "Présence au cœur de l'action pour saisir les éclats de rire et la convivialité."
+      "desc": "Présence au cœur de l'action pour saisir les éclats de rire et la convivialité.",
+      "status": "completed",
+      "done": true
     },
     {
       "titre": "03. Livraison rapide",
-      "desc": "Tri et retouche nocturne pour diffusion immédiate dès le lendemain."
+      "desc": "Tri et retouche nocturne pour diffusion immédiate dès le lendemain.",
+      "status": "completed",
+      "done": true
     }
   ],
   "lien": null

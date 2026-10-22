@@ -23,7 +23,106 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
     }
 
-    // 2. Boutons retour en haut & nom (SACHA GUITTER) — visibilité + défilement fluide
+    // 2. Moteur de défilement fluide et maîtrisé (Smooth Scroll sur mesure)
+    let activeScrollAnimation = null;
+
+    // Easing cubique (démarrage progressif, vitesse fluide, décélération soyeuse)
+    function easeInOutCubic(t) {
+        return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+    }
+
+    function cancelCurrentScroll() {
+        if (activeScrollAnimation) {
+            cancelAnimationFrame(activeScrollAnimation);
+            activeScrollAnimation = null;
+        }
+    }
+
+    // Interruption propre si l'utilisateur interagit pendant l'animation
+    ['wheel', 'touchstart', 'touchmove', 'keydown'].forEach(evt => {
+        window.addEventListener(evt, () => cancelCurrentScroll(), { passive: true });
+    });
+
+    function smoothScrollTo(targetY, duration, callback) {
+        if (prefersReducedMotion) {
+            window.scrollTo(0, targetY);
+            if (callback) callback();
+            return;
+        }
+
+        cancelCurrentScroll();
+
+        const startY = window.pageYOffset || document.documentElement.scrollTop;
+        const distance = targetY - startY;
+
+        if (Math.abs(distance) < 2) {
+            window.scrollTo(0, targetY);
+            if (callback) callback();
+            return;
+        }
+
+        // Vitesse calibrée pour un défilement noble et majestueux ("smooth") :
+        // Ni trop rapide (au minimum ~800ms) ni trop long (au maximum ~1400ms)
+        const scrollDuration = typeof duration === 'number'
+            ? duration
+            : Math.min(1400, Math.max(800, 560 + Math.sqrt(Math.abs(distance)) * 12));
+
+        const startTime = performance.now();
+
+        function step(currentTime) {
+            const elapsed = currentTime - startTime;
+            const progress = Math.min(elapsed / scrollDuration, 1);
+            const eased = easeInOutCubic(progress);
+
+            window.scrollTo(0, startY + (distance * eased));
+
+            if (progress < 1) {
+                activeScrollAnimation = requestAnimationFrame(step);
+            } else {
+                activeScrollAnimation = null;
+                window.scrollTo(0, targetY);
+                if (callback) callback();
+            }
+        }
+
+        activeScrollAnimation = requestAnimationFrame(step);
+    }
+
+    function smoothScrollToTarget(targetElement, hash) {
+        let targetY = 0;
+
+        if (targetElement && targetElement !== document.body && targetElement.id !== 'top') {
+            const rect = targetElement.getBoundingClientRect();
+            const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+            
+            // Respecter le scroll-margin-top du gabarit éditorial
+            const computedStyle = window.getComputedStyle(targetElement);
+            const scrollMarginTop = parseFloat(computedStyle.scrollMarginTop);
+            
+            const navHeader = document.querySelector('.main-navbar-header');
+            const navHeight = navHeader ? navHeader.getBoundingClientRect().height : 60;
+            const offset = (!isNaN(scrollMarginTop) && scrollMarginTop > 0)
+                ? scrollMarginTop
+                : (navHeight + 20);
+
+            targetY = currentScroll + rect.top - offset;
+        }
+
+        const maxScroll = Math.max(0, document.documentElement.scrollHeight - window.innerHeight);
+        targetY = Math.max(0, Math.min(targetY, maxScroll));
+
+        smoothScrollTo(targetY, null, () => {
+            if (hash && window.history && window.history.pushState) {
+                window.history.pushState(null, '', hash);
+            }
+            if (targetElement && targetElement.id && targetElement.id !== 'top') {
+                targetElement.setAttribute('tabindex', '-1');
+                targetElement.focus({ preventScroll: true });
+            }
+        });
+    }
+
+    // Boutons retour en haut & nom (SACHA GUITTER) — visibilité
     const backToTopBtns = document.querySelectorAll('.btn-retour-haut');
     backToTopBtns.forEach(btn => {
         const toggleVisibility = () => {
@@ -37,39 +136,42 @@ document.addEventListener("DOMContentLoaded", () => {
         toggleVisibility();
     });
 
-    // Fonction universelle pour remonter en haut de page
-    function scrollToTop(e) {
-        if (e && e.preventDefault) {
-            e.preventDefault();
-        }
-        window.scrollTo({
-            top: 0,
-            left: 0,
-            behavior: prefersReducedMotion ? 'auto' : 'smooth'
-        });
-
-        if (window.history && window.history.pushState) {
-            window.history.pushState(null, '', '#top');
-        }
-    }
-
-    // Gestion du clic pour remonter en haut :
-    // - Clic sur le logo / nom ("SACHA GUITTER") dans la navbar fixe (.nav-brand)
-    // - Clic sur le nom dans le menu mobile (.mobile-drawer-brand)
-    // - Clic sur "RETOUR AU DÉBUT" dans le footer (.footer-back-top)
-    // - Clic sur le bouton flottant de retour en haut (.btn-retour-haut)
-    // - Tout lien ciblant #top ou #
+    // Gestion universelle des clics sur les liens d'ancrage internes
     document.addEventListener('click', (e) => {
-        const link = e.target.closest('a[href="#top"], a[href="#"], .btn-retour-haut, .footer-back-top, .nav-brand, .mobile-drawer-brand');
+        const link = e.target.closest('a[href^="#"], .btn-retour-haut, .footer-back-top, .nav-brand, .mobile-drawer-brand');
         if (!link) return;
 
+        if (link.hasAttribute('download') || link.getAttribute('target') === '_blank') return;
+
         const href = link.getAttribute('href');
-        // Ne pas intercepter les liens menant vers une autre page (ex: ../index.html)
-        if (href && !href.startsWith('#') && href !== '') {
+
+        // Cas 1 : Retour en haut de page
+        if (
+            href === '#top' ||
+            href === '#' ||
+            link.classList.contains('btn-retour-haut') ||
+            link.classList.contains('footer-back-top') ||
+            link.classList.contains('nav-brand') ||
+            link.classList.contains('mobile-drawer-brand')
+        ) {
+            e.preventDefault();
+            smoothScrollTo(0, null, () => {
+                if (window.history && window.history.pushState) {
+                    window.history.pushState(null, '', '#top');
+                }
+            });
             return;
         }
 
-        scrollToTop(e);
+        // Cas 2 : Liens menant vers un chapitre ou une section (#chapitre-1, #contact, etc.)
+        if (href && href.startsWith('#') && href.length > 1) {
+            const targetId = href.substring(1);
+            const targetEl = document.getElementById(targetId);
+            if (targetEl) {
+                e.preventDefault();
+                smoothScrollToTarget(targetEl, href);
+            }
+        }
     });
 
     // 3. Live Clock dans la meta bar

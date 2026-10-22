@@ -3,6 +3,7 @@
   "titre": "Affiche Yoroï — Orelsan",
   "description": "Dans le cadre d’un cours de design graphique en BUT MMI, il nous était demandé de créer une affiche sur le sujet de notre choix. Étant un grand admirateur des créations d’Orelsan, tant par sa musique que par les créations cinématographiques de son frère Clément Cotentin (« Ne montre jamais ça à personne »), avec Gringe (« Comment c’est loin »), la série « Bloqués » ou le film « Yoroï » (2025) réalisé par David Tomaszewski. Dans cette composition, j’ai voulu mélanger le style graphique de la scénographie de son dernier album « La fuite en avant » et le style vestimentaire d’Orelsan, en utilisant des éléments graphiques variés et des typographies japonaises stylisées.",
   "categorie": "etudiant",
+  "status": "en_cours",
   "tags": [
     "Design Graphique",
     "Affiche",
@@ -29,15 +30,21 @@
   "etapes": [
     {
       "titre": "01. Analyse de l'univers d'Orelsan",
-      "desc": "Extraction de la palette chromatique et des références cinématographiques."
+      "desc": "Extraction de la palette chromatique et des références cinématographiques.",
+      "status": "completed",
+      "done": true
     },
     {
       "titre": "02. Cadrage et composition",
-      "desc": "Positionnement de la figure centrale et intégration des glyphes."
+      "desc": "Positionnement de la figure centrale et intégration des glyphes.",
+      "status": "completed",
+      "done": true
     },
     {
       "titre": "03. Finalisation des textures",
-      "desc": "Ajout de grain éditorial et réglages des contrastes d'encre."
+      "desc": "Ajout de grain éditorial et réglages des contrastes d'encre.",
+      "status": "completed",
+      "done": true
     }
   ],
   "lien": null

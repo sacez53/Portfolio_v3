@@ -3,6 +3,7 @@
   "titre": "Octobre Rose — Sillé-le-Guillaume",
   "description": "Dans le cadre de l’action contre le cancer du sein, d’Octobre Rose à Sillé-le-Guillaume, j’ai été invité à documenter les différents événements de la journée. D’un parcours de course à pied le matin à la remise du chèque des profits de la journée en passant par une marche douce. J’ai voulu dans ce projet montrer la cohésion d’une population pour une cause qui est chère au cœur d’un grand nombre de personnes.",
   "categorie": "perso",
+  "status": "en_cours",
   "tags": [
     "Reportage",
     "Événementiel",
@@ -34,15 +35,21 @@
   "etapes": [
     {
       "titre": "01. Matinée Sportive",
-      "desc": "Couverture dynamique de la course et de la marche solidaire."
+      "desc": "Couverture dynamique de la course et de la marche solidaire.",
+      "status": "completed",
+      "done": true
     },
     {
       "titre": "02. Moments Protocolaires",
-      "desc": "Prise de vue de la remise de chèque et des rassemblements."
+      "desc": "Prise de vue de la remise de chèque et des rassemblements.",
+      "status": "completed",
+      "done": true
     },
     {
       "titre": "03. Sélection et Éditing",
-      "desc": "Traitement colorimétrique harmonieux avec mise en valeur du rose emblématique."
+      "desc": "Traitement colorimétrique harmonieux avec mise en valeur du rose emblématique.",
+      "status": "completed",
+      "done": true
     }
   ],
   "lien": null

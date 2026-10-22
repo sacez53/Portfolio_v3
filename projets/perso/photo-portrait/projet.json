@@ -3,6 +3,7 @@
   "titre": "La Photo Portrait — Série I",
   "description": "Au sein de mon parcours créatif, la photographie de portrait occupe une place à part. C’est pour moi une manière d'exprimer ma passion pour l’image, en passant de l'observation de la nature à la véritable interaction humaine. Dans cette première série de portraits, j'ai cherché à capter l'authenticité d'un regard et la sensibilité d'une présence à travers un travail soigné des ombres et de la lumière naturelle.",
   "categorie": "perso",
+  "status": "en_cours",
   "tags": [
     "Photographie",
     "Portrait",
@@ -31,15 +32,21 @@
   "etapes": [
     {
       "titre": "01. Dialogue et Ambiance",
-      "desc": "Échange préalable pour définir l'humeur et le style du shooting."
+      "desc": "Échange préalable pour définir l'humeur et le style du shooting.",
+      "status": "completed",
+      "done": true
     },
     {
       "titre": "02. Prise de vue",
-      "desc": "Recherche des meilleures lumières douces en extérieur ou espace clair."
+      "desc": "Recherche des meilleures lumières douces en extérieur ou espace clair.",
+      "status": "completed",
+      "done": true
     },
     {
       "titre": "03. Post-traitement",
-      "desc": "Retouche délicate sous Lightroom pour sublimer les textures et les regards."
+      "desc": "Retouche délicate sous Lightroom pour sublimer les textures et les regards.",
+      "status": "completed",
+      "done": true
     }
   ],
   "lien": null

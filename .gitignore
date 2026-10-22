@@ -1,39 +1,74 @@
-# Dépendances
+# ========================================================
+# .gitignore — Portfolio Sacha Guitter & Project Manager
+# ========================================================
+
+# 1. Dépendances Node.js (racine et sous-dossiers)
 node_modules/
+**/node_modules/
 .pnp
 .pnp.js
 
-# Build et distribution
+# 2. Builds, compilations et distributions
 dist/
 dist-ssr/
 *.local
-
-# Fichiers d'environnement et secrets
-.env
-.env.local
-.env.*.local
-config.mail.php
-
-# Fichiers de cache
 .vite/
 .eslintcache
 .cache/
 
-# Logs
-logs
+# 3. Binaires lourds et fichiers de compilation (Node SEA)
+*.exe
+**/*.exe
+*.blob
+**/*.blob
+sea-prep.blob
+bundle.js
+**/bundle.js
+
+# 4. Fichiers volumineux (> 100 Mo interdits par GitHub)
+pdf/Portfolio-Sacha-Guitter-Edition-Papier.pdf
+pdf/*-Edition-Papier*.pdf
+dist/pdf/Portfolio-Sacha-Guitter-Edition-Papier.pdf
+
+# 5. Fichiers d'environnement, secrets et mots de passe
+.pm-auth.json
+**/.pm-auth.json
+*.auth.json
+**/*.auth.json
+config.mail.php
+.env
+.env.local
+.env.*.local
+
+# 6. Sauvegardes de données
+json/backups/
+**/backups/
+
+# 7. Journaux et logs
+logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-# Fichiers OS
+# 8. Fichiers temporaires et sauvegardes d'éditeurs
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
+
+# 9. Fichiers système (Windows / macOS)
 .DS_Store
+.DS_Store?
+._*
 Thumbs.db
 ehthumbs.db
 [Dd]esktop.ini
+$RECYCLE.BIN/
 
-# Editeurs & IDEs
+# 10. Éditeurs & IDEs
 .idea/
 .vscode/*
 !.vscode/extensions.json
@@ -43,3 +78,7 @@ ehthumbs.db
 *.njsproj
 *.sln
 *.sw?
+
+# 11. Configuration et caches locaux de l'agent IA
+.agents/
+GEMINI.md

@@ -31,7 +31,6 @@
     <script src="../script/modal-projets.js" defer></script>
     <script src="../script/projets.js" defer></script>
     <script src="../script/infos.js" defer></script>
-    <script src="../script/cursor.js" defer></script>
 </head>
 <body class="has-bottom-nav">
 
@@ -183,14 +182,16 @@
     <!-- Footer inversé -->
     <footer class="site-footer" role="contentinfo">
         <div class="container">
-            <div class="footer-the-end-monumental">
+            <!-- Typographie monumentale THE END -->
+            <div class="footer-the-end-monumental" aria-hidden="true">
                 THE END
             </div>
+
             <div class="footer-top">
-                <h2 class="footer-cta">Sacha GUITTER — Portfolio</h2>
+                <h2 class="footer-cta">Sacha GUITTER — Photographe & Créatif</h2>
                 <a href="../index.html" class="footer-back-top" aria-label="Retour à l'accueil">Retour à l'accueil ↑</a>
             </div>
-
+            
             <!-- Menus déroulants épurés & accessibles -->
             <div class="footer-dropdowns-group">
                 <!-- Menu 1 : Navigation -->
@@ -230,17 +231,19 @@
                         <ul class="footer-dropdown-links">
                             <li><a href="mailto:sachaguitterphoto@gmail.com" class="info-email">sachaguitterphoto@gmail.com</a></li>
                             <li><a href="tel:+33749610990" class="info-phone">+33 7 49 61 09 90</a></li>
-                            <li><span class="info-location">Laval — Sablé-sur-Sarthe (France)</span></li>
+                            <li><span class="info-location">Laval — Sablé-sur-Sarthe (53 / 72)</span></li>
+                            <li><a href="https://instagram.com/sacha.guitter.photo" class="info-instagram" target="_blank" rel="noopener noreferrer">Instagram ↗</a></li>
+                            <li><a href="https://www.linkedin.com/in/sachaguitter" class="info-linkedin" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></li>
                         </ul>
                     </div>
                 </details>
 
-                <!-- Menu 3 : Liens & Légal -->
+                <!-- Menu 3 : Téléchargements & Légal -->
                 <details class="footer-dropdown" open>
                     <summary class="footer-summary">
                         <span class="footer-summary-title">
                             <span class="footer-summary-num">03.</span>
-                            Réseaux & Légal
+                            Édition & Légal
                         </span>
                         <svg class="footer-dropdown-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                             <polyline points="6 9 12 15 18 9"></polyline>
@@ -248,8 +251,8 @@
                     </summary>
                     <div class="footer-dropdown-content">
                         <ul class="footer-dropdown-links">
-                            <li><a href="https://www.linkedin.com/in/sachaguitter" class="info-linkedin" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></li>
-                            <li><a href="https://instagram.com/sacha.guitter.photo" class="info-instagram" target="_blank" rel="noopener noreferrer">Instagram ↗</a></li>
+                            <li><a href="../pdf/Portfolio-Sacha-Guitter-Edition-Papier.pdf" download="Portfolio-Sacha-Guitter-Edition-Papier-A4.pdf" class="info-paper-portfolio-link" style="font-weight: 700; color: #FFFFFF;">Portfolio Papier (PDF A4) ↗</a></li>
+                            <li><a href="../pdf/cv-sacha-guitter.pdf" download="CV-Sacha-Guitter-BUT-MMI.pdf" class="info-cv-link">Curriculum Vitæ (PDF) ↗</a></li>
                             <li><a href="../da.html">Direction Artistique Papier ↗</a></li>
                             <li><a href="mentions-legales.html">Mentions légales</a></li>
                             <li><a href="politique-confidentialite.html">Confidentialité</a></li>

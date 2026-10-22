@@ -62,11 +62,69 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // 2. Gestion de la navbar principale fixe (.main-navbar-header) & surveillance des chapitres
+    // 2. Gestion de la navbar principale (.main-navbar-header) : masquée dans le hero, visible dès qu'on en sort
+    const mainNavHeader = document.querySelector('.main-navbar-header');
+    const heroWrapper = document.querySelector('.hero-wrapper');
     const mainNavLinks = document.querySelectorAll('.nav-link[href^="#"]');
     const mobileNavLinks = document.querySelectorAll('.mobile-drawer-link[href^="#"]');
     const chapterSections = document.querySelectorAll('section[id^="chapitre-"]');
 
+    if (mainNavHeader) {
+        if (!heroWrapper) {
+            // S'il n'y a pas de hero sur la page (ex: pages secondaires), la navbar est immédiatement visible
+            mainNavHeader.classList.add('is-visible');
+            mainNavHeader.removeAttribute('aria-hidden');
+        } else {
+            // Contrôle précis de la visibilité : masquée dans le hero, affichée dès qu'on en sort
+            const updateNavbarVisibility = () => {
+                const heroRect = heroWrapper.getBoundingClientRect();
+                const navHeight = mainNavHeader.offsetHeight || 64;
+                
+                // On considère qu'on est sorti du hero quand le bas de la couverture atteint le haut de l'écran
+                const isOutOfHero = heroRect.bottom <= navHeight;
+
+                if (isOutOfHero) {
+                    mainNavHeader.classList.add('is-visible');
+                    mainNavHeader.removeAttribute('aria-hidden');
+                } else {
+                    mainNavHeader.classList.remove('is-visible');
+                    mainNavHeader.setAttribute('aria-hidden', 'true');
+                }
+            };
+
+            let navTicking = false;
+            const onScroll = () => {
+                if (!navTicking) {
+                    window.requestAnimationFrame(() => {
+                        updateNavbarVisibility();
+                        navTicking = false;
+                    });
+                    navTicking = true;
+                }
+            };
+
+            window.addEventListener('scroll', onScroll, { passive: true });
+
+            // Surveillance par IntersectionObserver pour synchronisation optimale
+            if ('IntersectionObserver' in window) {
+                const heroObserver = new IntersectionObserver((entries) => {
+                    entries.forEach(() => {
+                        updateNavbarVisibility();
+                    });
+                }, {
+                    root: null,
+                    rootMargin: '-64px 0px 0px 0px',
+                    threshold: [0, 0.05, 0.1, 0.2]
+                });
+                heroObserver.observe(heroWrapper);
+            }
+
+            // Exécution immédiate au chargement (prise en compte des ancres #chapitre-X)
+            updateNavbarVisibility();
+        }
+    }
+
+    // Surveillance des chapitres pour surlignage des liens actifs
     if (chapterSections.length > 0 && (mainNavLinks.length > 0 || mobileNavLinks.length > 0)) {
         const chapterObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {

@@ -3,6 +3,7 @@
   "titre": "Gala de Danse — Sillé-le-Guillaume",
   "description": "En 2026, j’ai été invité par le club de danse de Sillé-le-Guillaume pour couvrir leur gala annuel composé de 3 représentations : 2 galas adultes en soirée et 1 gala enfants l’après-midi. Cette opportunité m'a permis de relever un défi logistique et technique d'envergure : gérer un flux massif de clichés, une post-production rigoureuse en grande quantité, la livraison rapide des galeries et la relation avec les danseurs et organisateurs.",
   "categorie": "perso",
+  "status": "en_cours",
   "tags": [
     "Spectacle",
     "Danse",
@@ -33,15 +34,21 @@
   "etapes": [
     {
       "titre": "01. Repérage des chorégraphies",
-      "desc": "Identification des moments forts et des sauts de chaque groupe."
+      "desc": "Identification des moments forts et des sauts de chaque groupe.",
+      "status": "completed",
+      "done": true
     },
     {
       "titre": "02. Prise de vue sur 3 représentations",
-      "desc": "Adaptation des angles de prise de vue entre enfants et adultes."
+      "desc": "Adaptation des angles de prise de vue entre enfants et adultes.",
+      "status": "completed",
+      "done": true
     },
     {
       "titre": "03. Post-traitement massif",
-      "desc": "Tri sélectif et application de préconfigurations d'étalonnage homogènes."
+      "desc": "Tri sélectif et application de préconfigurations d'étalonnage homogènes.",
+      "status": "completed",
+      "done": true
     }
   ],
   "lien": null

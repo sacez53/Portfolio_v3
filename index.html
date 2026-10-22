@@ -44,7 +44,6 @@
     <script src="script/carte.js" defer></script>
     <script src="script/projets.js" defer></script>
     <script src="script/infos.js" defer></script>
-    <script src="script/cursor.js" defer></script>
 </head>
 <body id="top">
     <div id="top-anchor" style="position: absolute; top: 0; left: 0; width: 1px; height: 1px; pointer-events: none;" aria-hidden="true"></div>
@@ -142,6 +141,8 @@
                     <a href="tel:+33749610990" class="info-phone">+33 7 49 61 09 90</a>
                 </div>
                 <div class="mobile-drawer-extra-links">
+                    <a href="pdf/Portfolio-Sacha-Guitter-Edition-Papier.pdf" download="Portfolio-Sacha-Guitter-Edition-Papier-A4.pdf" class="info-paper-portfolio-link" style="font-weight: 700; color: #000000;">Portfolio Papier A4 (PDF) ↗</a>
+                    <a href="pdf/cv-sacha-guitter.pdf" download="CV-Sacha-Guitter-BUT-MMI.pdf" class="info-cv-link">Curriculum Vitæ (PDF) ↗</a>
                     <a href="da.html">Direction Artistique Papier ↗</a>
                     <a href="html/mentions-legales.html">Mentions légales</a>
                     <a href="html/politique-confidentialite.html">Confidentialité</a>
@@ -217,32 +218,41 @@
                         </p>
                     </div>
 
-                    <!-- Case 2 & 4 : En haut le texte d'introduction / En bas le portrait d'enfance -->
+                    <!-- Case 2 & 4 : En haut le texte d'introduction / En bas le portrait d'enfance avec les infos -->
                     <div class="about-paper-col">
                         <p class="about-lead-paper">
                             Bonjour et bienvenue ! Je m'appelle Sacha GUITTER, je suis étudiant en BUT Métiers du Multimédia et de l'Internet (MMI) et grand passionné de la nature, ce qui m'a naturellement poussé à devenir photographe animalier amateur. À travers l'objectif de mon appareil comme derrière mon écran, j'aime capturer et transmettre des émotions.
                         </p>
 
-                        <div class="about-photo-frame about-photo-portrait-small">
-                            <img src="image/edito/apropos_enfant.webp" alt="Sacha Guitter enfant, naissance d'un regard" width="803" height="1152" loading="lazy">
-                        </div>
+                        <div class="about-profile-group">
+                            <div class="about-photo-frame about-photo-portrait-small">
+                                <img src="image/edito/apropos_enfant.webp" alt="Sacha Guitter enfant, naissance d'un regard" width="803" height="1152" loading="lazy">
+                            </div>
 
-                        <div class="about-meta-paper">
-                            <div class="about-meta-paper-item">
-                                <span class="about-meta-paper-label">Cursus</span>
-                                <span class="about-meta-paper-value">BUT MMI (IUT Laval)</span>
-                            </div>
-                            <div class="about-meta-paper-item">
-                                <span class="about-meta-paper-label">Bassin</span>
-                                <span class="about-meta-paper-value">Laval / Sablé (72)</span>
-                            </div>
-                            <div class="about-meta-paper-item">
-                                <span class="about-meta-paper-label">Spécialité</span>
-                                <span class="about-meta-paper-value">Photo & Tirage Print</span>
-                            </div>
-                            <div class="about-meta-paper-item">
-                                <span class="about-meta-paper-label">Vocation</span>
-                                <span class="about-meta-paper-value">Créatif Visuel</span>
+                            <div class="about-meta-paper">
+                                <div class="about-meta-paper-item">
+                                    <span class="about-meta-paper-label">Cursus</span>
+                                    <span class="about-meta-paper-value">BUT MMI (IUT Laval)</span>
+                                </div>
+                                <div class="about-meta-paper-item">
+                                    <span class="about-meta-paper-label">Bassin</span>
+                                    <span class="about-meta-paper-value">Laval / Sablé (72)</span>
+                                </div>
+                                <div class="about-meta-paper-item">
+                                    <span class="about-meta-paper-label">Spécialité</span>
+                                    <span class="about-meta-paper-value">Photo & Tirage Print</span>
+                                </div>
+                                <div class="about-meta-paper-item">
+                                    <span class="about-meta-paper-label">Vocation</span>
+                                    <span class="about-meta-paper-value">Créatif Visuel</span>
+                                </div>
+                                <div class="about-meta-paper-item">
+                                    <span class="about-meta-paper-label">Curriculum</span>
+                                    <a href="pdf/cv-sacha-guitter.pdf" download="CV-Sacha-Guitter-BUT-MMI.pdf" class="btn-cv-mini info-cv-link" aria-label="Télécharger le Curriculum Vitæ au format PDF">
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                                        <span>CV (PDF) ↓</span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -515,14 +525,97 @@
             <div class="container chapter-break">
                 <span class="chapter-number">4.</span>
                 <h2 class="chapter-title">MES ÉTUDES ET MOI</h2>
-                <div class="chapter-subtitle">A. MMI · B. À côté de MMI</div>
+                <div class="chapter-subtitle">A. Compétences & CV · B. Projets MMI · C. À côté de MMI</div>
             </div>
 
-            <!-- Sous-section A. BUT MMI -->
+            <!-- Sous-section A. Compétences & Curriculum Vitæ -->
+            <div id="section-competences" class="container subsection-break reveal">
+                <div class="subsection-header">
+                    <h3 class="subsection-title">A. RÉFÉRENTIEL DE COMPÉTENCES & CV</h3>
+                    <span class="subsection-page-num">FORMATION BUT MMI</span>
+                </div>
+                <div class="subsection-lead-text">
+                    <p>La formation Métiers du Multimédia et de l'Internet (IUT de Laval) articule la polyvalence créative et l'exigence technique autour de 4 grands pôles de compétences du référentiel national universitaire.</p>
+                </div>
+
+                <div class="competences-editorial-grid">
+                    <div class="competence-block">
+                        <div class="competence-num">01 / CONCEVOIR</div>
+                        <h4 class="competence-title">Comprendre & Concevoir</h4>
+                        <span class="competence-sub">Direction Artistique & Ergonomie</span>
+                        <p class="competence-desc">Conception d'identités visuelles complètes, maquettage UI/UX sous Figma, recherche utilisateur, architecture de l'information et respect de l'esprit d'imprimerie éditoriale.</p>
+                        <div class="competence-tags">
+                            <span>UI/UX</span>
+                            <span>Figma</span>
+                            <span>Typographie</span>
+                            <span>Charte</span>
+                        </div>
+                    </div>
+
+                    <div class="competence-block">
+                        <div class="competence-num">02 / EXPRIMER</div>
+                        <h4 class="competence-title">Exprimer & Créer</h4>
+                        <span class="competence-sub">Photographie, Print & 3D</span>
+                        <p class="competence-desc">Photographie de terrain (animalière, reportage, concerts, portraits), étalonnage et retouche sous Adobe Lightroom & Photoshop, PAO Affinity Publisher & InDesign, modélisation Blender 3D.</p>
+                        <div class="competence-tags">
+                            <span>Photo terrain</span>
+                            <span>Lightroom</span>
+                            <span>Affinity</span>
+                            <span>Blender 3D</span>
+                        </div>
+                    </div>
+
+                    <div class="competence-block">
+                        <div class="competence-num">03 / DÉVELOPPER</div>
+                        <h4 class="competence-title">Développer & Déployer</h4>
+                        <span class="competence-sub">Front-End & Intégration Web</span>
+                        <p class="competence-desc">Développement d'interfaces web réactives en HTML5 sémantique, CSS3 moderne et JavaScript Vanilla (ES6+), intégration de cartographies Leaflet / OSM, chaîne de build Vite et conformité accessibilité RGAA.</p>
+                        <div class="competence-tags">
+                            <span>HTML5 / CSS3</span>
+                            <span>JavaScript ES6+</span>
+                            <span>Vite</span>
+                            <span>Leaflet OSM</span>
+                        </div>
+                    </div>
+
+                    <div class="competence-block">
+                        <div class="competence-num">04 / ENTREPRENDRE</div>
+                        <h4 class="competence-title">Gérer & Entreprendre</h4>
+                        <span class="competence-sub">Gestion de Projet & Stratégie</span>
+                        <p class="competence-desc">Conduite de projets créatifs en méthodologie agile, couverture d'événements associatifs (BDE MMI Laval), gestion des droits à l'image, conformité RGPD et stratégie de communication multicanale.</p>
+                        <div class="competence-tags">
+                            <span>Gestion Agile</span>
+                            <span>Événementiel</span>
+                            <span>RGPD</span>
+                            <span>Droit d'auteur</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bannière Téléchargement CV & Espace Recruteurs -->
+                <div class="cv-recruteur-banner reveal">
+                    <div class="cv-recruteur-info">
+                        <span class="cv-recruteur-label">ESPACE RECRUTEURS & COLLABORATEURS</span>
+                        <h4 class="cv-recruteur-title">Curriculum Vitæ — Sacha GUITTER</h4>
+                        <p class="cv-recruteur-text">Retrouvez le récapitulatif détaillé de mon cursus BUT MMI, mes expériences associatives et de terrain, mes compétences logicielles ainsi que mes coordonnées complètes.</p>
+                    </div>
+                    <div class="cv-recruteur-actions">
+                        <a href="pdf/cv-sacha-guitter.pdf" download="CV-Sacha-Guitter-BUT-MMI.pdf" class="btn-cv-primary info-cv-link" aria-label="Télécharger le Curriculum Vitæ au format PDF">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                            <span>TÉLÉCHARGER LE CV (PDF)</span>
+                        </a>
+                        <a href="#chapitre-5" class="btn-cv-secondary">
+                            <span>CONTACTER SACHA →</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sous-section B. BUT MMI -->
             <div id="section-mmi" class="container subsection-break reveal">
                 <div class="subsection-header">
-                    <h3 class="subsection-title">A. BUT MMI</h3>
-                    <span class="subsection-page-num">PROJETS MMI</span>
+                    <h3 class="subsection-title">B. PROJETS MMI</h3>
+                    <span class="subsection-page-num">PROJETS UNIVERSITAIRES</span>
                 </div>
                 <div class="subsection-lead-text">
                     <p>Réalisations universitaires et projets tutorés au sein du département Métiers du Multimédia et de l'Internet de l'IUT de Laval : direction artistique, modélisation 3D et démarche d'auteur.</p>
@@ -582,10 +675,10 @@
                 </div>
             </div>
 
-            <!-- Sous-section B. À côté de MMI -->
+            <!-- Sous-section C. À côté de MMI -->
             <div id="section-cote-mmi" class="container subsection-break reveal">
                 <div class="subsection-header">
-                    <h3 class="subsection-title">B. À CÔTÉ DE MMI</h3>
+                    <h3 class="subsection-title">C. À CÔTÉ DE MMI</h3>
                     <span class="subsection-page-num">VIE ASSOCIATIVE</span>
                 </div>
                 <div class="subsection-lead-text">
@@ -746,16 +839,18 @@
                             <li><a href="mailto:sachaguitterphoto@gmail.com" class="info-email">sachaguitterphoto@gmail.com</a></li>
                             <li><a href="tel:+33749610990" class="info-phone">+33 7 49 61 09 90</a></li>
                             <li><span class="info-location">Laval — Sablé-sur-Sarthe (53 / 72)</span></li>
+                            <li><a href="https://instagram.com/sacha.guitter.photo" class="info-instagram" target="_blank" rel="noopener noreferrer">Instagram ↗</a></li>
+                            <li><a href="https://www.linkedin.com/in/sachaguitter" class="info-linkedin" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></li>
                         </ul>
                     </div>
                 </details>
 
-                <!-- Menu 3 : Liens & Légal -->
+                <!-- Menu 3 : Téléchargements & Légal -->
                 <details class="footer-dropdown" open>
                     <summary class="footer-summary">
                         <span class="footer-summary-title">
                             <span class="footer-summary-num">03.</span>
-                            Réseaux & Légal
+                            Édition & Légal
                         </span>
                         <svg class="footer-dropdown-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                             <polyline points="6 9 12 15 18 9"></polyline>
@@ -763,8 +858,8 @@
                     </summary>
                     <div class="footer-dropdown-content">
                         <ul class="footer-dropdown-links">
-                            <li><a href="https://www.linkedin.com/in/sachaguitter" class="info-linkedin" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></li>
-                            <li><a href="https://instagram.com/sacha.guitter.photo" class="info-instagram" target="_blank" rel="noopener noreferrer">Instagram ↗</a></li>
+                            <li><a href="pdf/Portfolio-Sacha-Guitter-Edition-Papier.pdf" download="Portfolio-Sacha-Guitter-Edition-Papier-A4.pdf" class="info-paper-portfolio-link" style="font-weight: 700; color: #FFFFFF;">Portfolio Papier (PDF A4) ↗</a></li>
+                            <li><a href="pdf/cv-sacha-guitter.pdf" download="CV-Sacha-Guitter-BUT-MMI.pdf" class="info-cv-link">Curriculum Vitæ (PDF) ↗</a></li>
                             <li><a href="da.html">Direction Artistique Papier ↗</a></li>
                             <li><a href="html/mentions-legales.html">Mentions légales</a></li>
                             <li><a href="html/politique-confidentialite.html">Confidentialité</a></li>

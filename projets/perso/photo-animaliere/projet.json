@@ -3,6 +3,7 @@
   "titre": "La Photo Animalière",
   "description": "Au cœur de la nature, la photographie animalière est ma passion originelle. À travers l'affût, la patience et l'observation silencieuse des chevreuils, des oiseaux et des écureuils, je cherche à figer la grâce de la faune sauvage sans jamais la déranger.",
   "categorie": "perso",
+  "status": "en_cours",
   "tags": [
     "Photographie",
     "Animalier",
@@ -18,13 +19,13 @@
     "Lightroom"
   ],
   "images": [
-    "projets/perso/photo-animaliere/ecureuil-roux-acouder-etoile.webp",
     "projets/perso/photo-animaliere/chevreuil-1.webp",
     "projets/perso/photo-animaliere/chevreuil-2.webp",
-    "projets/perso/photo-animaliere/mesange-bleue.webp",
+    "projets/perso/photo-animaliere/ecureuil-roux-acouder-etoile.webp",
     "projets/perso/photo-animaliere/fauvette.webp",
-    "projets/perso/photo-animaliere/rouge-gorge.webp",
-    "projets/perso/photo-animaliere/renard.webp"
+    "projets/perso/photo-animaliere/mesange-bleue.webp",
+    "projets/perso/photo-animaliere/renard.webp",
+    "projets/perso/photo-animaliere/rouge-gorge.webp"
   ],
   "reflexion": {
     "contexte": "Prises de vue réalisées au cœur des forêts et bocages de la Sarthe et de la Mayenne.",
@@ -35,15 +36,21 @@
   "etapes": [
     {
       "titre": "01. Repérage",
-      "desc": "Analyse des coulées et des zones de passage dans les sous-bois."
+      "desc": "Analyse des coulées et des zones de passage dans les sous-bois.",
+      "status": "completed",
+      "done": true
     },
     {
       "titre": "02. L'Affût",
-      "desc": "Installation matinale avant le lever du soleil pour une immersion totale."
+      "desc": "Installation matinale avant le lever du soleil pour une immersion totale.",
+      "status": "completed",
+      "done": true
     },
     {
       "titre": "03. Éditing et Retouche",
-      "desc": "Traitement colorimétrique doux et naturel sous Lightroom."
+      "desc": "Traitement colorimétrique doux et naturel sous Lightroom.",
+      "status": "completed",
+      "done": true
     }
   ],
   "lien": null

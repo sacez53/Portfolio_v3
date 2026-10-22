@@ -3,6 +3,7 @@
   "titre": "Affiche Trail — Création Graphique",
   "description": "Une affiche n'est pas qu'un simple support papier, c'est un véritable outil d'expression qui doit interpeller instantanément et faire comprendre au spectateur le message transmis de façon efficace. Créer une affiche, c'est relever le défi de traduire une idée complexe en un visuel clair et mémorable. Dans cette création conçue en BUT MMI, j'ai mobilisé la typographie percutante et le traitement de l'image pour transmettre l'énergie et la rudesse du trail en pleine nature.",
   "categorie": "etudiant",
+  "status": "en_cours",
   "tags": [
     "Design Graphique",
     "Print",
@@ -28,15 +29,21 @@
   "etapes": [
     {
       "titre": "01. Recherches et Moodboard",
-      "desc": "Analyse des codes graphiques des grandes courses de montagne."
+      "desc": "Analyse des codes graphiques des grandes courses de montagne.",
+      "status": "completed",
+      "done": true
     },
     {
       "titre": "02. Typographie et Grille",
-      "desc": "Structuration des niveaux de lecture (titre, dates, partenaires)."
+      "desc": "Structuration des niveaux de lecture (titre, dates, partenaires).",
+      "status": "completed",
+      "done": true
     },
     {
       "titre": "03. Étalonnage print",
-      "desc": "Contrôle des profils CMJN et des contrastes pour l'impression finale."
+      "desc": "Contrôle des profils CMJN et des contrastes pour l'impression finale.",
+      "status": "completed",
+      "done": true
     }
   ],
   "lien": null

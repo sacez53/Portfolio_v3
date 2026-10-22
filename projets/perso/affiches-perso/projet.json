@@ -3,6 +3,7 @@
   "titre": "Affiches Personnelles — Porsche 911 GT3 RS & BMW M2",
   "description": "Série d'affiches graphiques et automobiles réalisées à titre personnel. À travers ces compositions vectorielles et photographiques, j'explore le design automobile de haute précision : silhouettes emblématiques de la Porsche 911 GT3 RS et de la BMW M2, typographies éditoriales épurées, contrastes chromatiques audacieux et composition minimale inspirée des affiches d'art contemporain et des magazines de course automobile.",
   "categorie": "perso",
+  "status": "en_cours",
   "tags": [
     "Affiches Perso",
     "Design Graphique",
@@ -18,9 +19,9 @@
     "Retouche & Traitement numérique"
   ],
   "images": [
-    "projets/perso/affiches-perso/porsche-gt3rs-profil.webp",
+    "projets/perso/affiches-perso/bmw-m2.webp",
     "projets/perso/affiches-perso/porsche-gt3rs-arriere.webp",
-    "projets/perso/affiches-perso/bmw-m2.webp"
+    "projets/perso/affiches-perso/porsche-gt3rs-profil.webp"
   ],
   "reflexion": {
     "contexte": "Travaux personnels d'expérimentation visuelle et d'hommage au design automobile d'exception.",
@@ -31,15 +32,21 @@
   "etapes": [
     {
       "titre": "01. Sélection des modèles & cadrages",
-      "desc": "Choix des angles et lignes iconiques des bolides GT3 RS et M2."
+      "desc": "Choix des angles et lignes iconiques des bolides GT3 RS et M2.",
+      "status": "completed",
+      "done": true
     },
     {
       "titre": "02. Travail typographique & composition",
-      "desc": "Intégration de typographies sans-serif géométriques, grilles suisses et données techniques."
+      "desc": "Intégration de typographies sans-serif géométriques, grilles suisses et données techniques.",
+      "status": "completed",
+      "done": true
     },
     {
       "titre": "03. Étalonnage & Rendu print",
-      "desc": "Contrôle des profils colorimétriques et mise en page éditoriale prête pour le tirage grand format."
+      "desc": "Contrôle des profils colorimétriques et mise en page éditoriale prête pour le tirage grand format.",
+      "status": "completed",
+      "done": true
     }
   ],
   "lien": null

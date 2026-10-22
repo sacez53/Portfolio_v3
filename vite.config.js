@@ -37,7 +37,7 @@ export default defineConfig({
       name: 'copy-static-assets',
       closeBundle() {
         const dist = resolve(__dirname, 'dist');
-        const toCopy = ['json', 'projets', 'image', 'fonts', 'script', 'style', 'modeles_mails'];
+        const toCopy = ['json', 'projets', 'image', 'fonts', 'script', 'style', 'modeles_mails', 'pdf'];
         toCopy.forEach(dir => copyDir(resolve(__dirname, dir), resolve(dist, dir)));
         ['robots.txt', 'sitemap.xml', '.nojekyll'].forEach(file => {
           const src = resolve(__dirname, file);

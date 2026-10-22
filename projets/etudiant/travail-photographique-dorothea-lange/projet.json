@@ -3,6 +3,7 @@
   "titre": "Travail photographique — Dorothea Lange",
   "description": "Dans le cadre d’un cours d’anglais en première année de BUT MMI, nous avons travaillé avec l’ensemble de la promotion et notre professeure d’anglais sur les photographies emblématiques de Dorothea Lange. À partir de cette étude documentaire et sociale, nous avons réalisé des prises de vue sur des thèmes proches des luttes et sujets de Dorothea Lange (isolement, vieillesse, dignité du quotidien). J'ai choisi d'aborder la solitude de la vieillesse en faisant poser ma grand-mère. Durant l'exposition à l'IUT de Laval, la professeure m’a également confié la couverture photographique de l’événement.",
   "categorie": "etudiant",
+  "status": "en_cours",
   "tags": [
     "Photographie Documentaire",
     "Portrait",
@@ -30,15 +31,21 @@
   "etapes": [
     {
       "titre": "01. Étude stylistique",
-      "desc": "Analyse des cadrages et de la lumière naturelle de Dorothea Lange."
+      "desc": "Analyse des cadrages et de la lumière naturelle de Dorothea Lange.",
+      "status": "completed",
+      "done": true
     },
     {
       "titre": "02. Prise de vue",
-      "desc": "Séance intimiste avec ma grand-mère, recherche de la vérité des expressions."
+      "desc": "Séance intimiste avec ma grand-mère, recherche de la vérité des expressions.",
+      "status": "completed",
+      "done": true
     },
     {
       "titre": "03. Exposition et Vernissage",
-      "desc": "Tirage d'art grand format et photoreportage de l'exposition à l'IUT."
+      "desc": "Tirage d'art grand format et photoreportage de l'exposition à l'IUT.",
+      "status": "completed",
+      "done": true
     }
   ],
   "lien": null

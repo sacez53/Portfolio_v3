@@ -7,5 +7,17 @@
     "linkedin": "https://www.linkedin.com/in/sachaguitter",
     "instagram": "https://instagram.com/sacha.guitter.photo",
     "kardeme": "https://karde.me/sachaguitterphoto/"
+  },
+  "cv": {
+    "url": "pdf/cv-sacha-guitter.pdf",
+    "filename": "CV-Sacha-Guitter-BUT-MMI.pdf",
+    "title": "Curriculum Vitæ — Sacha GUITTER"
+  },
+  "portfolioPapier": {
+    "url": "pdf/Portfolio-Sacha-Guitter-Edition-Papier.pdf",
+    "filename": "Portfolio-Sacha-Guitter-Edition-Papier-A4.pdf",
+    "size": "98 Mo",
+    "format": "A4 Paysage · Tirages Haute Définition",
+    "title": "Portfolio Éditorial — Version Papier (A4 Paysage)"
   }
 }

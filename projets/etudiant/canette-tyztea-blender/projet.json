@@ -3,6 +3,7 @@
   "titre": "Marque Tyztea et Modélisation 3D",
   "description": "Dans le cadre d’un cours de design graphique, il nous était demandé de créer une marque de boisson complète. Pour ce projet, je me suis inspiré du concept des thés glacés en canette. La marque a pour nom Tyztea. Cette boisson est un thé pêche-raisin, j’ai donc axé les couleurs sur des nuances subtiles de raisin et de pêche. Pour ce projet, j’ai appris à utiliser le logiciel Blender pour modéliser et réaliser un rendu photoréaliste en 3 dimensions de ma canette.",
   "categorie": "etudiant",
+  "status": "en_cours",
   "tags": [
     "Design 3D",
     "Blender",
@@ -30,15 +31,21 @@
   "etapes": [
     {
       "titre": "01. Design de l'étiquette 2D",
-      "desc": "Création du logo Tyztea et choix de la palette pêche-raisin."
+      "desc": "Création du logo Tyztea et choix de la palette pêche-raisin.",
+      "status": "completed",
+      "done": true
     },
     {
       "titre": "02. Modélisation 3D dans Blender",
-      "desc": "Construction du maillage de la canette aluminium et application des shaders métalliques."
+      "desc": "Construction du maillage de la canette aluminium et application des shaders métalliques.",
+      "status": "completed",
+      "done": true
     },
     {
       "titre": "03. Rendu studio et Affiche promotionnelle",
-      "desc": "Éclairage virtuel, calcul du rendu et mise en page de l'affiche publicitaire."
+      "desc": "Éclairage virtuel, calcul du rendu et mise en page de l'affiche publicitaire.",
+      "status": "completed",
+      "done": true
     }
   ],
   "lien": null
