@@ -1065,16 +1065,17 @@ body.mobile-menu-open {
 .about-profile-group {
   display: flex;
   align-items: stretch;
-  gap: clamp(0.75rem, 3vw, 1.5rem);
-  margin-top: 0.75rem;
-  padding-top: 1.25rem;
+  gap: clamp(1rem, 2.8vw, 1.75rem);
+  margin-top: 1.25rem;
+  padding-top: 1.5rem;
   border-top: 2px solid #000000;
 }
 
 .about-photo-portrait-small {
-  flex: 0 0 clamp(105px, 36%, 180px);
-  max-width: 180px;
+  flex: 0 0 clamp(135px, 42%, 245px);
+  max-width: 250px;
   align-self: auto;
+  aspect-ratio: 803 / 1152;
 }
 
 .about-photo-portrait-small img {
@@ -1088,7 +1089,7 @@ body.mobile-menu-open {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 0.65rem;
+  gap: clamp(0.75rem, 1.8vw, 1.15rem);
   flex: 1;
   min-width: 0;
   margin: 0;
@@ -1097,44 +1098,50 @@ body.mobile-menu-open {
 }
 
 .about-meta-paper-item {
-  border-left: 2px solid #000000;
-  padding-left: clamp(0.55rem, 1.5vw, 0.75rem);
+  border-left: 2.5px solid #000000;
+  padding-left: clamp(0.7rem, 1.8vw, 1rem);
 }
 
 .about-meta-paper-label {
-  font-size: 0.72rem;
+  font-size: clamp(0.78rem, 1.2vw, 0.85rem);
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
   color: var(--text-muted);
   display: block;
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.25rem;
   font-weight: 600;
 }
 
 .about-meta-paper-value {
   font-weight: 700;
-  font-size: clamp(0.78rem, 2vw, 0.98rem);
+  font-size: clamp(0.95rem, 1.7vw, 1.15rem);
   color: #000000;
-  line-height: 1.25;
+  line-height: 1.3;
   word-break: break-word;
 }
 
 .btn-cv-mini {
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
+  gap: 0.5rem;
   background: #000000;
   color: #FFFFFF !important;
   border: 1px solid #000000;
-  padding: 0.45rem 0.75rem;
-  font-size: 0.72rem;
+  padding: 0.55rem 0.95rem;
+  font-size: clamp(0.78rem, 1.2vw, 0.85rem);
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
   text-decoration: none;
-  margin-top: 0.35rem;
+  margin-top: 0.4rem;
   width: fit-content;
   transition: background 0.15s ease, color 0.15s ease;
+}
+
+.btn-cv-mini svg {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
 }
 
 .btn-cv-mini:hover {
@@ -1311,193 +1318,6 @@ body.mobile-menu-open {
     grid-template-columns: 1fr;
     gap: 1rem;
   }
-}
-
-/* ══════════════════════════════════════════════════════════════
-   MODULE : COMPÉTENCES BUT MMI & BANNIÈRE CV ÉDITORIALE
-   ══════════════════════════════════════════════════════════════ */
-.competences-editorial-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.25rem;
-  margin-bottom: 2rem;
-}
-
-@media (max-width: 1024px) {
-  .competences-editorial-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 640px) {
-  .competences-editorial-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-}
-
-.competence-block {
-  border: 1px solid #000000;
-  background: #FFFFFF;
-  padding: 1.5rem 1.25rem;
-  display: flex;
-  flex-direction: column;
-}
-
-.competence-num {
-  font-family: var(--font-mono, monospace);
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--text-muted);
-  margin-bottom: 0.6rem;
-}
-
-.competence-title {
-  font-family: var(--font-display);
-  font-size: 1.15rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #000000;
-  line-height: 1.2;
-  margin-bottom: 0.25rem;
-}
-
-.competence-sub {
-  font-size: 0.78rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: #000000;
-  display: block;
-  margin-bottom: 0.85rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 1px solid #E2E2E2;
-}
-
-.competence-desc {
-  font-size: 0.88rem;
-  line-height: 1.55;
-  color: var(--text-secondary);
-  flex: 1;
-  margin-bottom: 1.25rem;
-}
-
-.competence-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-  margin-top: auto;
-}
-
-.competence-tags span {
-  font-size: 0.68rem;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  border: 1px solid #000000;
-  padding: 0.2rem 0.45rem;
-  background: #FFFFFF;
-  color: #000000;
-}
-
-.cv-recruteur-banner {
-  border: 2px solid #000000;
-  background: #F8F8F8;
-  padding: clamp(1.5rem, 3vw, 2.25rem);
-  margin-bottom: 2.5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-}
-
-.cv-recruteur-info {
-  flex: 1;
-  min-width: 280px;
-}
-
-.cv-recruteur-label {
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--text-muted);
-  display: block;
-  margin-bottom: 0.4rem;
-}
-
-.cv-recruteur-title {
-  font-family: var(--font-display);
-  font-size: clamp(1.2rem, 2.5vw, 1.7rem);
-  font-weight: 900;
-  text-transform: uppercase;
-  color: #000000;
-  line-height: 1.15;
-  margin-bottom: 0.5rem;
-}
-
-.cv-recruteur-text {
-  font-size: 0.92rem;
-  line-height: 1.5;
-  color: var(--text-secondary);
-  max-width: 680px;
-  margin: 0;
-}
-
-.cv-recruteur-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  align-items: center;
-}
-
-.btn-cv-primary {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  background: #000000;
-  color: #FFFFFF !important;
-  border: 1px solid #000000;
-  padding: 0.85rem 1.4rem;
-  font-family: var(--font-display);
-  font-size: 0.82rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  text-decoration: none;
-  cursor: pointer;
-  transition: background 0.15s ease, color 0.15s ease;
-}
-
-.btn-cv-primary:hover {
-  background: #FFFFFF;
-  color: #000000 !important;
-}
-
-.btn-cv-secondary {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  background: #FFFFFF;
-  color: #000000 !important;
-  border: 1px solid #000000;
-  padding: 0.85rem 1.4rem;
-  font-family: var(--font-display);
-  font-size: 0.82rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  text-decoration: none;
-  cursor: pointer;
-  transition: background 0.15s ease, color 0.15s ease;
-}
-
-.btn-cv-secondary:hover {
-  background: #000000;
-  color: #FFFFFF !important;
 }
 
 /* Carte de projet : Uniquement l'image avec texte superposé en bas */
