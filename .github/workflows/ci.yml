@@ -1,0 +1,40 @@
+name: CI — Test & Build Verification
+
+on:
+  pull_request:
+    branches: ["main", "master"]
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate-build:
+    name: Build & Integrity Check
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout du code
+        uses: actions/checkout@v4
+
+      - name: Configuration de Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Installation stricte des dépendances
+        run: npm ci
+
+      - name: Validation du build Vite
+        run: npm run build
+
+      - name: Vérification de la présence des artefacts essentiels
+        run: |
+          test -f dist/index.html || (echo "Erreur: dist/index.html manquant" && exit 1)
+          test -f dist/da.html || (echo "Erreur: dist/da.html manquant" && exit 1)
+          test -f dist/robots.txt || (echo "Erreur: dist/robots.txt manquant" && exit 1)
+          test -f dist/sitemap.xml || (echo "Erreur: dist/sitemap.xml manquant" && exit 1)
+          test -f dist/json/liste_projets.json || (echo "Erreur: dist/json/liste_projets.json manquant" && exit 1)
+          echo "Tous les artefacts essentiels sont présents et conformes."

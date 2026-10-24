@@ -1,32 +1,33 @@
 ---
 name: Signalement de bug
-about: Signaler un problème d'affichage, un lien mort ou un dysfonctionnement
+about: Signaler un dysfonctionnement, un défaut d'affichage ou un lien brisé
 title: "[BUG] "
-labels: bug
+labels: ["bug"]
 assignees: ''
 
 ---
 
-**Description du bug**
-Une description claire et concise du problème rencontré.
+## 🐛 Description du Bug
+Une description claire et synthétique du problème rencontré.
 
-**Comportement attendu**
-Ce qui aurait dû se passer.
+## 🔁 Étapes pour Reproduire
+1. Aller sur `...`
+2. Cliquer sur `...`
+3. Faire défiler jusqu'à la section `...`
+4. Constater le comportement anormal.
 
-**Étapes pour reproduire**
-1. Aller sur '...'
-2. Cliquer sur '....'
-3. Faire défiler jusqu'à '....'
-4. Constater l'erreur
+## 🎯 Comportement Attendu
+Ce qui aurait dû se produire normalement.
 
-**Captures d'écran ou enregistrements**
-Si applicable, ajoutez des captures d'écran pour illustrer le problème.
+## 📸 Captures d'Écran ou Vidéos
+Si possible, joignez une capture d'écran ou un GIF illustrant l'anomalie.
 
-**Environnement de test :**
-- Appareil : [ex. PC Bureau, iPhone 14, MacBook Pro]
-- Navigateur : [ex. Chrome, Firefox, Safari]
-- Système d'exploitation : [ex. Windows 11, macOS Sonoma, iOS 17]
-- Résolution d'écran : [ex. 1920x1080, 390x844]
+## 💻 Environnement de Test
+- **Appareil** : [ex. PC Portable, iPhone 14 Pro, Samsung Galaxy S23, iPad]
+- **Système d'exploitation** : [ex. Windows 11, macOS Sequoia, iOS 18, Ubuntu 24.04]
+- **Navigateur** : [ex. Chrome 130, Firefox 131, Safari 18, Edge 130]
+- **Résolution d'écran** : [ex. 1920x1080, 390x844]
 
-**Informations supplémentaires**
-Tout autre contexte utile concernant le problème (console JavaScript, erreurs réseau...).
+## 📋 Informations Complémentaires
+- Erreurs présentes dans la console JavaScript (F12 > Console)
+- Codes de statut réseau ou messages d'erreur pertinents

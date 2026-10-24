@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 🛡️ Signalement de Sécurité
+    url: mailto:sachaguitterphoto@gmail.com
+    about: Pour signaler une vulnérabilité de sécurité de manière confidentielle (ne pas ouvrir d'issue publique).
+  - name: 💬 Prise de Contact Directe
+    url: https://sacez53.github.io/Portfolio_v3/#chapitre-5
+    about: Pour toute question professionnelle, collaboration ou tirage photographique.

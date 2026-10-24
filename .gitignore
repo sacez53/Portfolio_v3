@@ -8,7 +8,7 @@ node_modules/
 .pnp
 .pnp.js
 
-# 2. Builds, compilations et distributions
+# 2. Builds, compilations et artefacts de production
 dist/
 dist-ssr/
 *.local
@@ -16,7 +16,7 @@ dist-ssr/
 .eslintcache
 .cache/
 
-# 3. Binaires lourds et fichiers de compilation (Node SEA)
+# 3. Binaires lourds et fichiers de compilation SEA (Node.js Single Executable)
 *.exe
 **/*.exe
 *.blob
@@ -40,11 +40,11 @@ config.mail.php
 .env.local
 .env.*.local
 
-# 6. Sauvegardes de données
+# 6. Sauvegardes locales de données
 json/backups/
 **/backups/
 
-# 7. Journaux et logs
+# 7. Journaux d'exécution et logs
 logs/
 *.log
 npm-debug.log*
@@ -58,8 +58,9 @@ pnpm-debug.log*
 *.bak
 *.swp
 *~
+*.orig
 
-# 9. Fichiers système (Windows / macOS)
+# 9. Fichiers système (Windows / macOS / Linux)
 .DS_Store
 .DS_Store?
 ._*
@@ -79,6 +80,10 @@ $RECYCLE.BIN/
 *.sln
 *.sw?
 
-# 11. Configuration et caches locaux de l'agent IA
-.agents/
-GEMINI.md
+# 11. Caches temporaires des agents IA & environnements locaux
+# Note : Les dossiers .agent/skills/ et .agents/skills/ ainsi que GEMINI.md
+# sont explicitement conservés pour le partage des procédures d'équipe.
+.gemini/
+.agent/scratch/
+.agents/scratch/
+*.session.json

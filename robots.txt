@@ -1,4 +1,25 @@
+# ========================================================
+# Robots.txt — Portfolio Sacha GUITTER
+# Site : https://sacez53.github.io/Portfolio_v3/
+# ========================================================
+
 User-agent: *
 Allow: /
 
-Sitemap: https://sachaguitter.github.io/portfolio_v3/sitemap.xml
+# Autorisation explicite pour les ressources graphiques, polices et scripts
+Allow: /image/
+Allow: /projets/
+Allow: /style/
+Allow: /script/
+Allow: /fonts/
+Allow: /json/liste_projets.json
+Allow: /json/infos.json
+
+# Interdire l'indexation directe des modèles d'e-mails, outils et sauvegardes
+Disallow: /modeles_mails/
+Disallow: /json/backups/
+Disallow: /tools/
+
+# Déclaration du Sitemap XML
+Sitemap: https://sacez53.github.io/Portfolio_v3/sitemap.xml
+Host: https://sacez53.github.io/Portfolio_v3

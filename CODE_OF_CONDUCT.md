@@ -1,33 +1,51 @@
-# Code de Conduite pour les Contributeurs
+# Code de Conduite pour la Communauté et les Contributeurs
 
-## Notre engagement
+## 1. Notre Engagement
 
-En tant que membres, contributeurs et gestionnaires de ce projet, nous nous engageons à faire de la participation à notre communauté une expérience exempte de tout harcèlement pour tout le monde, quel que soit l'âge, la taille corporelle, le handicap visible ou invisible, l'origine ethnique, les caractéristiques sexuelles, l'identité et l'expression de genre, le niveau d'expérience, l'éducation, le statut socio-économique, la nationalité, l'apparence physique, la race, la religion, ou l'identité et l'orientation sexuelles.
+En tant que créateurs, contributeurs et mainteneurs de ce projet, nous nous engageons à offrir une expérience inclusive, respectueuse et exempte de tout harcèlement pour l'ensemble des participantes et participants, quels que soient leur âge, corpulence, handicap visible ou invisible, origine ethnique, caractéristiques sexuelles, identité et expression de genre, niveau d'expérience, éducation, statut socio-économique, nationalité, apparence physique, race, religion ou orientation sexuelle.
 
-Nous nous engageons à agir et à interagir de manière à contribuer à une communauté ouverte, accueillante, diverse, inclusive et saine.
+Nous nous engageons à agir et collaborer de manière à promouvoir une communauté ouverte, accueillante, diversifiée et bienveillante.
 
-## Nos normes
+---
 
-Exemples de comportements qui contribuent à un environnement positif :
+## 2. Nos Standards
 
-* Faire preuve d'empathie et de bienveillance envers les autres.
-* Être respectueux des opinions, des points de vue et des expériences divergentes.
-* Donner et recevoir gracieusement les retours constructifs.
-* Assumer ses responsabilités et s'excuser auprès des personnes affectées par nos erreurs, en apprenant de l'expérience.
-* Se concentrer sur ce qui est le mieux, non seulement pour nous en tant qu'individus, mais pour la communauté dans son ensemble.
+### Exemples de comportements encourageant un environnement constructif :
+- **Bienveillance & Empathie** : Faire preuve de considération et d'écoute active envers les autres.
+- **Respect de la diversité** : Être ouvert aux points de vue, expériences et avis techniques variés.
+- **Accueil des retours** : Exprimer et recevoir les critiques constructives avec humilité et professionnalisme.
+- **Responsabilité** : Assumer ses erreurs, s'excuser sincèrement auprès des personnes impactées et en tirer les leçons.
+- **Intérêt collectif** : Se concentrer sur ce qui bénéficie à la qualité du projet et à la communauté.
 
-Exemples de comportements inacceptables :
+### Exemples de comportements inacceptables :
+- Propos, avances, allusions ou visuels inappropriés ou à connotation dégradante.
+- Insultes, attaques personnelles, dénigrement, intimidation ou commentaires politiques agressifs.
+- Harcèlement public ou privé, sous quelque forme que ce soit.
+- Publication d'informations privées d'autrui (adresses e-mails, numéros, coordonnées géographiques) sans consentement préalable exprès (*doxxing*).
+- Toute autre attitude pouvant raisonnablement être qualifiée d'inappropriée dans un cadre professionnel ou collaboratif.
 
-* L'utilisation d'un langage ou d'images à connotation sexuelle, ainsi que les avances sexuelles de toute nature.
-* Le dénigrement, les insultes ou attaques personnelles et politiques.
-* Le harcèlement public ou privé.
-* La publication d'informations privées d'autrui, telles qu'une adresse physique ou électronique, sans autorisation explicite.
-* Toute autre conduite qui pourrait raisonnablement être considérée comme inappropriée dans un cadre professionnel.
+---
 
-## Application des normes
+## 3. Responsabilités et Application
 
-Les cas de comportements inacceptables peuvent être signalés à l'administrateur du projet à l'adresse **sachaguitterphoto@gmail.com**. Toutes les plaintes seront examinées et feront l'objet d'une enquête rapide et équitable.
+Les mainteneurs du projet veillent au respect de ces normes de conduite et disposent du droit de prendre les mesures appropriées en cas de manquement, notamment :
+- Avertissement formel privé ou public.
+- Modification ou suppression de commentaires, messages ou contributions contrevenants.
+- Exclusion temporaire ou définitive de l'accès aux dépôts ou aux espaces d'échange.
 
-## Attribution
+---
 
-Ce Code de Conduite est adapté du [Contributor Covenant](https://www.contributor-covenant.org), version 2.1, disponible à l'adresse https://www.contributor-covenant.org/version/2/1/code_of_conduct.html.
+## 4. Signalement d'un Incident
+
+Tout comportement injurieux, inapproprié ou contraire au présent Code de Conduite peut être signalé en toute confidentialité à l'administrateur du projet :
+
+- 📧 **Contact** : **Sacha GUITTER** — [sachaguitterphoto@gmail.com](mailto:sachaguitterphoto@gmail.com)
+- 📌 **Objet** : `[Code de Conduite] Signalement d'incident - Portfolio v3`
+
+Toutes les plaintes feront l'objet d'un examen attentif, rapide et impartial, dans le respect strict de la confidentialité de la personne à l'origine du signalement.
+
+---
+
+## 5. Attribution & Référence
+
+Ce Code de Conduite est adapté du [Contributor Covenant](https://www.contributor-covenant.org), version 2.1, disponible sur [contributor-covenant.org/version/2/1/code_of_conduct.html](https://www.contributor-covenant.org/version/2/1/code_of_conduct.html).

@@ -2,16 +2,16 @@ name: Deploy Portfolio to GitHub Pages
 
 on:
   push:
-    branches: ["main", "master"]
+    branches: ["main"]
   workflow_dispatch:
 
-# Autorisations nécessaires pour déployer sur GitHub Pages
+# Permissions minimales requises pour le déploiement sur GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Permet d'éviter les déploiements concurrents
+# Annule les déploiements concurrents en cours pour ne conserver que le dernier commit
 concurrency:
   group: "pages"
   cancel-in-progress: false
@@ -26,13 +26,13 @@ jobs:
       - name: Checkout du projet
         uses: actions/checkout@v4
 
-      - name: Configuration de Node.js
+      - name: Configuration de Node.js (v20)
         uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: 'npm'
 
-      - name: Installation des dépendances
+      - name: Installation stricte des dépendances
         run: npm ci
 
       - name: Compilation avec Vite

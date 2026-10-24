@@ -1,20 +1,24 @@
 ---
 name: Suggestion d'amélioration
-about: Proposer une idée, une fonctionnalité ou une amélioration d'ergonomie
+about: Proposer une idée, une nouvelle fonctionnalité ou un perfectionnement d'ergonomie
 title: "[FEATURE] "
-labels: enhancement
+labels: ["enhancement"]
 assignees: ''
 
 ---
 
-**Votre suggestion est-elle liée à un problème existant ?**
-Une description claire de ce que vous tentez de faire ou d'améliorer (ex. "Il manque une option de zoom sur les images...").
+## 💡 Résumé de la Suggestion
+Décrivez clairement et simplement l'amélioration que vous aimeriez voir intégrée dans le portfolio.
 
-**Solution suggérée**
-Une explication précise de l'amélioration souhaitée et de la manière dont elle devrait fonctionner.
+## 🎯 Problème ou Besoin Associé
+Votre suggestion résout-elle une frustration ou un manque actuel ?
+> *Exemple : "Lors de la consultation sur smartphone, il serait appréciable d'avoir..."*
 
-**Alternatives envisagées**
-Avez-vous pensé à d'autres solutions ou contournements ?
+## 🛠️ Solution Proposée
+Décrivez précisément comment cette fonctionnalité devrait fonctionner et comment elle s'intégrerait dans la navigation ou la direction artistique du site.
 
-**Contexte ou maquette**
-Ajoutez des captures, liens ou références visuelles si pertinent.
+## 🔄 Alternatives Envisagées
+Avez-vous réfléchi à d'autres manières de traiter ce besoin ?
+
+## 🎨 Maquettes ou Références Visuelles
+Ajoutez des captures d'écran, liens ou croquis si pertinent pour illustrer la proposition.

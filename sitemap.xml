@@ -2,108 +2,114 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Pages Principales -->
   <url>
-    <loc>https://sachaguitter.github.io/portfolio_v3/index.html</loc>
-    <lastmod>2026-10-19</lastmod>
+    <loc>https://sacez53.github.io/Portfolio_v3/</loc>
+    <lastmod>2026-10-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://sachaguitter.github.io/portfolio_v3/da.html</loc>
-    <lastmod>2026-10-19</lastmod>
+    <loc>https://sacez53.github.io/Portfolio_v3/index.html</loc>
+    <lastmod>2026-10-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://sacez53.github.io/Portfolio_v3/da.html</loc>
+    <lastmod>2026-10-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- Planches Projets (13 Projets Éditoriaux) -->
+  <!-- Planches Projets Éditoriaux & Étudiants -->
   <url>
-    <loc>https://sachaguitter.github.io/portfolio_v3/html/projet.html?slug=photo-animaliere</loc>
-    <lastmod>2026-10-19</lastmod>
+    <loc>https://sacez53.github.io/Portfolio_v3/html/projet.html?slug=photo-animaliere</loc>
+    <lastmod>2026-10-24</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://sachaguitter.github.io/portfolio_v3/html/projet.html?slug=photo-portrait</loc>
-    <lastmod>2026-10-19</lastmod>
+    <loc>https://sacez53.github.io/Portfolio_v3/html/projet.html?slug=photo-portrait</loc>
+    <lastmod>2026-10-24</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://sachaguitter.github.io/portfolio_v3/html/projet.html?slug=shooting-charlyne</loc>
-    <lastmod>2026-10-19</lastmod>
+    <loc>https://sacez53.github.io/Portfolio_v3/html/projet.html?slug=shooting-charlyne</loc>
+    <lastmod>2026-10-24</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://sachaguitter.github.io/portfolio_v3/html/projet.html?slug=octobre-rose-sille</loc>
-    <lastmod>2026-10-19</lastmod>
+    <loc>https://sacez53.github.io/Portfolio_v3/html/projet.html?slug=octobre-rose-sille</loc>
+    <lastmod>2026-10-24</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://sachaguitter.github.io/portfolio_v3/html/projet.html?slug=guiz-tryo-blizart</loc>
-    <lastmod>2026-10-19</lastmod>
+    <loc>https://sacez53.github.io/Portfolio_v3/html/projet.html?slug=guiz-tryo-blizart</loc>
+    <lastmod>2026-10-24</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://sachaguitter.github.io/portfolio_v3/html/projet.html?slug=gala-danse-sille</loc>
-    <lastmod>2026-10-19</lastmod>
+    <loc>https://sacez53.github.io/Portfolio_v3/html/projet.html?slug=gala-danse-sille</loc>
+    <lastmod>2026-10-24</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://sachaguitter.github.io/portfolio_v3/html/projet.html?slug=affiche-trail</loc>
-    <lastmod>2026-10-19</lastmod>
+    <loc>https://sacez53.github.io/Portfolio_v3/html/projet.html?slug=affiche-trail</loc>
+    <lastmod>2026-10-24</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://sachaguitter.github.io/portfolio_v3/html/projet.html?slug=affiches-perso</loc>
-    <lastmod>2026-10-19</lastmod>
+    <loc>https://sacez53.github.io/Portfolio_v3/html/projet.html?slug=affiches-perso</loc>
+    <lastmod>2026-10-24</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://sachaguitter.github.io/portfolio_v3/html/projet.html?slug=affiche-yoroi-orelsan</loc>
-    <lastmod>2026-10-19</lastmod>
+    <loc>https://sacez53.github.io/Portfolio_v3/html/projet.html?slug=affiche-yoroi-orelsan</loc>
+    <lastmod>2026-10-24</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://sachaguitter.github.io/portfolio_v3/html/projet.html?slug=canette-tyztea-blender</loc>
-    <lastmod>2026-10-19</lastmod>
+    <loc>https://sacez53.github.io/Portfolio_v3/html/projet.html?slug=canette-tyztea-blender</loc>
+    <lastmod>2026-10-24</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://sachaguitter.github.io/portfolio_v3/html/projet.html?slug=travail-photographique-dorothea-lange</loc>
-    <lastmod>2026-10-19</lastmod>
+    <loc>https://sacez53.github.io/Portfolio_v3/html/projet.html?slug=travail-photographique-dorothea-lange</loc>
+    <lastmod>2026-10-24</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://sachaguitter.github.io/portfolio_v3/html/projet.html?slug=bde-mmi-photographe</loc>
-    <lastmod>2026-10-19</lastmod>
+    <loc>https://sacez53.github.io/Portfolio_v3/html/projet.html?slug=bde-mmi-photographe</loc>
+    <lastmod>2026-10-24</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://sachaguitter.github.io/portfolio_v3/html/projet.html?slug=ceremonie-twitch-le-studio</loc>
-    <lastmod>2026-10-19</lastmod>
+    <loc>https://sacez53.github.io/Portfolio_v3/html/projet.html?slug=ceremonie-twitch-le-studio</loc>
+    <lastmod>2026-10-24</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.75</priority>
   </url>
 
-  <!-- Pages Légales -->
+  <!-- Pages Légales & Conformité RGPD -->
   <url>
-    <loc>https://sachaguitter.github.io/portfolio_v3/html/mentions-legales.html</loc>
-    <lastmod>2026-10-19</lastmod>
+    <loc>https://sacez53.github.io/Portfolio_v3/html/mentions-legales.html</loc>
+    <lastmod>2026-10-24</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://sachaguitter.github.io/portfolio_v3/html/politique-confidentialite.html</loc>
-    <lastmod>2026-10-19</lastmod>
+    <loc>https://sacez53.github.io/Portfolio_v3/html/politique-confidentialite.html</loc>
+    <lastmod>2026-10-24</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
