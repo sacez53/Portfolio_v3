@@ -281,7 +281,7 @@ Consultez la [documentation complète de ProjectManager](./tools/projectmanager/
 Le projet intègre un pipeline CI/CD automatisé via **GitHub Actions** :
 
 1. **Validation Continue ([`.github/workflows/ci.yml`](./.github/workflows/ci.yml))** :
-   À chaque Pull Request, les dépendances sont installées et le build Vite est validé pour prévenir toute régression.
+   À chaque pull request, `npm test` compile le site et vérifie les réponses HTTP du build en local.
 2. **Déploiement Continu ([`.github/workflows/deploy.yml`](./.github/workflows/deploy.yml))** :
    À chaque commit poussé sur la branche `main`, le portfolio est automatiquement compilé et déployé sur GitHub Pages à l'adresse :
    [https://sacez53.github.io/Portfolio_v3/](https://sacez53.github.io/Portfolio_v3/)
@@ -295,8 +295,24 @@ Le projet intègre un pipeline CI/CD automatisé via **GitHub Actions** :
 - **Performances multimédia** : Images compressées au format moderne **WebP**, dimensions explicitées (`width` et `height`) pour éviter tout saut de mise en page (*Cumulative Layout Shift*).
 - **Référencement naturel (SEO)** :
   - Métadonnées Open Graph et Twitter Cards configurées pour le partage sur les réseaux.
-  - Plan de site [`sitemap.xml`](./sitemap.xml) recensant l'intégralité des 13 fiches projets et pages légales.
-  - Fichier [`robots.txt`](./robots.txt) optimisé autorisant l'exploration des pages et protégeant les dossiers privés.
+  - Le [`sitemap.xml`](./sitemap.xml) recense l’accueil, les fiches de projet et les pages d’information indexables.
+  - Le [`robots.txt`](./robots.txt) est livré sous `/Portfolio_v3/`. Le fichier d’exclusion applicable au domaine entier est `https://sacez53.github.io/robots.txt` et dépend du site GitHub Pages du compte.
+
+### Consultation par les agents
+
+L’accueil référence [`llms.txt`](./llms.txt) et sa version Markdown, publiée sous `/Portfolio_v3/index.md`. La page 404 HTML donne accès au plan du site.
+
+Après l’ajout ou le retrait d’une fiche de projet, mettez à jour [`sitemap.xml`](./sitemap.xml) et [`agent/home.md`](./agent/home.md). `npm test` compare leurs liens au catalogue JSON.
+
+Pour vérifier la négociation HTTP, exécutez `npm run build` puis `npm run preview`.
+
+```sh
+curl -i -H 'Accept: text/markdown' http://localhost:4173/Portfolio_v3/
+curl -i -H 'Accept: text/html' http://localhost:4173/Portfolio_v3/
+curl -i -H 'Accept: text/markdown' http://localhost:4173/Portfolio_v3/page-introuvable
+```
+
+La prévisualisation renvoie respectivement HTTP 200 en Markdown, HTTP 200 en HTML et HTTP 404 en Markdown, avec `Vary: Accept`. Pour obtenir les mêmes réponses en public, il faut un hébergement ou une couche HTTP capable de traiter l’en-tête `Accept` sur un domaine que vous contrôlez. GitHub Pages publie le build statique. [Documentation GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site)
 
 ---
 

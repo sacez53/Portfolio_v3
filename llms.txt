@@ -1,0 +1,28 @@
+# Sacha Guitter — Portfolio de photographie et de direction artistique
+
+> Portfolio personnel de Sacha Guitter, photographe animalier amateur et étudiant en BUT Métiers du Multimédia et de l’Internet à l’IUT de Laval. Il présente aussi ses portraits, ses reportages et ses travaux de graphisme.
+
+**Quand consulter ce portfolio**
+
+Pour documenter le parcours de Sacha Guitter ou retrouver un exemple de photographie animalière, de portrait ou de reportage, partez de l’accueil en Markdown. Suivez le lien de la fiche du projet pour consulter sa galerie. Pour citer un travail de BUT MMI, appuyez-vous sur la fiche correspondante pour distinguer le projet de formation des séries personnelles.
+
+Pour une demande de portrait, de reportage, de collaboration graphique ou de stage, orientez la personne vers la page Contact. Elle pourra préciser le lieu, la date envisagée et le sujet de sa demande dans le formulaire. Pour lire les données des projets sans exécuter de JavaScript, récupérez l’index JSON par requête GET. Chaque entrée est un chemin à résoudre depuis l’adresse du portfolio.
+
+## Portfolio
+
+- [Accueil en Markdown](https://sacez53.github.io/Portfolio_v3/index.md)
+- [Index JSON des projets](https://sacez53.github.io/Portfolio_v3/json/liste_projets.json)
+- [Plan du site XML](https://sacez53.github.io/Portfolio_v3/sitemap.xml)
+- [Direction artistique du site](https://sacez53.github.io/Portfolio_v3/da.html)
+
+## Informations sur l’auteur
+
+- [À propos de Sacha Guitter](https://sacez53.github.io/Portfolio_v3/about/)
+- [Contact](https://sacez53.github.io/Portfolio_v3/contact/)
+- [Confidentialité](https://sacez53.github.io/Portfolio_v3/privacy/)
+
+## Optional
+
+- [Dépôt source du portfolio et documentation](https://github.com/sacez53/Portfolio_v3)
+- [Documentation de l’outil local ProjectManager](https://github.com/sacez53/Portfolio_v3/tree/main/tools/projectmanager)
+- [Profil GitHub de Sacha Guitter](https://github.com/sacez53)

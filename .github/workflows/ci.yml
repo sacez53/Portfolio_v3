@@ -27,8 +27,8 @@ jobs:
       - name: Installation stricte des dépendances
         run: npm ci
 
-      - name: Validation du build Vite
-        run: npm run build
+      - name: Compilation et tests HTTP
+        run: npm test
 
       - name: Vérification de la présence des artefacts essentiels
         run: |

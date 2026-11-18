@@ -1,26 +1,77 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" prefix="og: https://ogp.me/ns#">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sacha GUITTER — Portfolio Photographie & Direction Artistique</title>
+    <title>Sacha Guitter — Portfolio de photographie et de direction artistique</title>
     
     <!-- SEO & Métadonnées -->
     <meta name="description" content="Portfolio officiel de Sacha GUITTER, photographe et étudiant en BUT MMI. Photographie animalière, portrait, événementiel et design éditorial.">
-    <meta name="keywords" content="Sacha Guitter, photographe, portfolio, photographie animalière, portrait, événement, BUT MMI Laval, design éditorial, tirages">
+    <meta name="keywords" content="photographie animalière, direction artistique, portrait, photographie événementielle, Sacha Guitter, BUT MMI Laval">
     <meta name="author" content="Sacha GUITTER">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#FFFFFF">
+    <link rel="canonical" href="https://sacez53.github.io/Portfolio_v3/">
+    <link rel="describedby" href="https://sacez53.github.io/Portfolio_v3/llms.txt">
+    <link rel="alternate" type="text/markdown" href="https://sacez53.github.io/Portfolio_v3/index.md">
     
     <!-- Open Graph & Twitter Cards -->
-    <meta property="og:title" content="Sacha GUITTER — Portfolio Photographie">
+    <meta property="og:title" content="Sacha Guitter — Portfolio de photographie et de direction artistique">
     <meta property="og:description" content="Photographie animalière, portrait, événementiel et direction artistique.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="image/titre/sacha_cover.webp">
+    <meta property="og:url" content="https://sacez53.github.io/Portfolio_v3/">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="Portfolio de Sacha Guitter">
+    <meta property="og:image" content="https://sacez53.github.io/Portfolio_v3/image/titre/sacha_cover.webp">
+    <meta property="og:image:type" content="image/webp">
+    <meta property="og:image:width" content="2040">
+    <meta property="og:image:height" content="2040">
+    <meta property="og:image:alt" content="Sacha Guitter en pleine prise de vue">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Sacha GUITTER — Portfolio Photographie">
+    <meta name="twitter:title" content="Sacha Guitter — Portfolio de photographie et de direction artistique">
     <meta name="twitter:description" content="Photographie animalière, portrait, événementiel et direction artistique.">
-    <meta name="twitter:image" content="image/titre/sacha_cover.webp">
+    <meta name="twitter:image" content="https://sacez53.github.io/Portfolio_v3/image/titre/sacha_cover.webp">
+    <meta name="twitter:image:alt" content="Sacha Guitter en pleine prise de vue">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "WebSite",
+                "@id": "https://sacez53.github.io/Portfolio_v3/#site",
+                "name": "Portfolio de Sacha Guitter",
+                "description": "Portfolio de photographie et de direction artistique de Sacha Guitter.",
+                "url": "https://sacez53.github.io/Portfolio_v3/",
+                "inLanguage": "fr",
+                "keywords": ["photographie animalière", "direction artistique"],
+                "author": { "@id": "https://sacez53.github.io/Portfolio_v3/#sacha-guitter" }
+            },
+            {
+                "@type": "Person",
+                "@id": "https://sacez53.github.io/Portfolio_v3/#sacha-guitter",
+                "name": "Sacha Guitter",
+                "description": "Photographe animalier amateur et étudiant en BUT MMI à Laval.",
+                "url": "https://sacez53.github.io/Portfolio_v3/",
+                "image": "https://sacez53.github.io/Portfolio_v3/image/titre/sacha_cover.webp",
+                "knowsAbout": ["photographie animalière", "direction artistique"],
+                "sameAs": [
+                    "https://www.linkedin.com/in/sachaguitter",
+                    "https://instagram.com/sacha.guitter.photo",
+                    "https://karde.me/sachaguitterphoto/",
+                    "https://github.com/sacez53"
+                ],
+                "contactPoint": {
+                    "@type": "ContactPoint",
+                    "contactType": "Contact du portfolio",
+                    "email": "sachaguitterphoto@gmail.com",
+                    "telephone": "+33 7 49 61 09 90",
+                    "availableLanguage": "fr"
+                }
+            }
+        ]
+    }
+    </script>
 
     <!-- Preload image LCP -->
     <link rel="preload" as="image" href="image/titre/sacha_cover.webp" type="image/webp">
@@ -736,6 +787,7 @@
                             <li><a href="#chapitre-3">3. Les arts et moi</a></li>
                             <li><a href="#chapitre-4">4. Mes études et moi</a></li>
                             <li><a href="#chapitre-5">5. Un très grand merci</a></li>
+                            <li><a href="about/">À propos de Sacha Guitter</a></li>
                         </ul>
                     </div>
                 </details>
@@ -755,6 +807,7 @@
                         <ul class="footer-dropdown-links">
                             <li><a href="mailto:sachaguitterphoto@gmail.com" class="info-email">sachaguitterphoto@gmail.com</a></li>
                             <li><a href="tel:+33749610990" class="info-phone">+33 7 49 61 09 90</a></li>
+                            <li><a href="contact/">Page de contact</a></li>
                             <li><span class="info-location">Laval — Sablé-sur-Sarthe (53 / 72)</span></li>
                             <li><a href="https://instagram.com/sacha.guitter.photo" class="info-instagram" target="_blank" rel="noopener noreferrer">Instagram ↗</a></li>
                             <li><a href="https://www.linkedin.com/in/sachaguitter" class="info-linkedin" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></li>
@@ -778,8 +831,9 @@
                             <li><a href="pdf/Portfolio-Sacha-Guitter-Edition-Papier.pdf" download="Portfolio-Sacha-Guitter-Edition-Papier-A4.pdf" class="info-paper-portfolio-link" style="font-weight: 700; color: #FFFFFF;">Portfolio Papier (PDF A4) ↗</a></li>
                             <li><a href="pdf/cv-sacha-guitter.pdf" download="CV-Sacha-Guitter-BUT-MMI.pdf" class="info-cv-link">Curriculum Vitæ (PDF) ↗</a></li>
                             <li><a href="da.html">Direction Artistique Papier ↗</a></li>
+                            <li><a href="https://github.com/sacez53/Portfolio_v3">Code source sur GitHub</a></li>
                             <li><a href="html/mentions-legales.html">Mentions légales</a></li>
-                            <li><a href="html/politique-confidentialite.html">Confidentialité</a></li>
+                            <li><a href="privacy/">Confidentialité</a></li>
                         </ul>
                     </div>
                 </details>

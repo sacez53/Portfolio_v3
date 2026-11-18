@@ -1,0 +1,68 @@
+.info-page {
+    width: 100%;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: clamp(2rem, 6vw, 5rem) var(--container-pad);
+    flex: 1;
+}
+
+.info-page-header {
+    border-bottom: var(--border-thick);
+    padding-bottom: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.info-page-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.info-page-header h1,
+.info-page-section h2 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.15;
+    margin-bottom: 0.75rem;
+}
+
+.info-page-header h1 {
+    font-size: clamp(1.65rem, 5vw, 3rem);
+    text-wrap: balance;
+    overflow-wrap: anywhere;
+}
+
+.info-page-section {
+    border: var(--border-editorial);
+    padding: clamp(1rem, 4vw, 2rem);
+    margin-bottom: 1.25rem;
+}
+
+.info-page-section h2 {
+    font-size: clamp(1.05rem, 3vw, 1.25rem);
+}
+
+.info-page p {
+    color: var(--text-secondary);
+}
+
+.info-page p + p {
+    margin-top: 0.75rem;
+}
+
+.info-page a,
+.info-page-footer a {
+    text-decoration: underline;
+    overflow-wrap: anywhere;
+}
+
+.info-page-nav [aria-current="page"] {
+    font-weight: 700;
+}
+
+.info-page-footer {
+    padding: 1.25rem 0;
+}

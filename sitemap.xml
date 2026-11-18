@@ -3,15 +3,7 @@
   <!-- Pages Principales -->
   <url>
     <loc>https://sacez53.github.io/Portfolio_v3/</loc>
-    <lastmod>2026-10-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://sacez53.github.io/Portfolio_v3/index.html</loc>
-    <lastmod>2026-10-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <lastmod>2026-11-10</lastmod>
   </url>
   <url>
     <loc>https://sacez53.github.io/Portfolio_v3/da.html</loc>
@@ -100,17 +92,17 @@
     <priority>0.75</priority>
   </url>
 
-  <!-- Pages Légales & Conformité RGPD -->
+  <!-- Pages d'information -->
   <url>
-    <loc>https://sacez53.github.io/Portfolio_v3/html/mentions-legales.html</loc>
-    <lastmod>2026-10-24</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <loc>https://sacez53.github.io/Portfolio_v3/about/</loc>
+    <lastmod>2026-11-10</lastmod>
   </url>
   <url>
-    <loc>https://sacez53.github.io/Portfolio_v3/html/politique-confidentialite.html</loc>
-    <lastmod>2026-10-24</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <loc>https://sacez53.github.io/Portfolio_v3/contact/</loc>
+    <lastmod>2026-11-10</lastmod>
+  </url>
+  <url>
+    <loc>https://sacez53.github.io/Portfolio_v3/privacy/</loc>
+    <lastmod>2026-11-10</lastmod>
   </url>
 </urlset>
