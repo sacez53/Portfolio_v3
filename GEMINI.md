@@ -20,34 +20,17 @@ Ce document sert de guide de référence et de consignes opérationnelles pour t
 
 ```text
 portfolio_v3_web/
-├── index.html                   # Page d'accueil complète (Hero, Chapitres 1 à 5, Contact, Footer)
-├── da.html                      # Page Direction Artistique (charte graphique, typographie, grille)
-├── html/
-│   ├── projet.html              # Fiche projet dynamique (paramètre URL ?slug=<nom-du-projet>)
-│   ├── mentions-legales.html    # Mentions légales conformes RGPD
-│   └── politique-confidentialite.html # Politique de confidentialité
-├── style/
-│   ├── design-tokens.css        # Variables CSS racines (:root : couleurs, polices, bordures, marges)
-│   ├── fonts.css                # Déclarations @font-face pour Special Gothic (fichiers locaux)
-│   └── style.css                # Feuilles de styles principales, responsive et composants
-├── script/
-│   ├── carte.js                 # Initialisation de la carte Leaflet (OSM monochrome, Sablé/Laval)
-│   ├── contact.js               # Validation et expédition du formulaire via EmailJS (CDN)
-│   ├── email.config.js          # Paramètres de service EmailJS
-│   ├── infos.js                 # Hydratation dynamique des coordonnées depuis json/infos.json
-│   ├── modal-projets.js         # Visionneuse modale et navigation dans les projets
-│   ├── nav.js                   # Navigation fixe, tiroir mobile burger, surlignage des chapitres
-│   ├── projets.js               # Rendu dynamique des galeries et fiches de projets
-│   └── scroll.js                # Moteur de défilement fluide (easeInOutCubic) & animations .reveal
-├── json/
-│   ├── infos.json               # Coordonnées (email, téléphone, villes, réseaux sociaux)
-│   ├── liste_projets.json        # Index structuré des chemins vers les fiches projets modulaires
-│   └── backups/                 # Sauvegardes de sécurité générées par ProjectManager
-├── projets/                     # Visuels WebP et configurations projet.json (perso/ et etudiant/)
-├── image/                       # Assets éditoriaux (apropos_terrain, apropos_enfant, etc.)
-├── fonts/                       # Polices Special Gothic (TrueType / Variable)
-└── dist/                        # Dossier de build généré par Vite (ignoré par Git)
+├── src/                  Sources web : HTML, script/, style/, json/, projets/, médias
+├── content/agent/        Sources Markdown de l’accueil et de la page 404
+├── templates/emails/     Modèles EmailJS
+├── docs/                 Documentation du projet
+├── tools/                Gestionnaire, outils de build et génération du CV
+├── tests/                Tests Node.js
+├── output/               Aperçus locaux ignorés par Git
+└── dist/                 Site généré par Vite
 ```
+
+La racine web est `src/`. Les chemins des ressources publiées restent identiques. Les exemples ci-dessous et les skills qui mentionnent un chemin web comme `json/infos.json` doivent être préfixés par `src/` pour un accès sur disque. Voir `docs/architecture.md`.
 
 ---
 
@@ -78,7 +61,7 @@ portfolio_v3_web/
    Toujours exécuter `npm run build` après chaque modification de code pour s'assurer que le bundler compile sans avertissement bloquant et que le dossier `dist/` est à jour.
 2. **Respect strict de la charte graphique** :
    - Ne pas introduire de bibliothèques CSS tierces (ex: Bootstrap, Tailwind).
-   - Utiliser systématiquement les variables définies dans `style/design-tokens.css` (`var(--line-black)`, `var(--bg)`, `var(--container-pad)`).
+   - Utiliser systématiquement les variables définies dans `src/style/design-tokens.css` (`var(--line-black)`, `var(--bg)`, `var(--container-pad)`).
    - Pas de coins arrondis sur les cartes, boutons, cadres ou popups (conserver l'esprit d'imprimerie).
 3. **Approche Vanilla & Performance** :
    - Conserver un code JavaScript pur (Vanilla ES6+), sans framework superflu.
@@ -86,7 +69,7 @@ portfolio_v3_web/
 4. **Accessibilité & Navigation** :
    - Préserver la structure sémantique HTML5 et les attributs ARIA.
    - Respecter le mode `prefers-reduced-motion` pour toutes les animations et transitions.
-   - Ne jamais forcer un défilement saccadé ou trop rapide : utiliser le moteur fluide calibré dans `script/scroll.js`.
+   - Ne jamais forcer un défilement saccadé ou trop rapide : utiliser le moteur fluide calibré dans `src/script/scroll.js`.
 5. **Confidentialité & Sécurité** :
    - Ne jamais copier de jeton, clé privée ou mot de passe dans les fichiers versionnés ou dans la documentation.
    - Ne pas modifier directement les fichiers situés dans `dist/` : ils sont régénérés automatiquement par `npm run build`.
@@ -97,4 +80,4 @@ portfolio_v3_web/
 
 Des procédures détaillées réutilisables sont disponibles dans le dossier local `.agents/skills/` :
 - **`portfolio-workflow`** (`.agents/skills/portfolio-workflow/SKILL.md`) : procédures de dev, build, prévisualisation et checklist de validation.
-- **`portfolio-project-manager`** (`.agents/skills/portfolio-project-manager/SKILL.md`) : guide d'ajout, de mise à jour et d'audit des projets dans `json/projets.json` et des galeries d'images.
+- **`portfolio-project-manager`** (`.agents/skills/portfolio-project-manager/SKILL.md`) : guide d'ajout, de mise à jour et d'audit des projets dans `src/json/liste_projets.json` et des galeries d'images.

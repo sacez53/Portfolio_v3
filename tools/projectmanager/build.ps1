@@ -65,36 +65,14 @@ Write-Host "  -> sea-prep.blob genere avec succes." -ForegroundColor Gray
 Write-Host "[6/7] Cloner l'executable node et injection via postject..." -ForegroundColor Yellow
 $nodeExePath = $nodeCmd.Source
 
-# Cible 1 : projectmanager.exe
-Copy-Item $nodeExePath -Destination "projectmanager.exe" -Force
-npx postject projectmanager.exe NODE_SEA_BLOB sea-prep.blob --sentinel-fuse NODE_SEA_FUSE_fce680ab2cc467b6e072b8b5df1996b2
-
-# Cible 2 : PortfolioManager.exe (compatibilité historique)
-Copy-Item "projectmanager.exe" -Destination "PortfolioManager.exe" -Force
-
-# Copie vers le dossier tools parent (../) si présent
-$parentToolsDir = Split-Path -Path $scriptDir -Parent
-if (Test-Path $parentToolsDir) {
-    Copy-Item "projectmanager.exe" -Destination "$parentToolsDir\projectmanager.exe" -Force
-    Copy-Item "PortfolioManager.exe" -Destination "$parentToolsDir\PortfolioManager.exe" -Force
-    Write-Host "  -> Executables copies vers : $parentToolsDir" -ForegroundColor Gray
-
-    # Copie vers la racine du projet portfolio_v3_web
-    $projectRootDir = Split-Path -Path $parentToolsDir -Parent
-    if (Test-Path $projectRootDir) {
-        Copy-Item "projectmanager.exe" -Destination "$projectRootDir\projectmanager.exe" -Force
-        Copy-Item "PortfolioManager.exe" -Destination "$projectRootDir\PortfolioManager.exe" -Force
-        Write-Host "  -> Executables copies vers la racine : $projectRootDir" -ForegroundColor Gray
-    }
-}
-
-# Copie vers portfolio_v2/tools si présent
-$v2ToolsDir = Resolve-Path "$scriptDir\..\..\..\portfolio_v2\tools" -ErrorAction SilentlyContinue
-if ($v2ToolsDir -and (Test-Path $v2ToolsDir)) {
-    Copy-Item "projectmanager.exe" -Destination "$v2ToolsDir\projectmanager.exe" -Force
-    Copy-Item "PortfolioManager.exe" -Destination "$v2ToolsDir\PortfolioManager.exe" -Force
-    Write-Host "  -> Executables copies vers : $v2ToolsDir" -ForegroundColor Gray
-}
+# Les executables restent dans un seul dossier.
+$binDir = Join-Path $scriptDir 'bin'
+New-Item -ItemType Directory -Path $binDir -Force | Out-Null
+$exePath = Join-Path $binDir 'projectmanager.exe'
+Copy-Item -LiteralPath $nodeExePath -Destination $exePath -Force
+npx postject $exePath NODE_SEA_BLOB sea-prep.blob --sentinel-fuse NODE_SEA_FUSE_fce680ab2cc467b6e072b8b5df1996b2
+if ($LASTEXITCODE -ne 0) { throw 'Echec de creation de l executable.' }
+Copy-Item -LiteralPath $exePath -Destination (Join-Path $binDir 'PortfolioManager.exe') -Force
 
 # 7. Nettoyage
 Write-Host "[7/7] Nettoyage des fichiers temporaires..." -ForegroundColor Yellow
@@ -103,7 +81,7 @@ if (Test-Path "sea-prep.blob") { Remove-Item "sea-prep.blob" -Force }
 
 Write-Host ""
 Write-Host "Verification de l'executable genere..." -ForegroundColor Yellow
-$testOutput = & ".\projectmanager.exe" --version
+$testOutput = & $exePath --version
 Write-Host "  -> Sortie : $testOutput" -ForegroundColor Green
 
 Write-Host ""

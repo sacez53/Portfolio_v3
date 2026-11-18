@@ -1,8 +1,22 @@
-# 🛠️ Portfolio Project Manager v2.3 (Desktop GUI & CLI)
+# Gestionnaire du portfolio
 
-> **Application de bureau moderne avec Interface Graphique (GUI)** et mode CLI pour l'administration éditoriale, la gestion de tâches, l'inspection et réorganisation des galeries, l'export Markdown MMI, la sécurité par mot de passe et la maintenance du portfolio de **Sacha GUITTER**.
+Le lanceur est `admin.cmd` à la racine du dépôt. Il accepte les mêmes arguments que le gestionnaire, par exemple `admin.cmd --cli` ou `admin.cmd --audit`.
 
----
+Les sources web sont dans `src/`. Le gestionnaire reconnaît aussi la racine du dépôt et résout les chemins vers ce dossier. Les fiches gardent des chemins relatifs à la racine web comme `projets/perso/photo-animaliere/projet.json`.
+
+Les sauvegardes sont dans `src/json/backups/`. Le fichier d’authentification reste à la racine du dépôt. La commande de compilation s’exécute depuis cette racine.
+
+Les exécutables sont dans `tools/projectmanager/bin/`. Les anciennes copies sont conservées dans `bin/archives/`. Le lanceur utilise les sources Node.js en priorité pour suivre les modifications du code ; en l’absence de Node.js, il lance `bin/projectmanager.exe --path <racine>/src`.
+
+Pour compiler un nouvel exécutable :
+
+```powershell
+cd tools/projectmanager
+npm ci
+npm run build:exe
+```
+
+La compilation écrit uniquement dans `bin/` et ne copie plus les exécutables dans la racine ni dans un autre portfolio.
 
 ## 📌 Sommaire
 
@@ -115,7 +129,7 @@ Menu rétractable permettant de naviguer instantanément entre les vues :
 ### 🛡️ Sauvegardes & Sécurité des Données
 - **Sauvegarde automatique** avant chaque modification, création ou suppression.
 - **Bouton "Créer une sauvegarde maintenant"** dans les paramètres.
-- **Dossier d'archivage local** : `json/backups/liste_projets_YYYY-MM-DD_HH-mm-ss.json`.
+- **Dossier d'archivage local** : `src/json/backups/liste_projets_YYYY-MM-DD_HH-mm-ss.json`.
 - **Protection anti-traversal** : validation stricte des chemins d'accès pour empêcher toute fuite hors de la racine du portfolio.
 
 ---
@@ -240,11 +254,8 @@ Le script de compilation effectue automatiquement les 7 étapes suivantes :
 7. Nettoyage des résidus temporaires et test de validation.
 
 Les exécutables générés sont automatiquement synchronisés dans :
-- `tools/projectmanager/projectmanager.exe`
-- `tools/projectmanager/PortfolioManager.exe`
-- `tools/projectmanager.exe`
-- `tools/PortfolioManager.exe`
-- `../portfolio_v2/tools/` (si présent sur le système).
+- `tools/projectmanager/bin/projectmanager.exe`
+- `tools/projectmanager/bin/PortfolioManager.exe`
 
 ---
 
@@ -257,7 +268,7 @@ Double-cliquez sur `projectmanager.exe` ou sur `admin.cmd`. La fenêtre d'applic
 
 #### En ligne de commande
 ```powershell
-.\tools\projectmanager\projectmanager.exe
+.\tools\projectmanager\bin\projectmanager.exe
 ```
 
 #### Options du mode graphique
@@ -387,7 +398,7 @@ Pour utiliser le menu console interactif ou exécuter des scripts automatisés :
 - Tri naturel intelligent des images (`naturalSort`) avec priorité aux visuels `cover`.
 - Prise en charge des formats modernes (`.webp`, `.avif`, `.svg`).
 - Intégration de Node.js SEA (Single Executable Application) avec `postject`.
-- Sauvegardes automatiques horodatées dans `json/backups/`.
+- Sauvegardes automatiques horodatées dans `src/json/backups/`.
 
 ---
 

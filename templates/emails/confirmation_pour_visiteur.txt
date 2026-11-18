@@ -1,0 +1,17 @@
+Bonjour {{firstname}},
+
+Merci pour votre message. J’ai bien reçu votre demande concernant « {{subject}} ».
+Je vous répondrai dès que possible.
+
+Votre message :
+{{message}}
+
+À bientôt,
+
+Sacha GUITTER
+Photographie · Direction artistique
+sachaguitterphoto@gmail.com
+07 49 61 09 90
+
+Portfolio : https://sacez53.github.io/Portfolio_v3/
+Instagram : https://instagram.com/sacha.guitter.photo

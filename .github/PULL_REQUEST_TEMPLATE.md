@@ -24,7 +24,7 @@ Résumez brièvement les modifications apportées et l'objectif visé par cette 
 ## 📐 Conformité à la Charte Graphique Éditoriale
 
 - [ ] Respect de la palette monochrome (fonds `#FFFFFF`, filets noirs `#000000`)
-- [ ] Utilisation exclusive des variables de `style/design-tokens.css`
+- [ ] Utilisation exclusive des variables de `src/style/design-tokens.css`
 - [ ] Typographie Special Gothic préservée sans importation de polices tierces
 - [ ] Absence de coins arrondis superflus (`border-radius: 0`)
 
@@ -32,7 +32,7 @@ Résumez brièvement les modifications apportées et l'objectif visé par cette 
 
 ## ✅ Checklist de Vérification
 
-- [ ] Mon code suit les règles et conventions du projet ([CONTRIBUTING.md](../CONTRIBUTING.md))
+- [ ] Mon code suit les règles et conventions du projet ([CONTRIBUTING.md](../docs/CONTRIBUTING.md))
 - [ ] La compilation s'exécute avec succès sans aucune erreur (`npm run build`)
 - [ ] Le rendu a été testé et validé sur plusieurs résolutions (Mobile, Tablette, Desktop)
 - [ ] Le défilement fluide et le menu de navigation fonctionnent correctement

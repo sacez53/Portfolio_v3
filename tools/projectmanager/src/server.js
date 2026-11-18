@@ -24,7 +24,8 @@ import {
   deleteBackupFile,
   generateProjectMarkdown,
   openInExplorer,
-  buildPortfolioProject
+  buildPortfolioProject,
+  getSiteDir
 } from './config.js';
 import { CATEGORIES, AVAILABLE_TAGS, AVAILABLE_COMPETENCES } from './constants.js';
 import { syncImagesAction } from './actions/sync.js';
@@ -54,6 +55,7 @@ const VERSION = '2.3.0';
 export function startServer(options = {}) {
   let { portfolioDir, port = 4899 } = options;
   if (!port) port = 4899;
+  portfolioDir = getSiteDir(portfolioDir);
 
   return new Promise((resolve, reject) => {
     let lastActiveTime = Date.now();
@@ -421,7 +423,7 @@ export function startServer(options = {}) {
             return sendError('Dossier invalide : json/liste_projets.json et projets/ sont requis.');
           }
 
-          portfolioDir = targetPath;
+          portfolioDir = getSiteDir(targetPath);
           if (typeof options.onPortfolioChanged === 'function') {
             options.onPortfolioChanged(portfolioDir);
           }

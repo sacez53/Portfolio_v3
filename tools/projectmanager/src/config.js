@@ -5,6 +5,9 @@ import chalk from 'chalk';
 import { input } from '@inquirer/prompts';
 import { normalizeRelativePath, generateSlug } from './utils.js';
 
+import { getSiteDir, getRepositoryDir } from './paths.js';
+export { getSiteDir, getRepositoryDir } from './paths.js';
+
 /**
  * Vérifie si un dossier est une racine de portfolio valide
  * @param {string} dir 
@@ -13,6 +16,7 @@ import { normalizeRelativePath, generateSlug } from './utils.js';
 export function isValidPortfolioRoot(dir) {
   if (!dir || typeof dir !== 'string') return false;
   try {
+    dir = getSiteDir(dir);
     const jsonPath = path.join(dir, 'json', 'liste_projets.json');
     const projetsDir = path.join(dir, 'projets');
     return fs.existsSync(jsonPath) && fs.existsSync(projetsDir);
@@ -31,7 +35,7 @@ export function searchUpwardForPortfolio(startDir, maxDepth = 5) {
   let current = path.resolve(startDir);
   for (let i = 0; i < maxDepth; i++) {
     if (isValidPortfolioRoot(current)) {
-      return current;
+      return getSiteDir(current);
     }
     const parent = path.dirname(current);
     if (parent === current) break; // Racine du système atteinte
@@ -57,7 +61,7 @@ export async function resolvePortfolioDir(explicitPath = null, interactive = tru
   if (explicitPath) {
     const candidate = path.resolve(explicitPath);
     if (isValidPortfolioRoot(candidate)) {
-      return candidate;
+      return getSiteDir(candidate);
     }
     console.log(chalk.yellow(`⚠️  Le chemin spécifié '${explicitPath}' ne contient pas l'arborescence requise (json/liste_projets.json et projets/).`));
   }
@@ -66,7 +70,7 @@ export async function resolvePortfolioDir(explicitPath = null, interactive = tru
   if (process.env.PORTFOLIO_DIR) {
     const envCandidate = path.resolve(process.env.PORTFOLIO_DIR);
     if (isValidPortfolioRoot(envCandidate)) {
-      return envCandidate;
+      return getSiteDir(envCandidate);
     }
   }
 
@@ -114,7 +118,7 @@ export async function resolvePortfolioDir(explicitPath = null, interactive = tru
 
     const validated = path.resolve(userPath.trim());
     if (isValidPortfolioRoot(validated)) {
-      return validated;
+      return getSiteDir(validated);
     }
   }
 }
@@ -124,6 +128,7 @@ export async function resolvePortfolioDir(explicitPath = null, interactive = tru
  * @param {string} portfolioDir 
  */
 export function getPaths(portfolioDir) {
+  portfolioDir = getSiteDir(portfolioDir);
   return {
     root: portfolioDir,
     jsonDir: path.join(portfolioDir, 'json'),
@@ -685,7 +690,7 @@ export function buildPortfolioProject(portfolioDir) {
   return new Promise((resolve) => {
     const startTime = Date.now();
     const cmd = process.platform === 'win32' ? 'npm.cmd run build' : 'npm run build';
-    exec(cmd, { cwd: portfolioDir, timeout: 60000 }, (error, stdout, stderr) => {
+    exec(cmd, { cwd: getRepositoryDir(portfolioDir), timeout: 60000 }, (error, stdout, stderr) => {
       const elapsedMs = Date.now() - startTime;
       const output = `${stdout || ''}\n${stderr || ''}`.trim();
       if (error) {

@@ -21,7 +21,7 @@ Seule la dernière version publiée sur la branche principale (`main`) bénéfic
 ### 1. Portfolio Web Statique (Client)
 - **Hébergement Statique & Chiffrement TLS** : Le site est hébergé via GitHub Pages avec HTTPS forcé et en-têtes de sécurité stricts.
 - **Formulaire Sans Serveur (EmailJS)** :
-  - La clé publique (`publicKey`) configurée dans `script/email.config.js` est conçue pour être publique côté client selon la documentation officielle d'EmailJS.
+  - La clé publique (`publicKey`) configurée dans `src/script/email.config.js` est conçue pour être publique côté client selon la documentation officielle d'EmailJS.
   - La sécurité repose sur la restriction d'origine (*Allowed Origins / Domain Whitelist*) configurée dans le tableau de bord EmailJS (`https://sacez53.github.io` et `http://localhost:5173`).
   - Aucun jeton privé, clé secrète (*Private Key*) ou mot de passe n'est stocké ou transmis par le code front-end.
 - **Intégrité des Sous-Ressources (SRI)** : Les bibliothèques externes chargées via CDN (Leaflet.js) intègrent des attributs d'intégrité cryptographique `integrity="sha256-..."` et `crossorigin=""`.

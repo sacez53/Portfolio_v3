@@ -1,0 +1,18 @@
+Nouveau message du portfolio
+
+De : {{name}}
+E-mail : {{email}}
+Objet : {{subject}}
+
+{{message}}
+
+Pour répondre : {{email}}
+
+---
+Sacha GUITTER
+Photographie · Direction artistique
+sachaguitterphoto@gmail.com
+07 49 61 09 90
+
+Portfolio : https://sacez53.github.io/Portfolio_v3/
+Instagram : https://instagram.com/sacha.guitter.photo

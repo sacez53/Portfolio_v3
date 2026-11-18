@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
+import { getRepositoryDir } from './paths.js';
 
 /**
  * Module d'authentification et de sécurité pour Portfolio Project Manager
@@ -17,6 +18,7 @@ const DEFAULT_SESSION_DURATION = 30 * 24 * 60 * 60 * 1000; // 30 jours max
  */
 export function getAuthFilePath(portfolioDir = null) {
   if (portfolioDir) {
+    portfolioDir = getRepositoryDir(portfolioDir);
     const candidate = path.join(portfolioDir, '.pm-auth.json');
     if (fs.existsSync(candidate)) return candidate;
     const candidateSub = path.join(portfolioDir, 'tools', 'projectmanager', '.pm-auth.json');

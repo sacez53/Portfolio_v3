@@ -20,11 +20,11 @@
  * 
  * 3. templateId (Notification reçue par vous) :
  *    - Allez dans "Email Templates"
- *    - Créez un template avec le fichier 'modeles_mails/notification_pour_sacha.html'
+ *    - Créez un template avec le fichier 'templates/emails/notification_pour_sacha.html'
  *    - Copiez le Template ID (ex: "template_xxxxxxx")
  * 
  * 4. templateAutoReplyId (Confirmation reçue par le visiteur — optionnel) :
- *    - Créez un second template avec le fichier 'modeles_mails/confirmation_pour_visiteur.html'
+ *    - Créez un second template avec le fichier 'templates/emails/confirmation_pour_visiteur.html'
  *    - Copiez son Template ID (ex: "template_yyyyyyy")
  * ══════════════════════════════════════════════════════════════════════════
  */

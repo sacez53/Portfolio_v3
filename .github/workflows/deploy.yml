@@ -35,8 +35,8 @@ jobs:
       - name: Installation stricte des dépendances
         run: npm ci
 
-      - name: Compilation avec Vite
-        run: npm run build
+      - name: Compilation et vérification des chemins
+        run: npm test
 
       - name: Configuration de GitHub Pages
         uses: actions/configure-pages@v5

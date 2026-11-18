@@ -24,7 +24,7 @@ Les propositions de corrections de bogues, d'optimisations d'accessibilité, d'a
 ## ⚖️ Règles Fondamentales
 
 1. **Intégrité de la Direction Artistique** : Respecter scrupuleusement l'esprit éditorial « grand format papier », monochrome, inspiré du graphisme suisse.
-2. **Pas de Framework CSS Tiers** : N'ajoutez ni Bootstrap, ni Tailwind, ni framework lourd. Le projet repose sur du CSS Vanilla moderne structuré avec des variables CSS racines (`style/design-tokens.css`).
+2. **Pas de Framework CSS Tiers** : N'ajoutez ni Bootstrap, ni Tailwind, ni framework lourd. Le projet repose sur du CSS Vanilla moderne structuré avec des variables CSS racines (`src/style/design-tokens.css`).
 3. **Vanilla JavaScript Moderne** : Conserver un code JavaScript propre, modulaire et sans dépendance superflue.
 4. **Validation Systématique du Build** : Toujours vérifier que `npm run build` s'exécute avec succès avant de soumettre une contribution.
 
@@ -81,17 +81,17 @@ Avant d'ouvrir un ticket :
 
 Le portfolio n'utilise pas de base de données backend complexe mais une architecture JSON modulaire performante :
 
-- `json/liste_projets.json` : Index contenant la liste ordonnée des chemins vers chaque fiche projet.
-- `projets/<categorie>/<slug>/projet.json` : Fiche descriptive indépendante avec métadonnées, analyse réflexive et liste d'images.
-- `projets/<categorie>/<slug>/*.webp` : Clichés optimisés associés au projet.
+- `src/json/liste_projets.json` : Index contenant la liste ordonnée des chemins vers chaque fiche projet.
+- `src/projets/<categorie>/<slug>/projet.json` : Fiche descriptive indépendante avec métadonnées, analyse réflexive et liste d'images.
+- `src/projets/<categorie>/<slug>/*.webp` : Clichés optimisés associés au projet.
 
 ---
 
 ## 🛠️ Outil d'Administration `ProjectManager`
 
 Pour administrer les projets sans manipuler manuellement les JSON :
-- Lancez `admin.cmd` à la racine ou exécutez `tools/projectmanager.exe`.
-- Cet outil permet de créer de nouveaux projets, réordonner les galeries par flèches (`◀` / `▶`), définir l'image de couverture (`⭐ Couv.`), gérer les sauvegardes dans `json/backups/` et auditer les dossiers orphelins.
+- Lancez `admin.cmd` à la racine ou exécutez `tools/projectmanager/bin/projectmanager.exe --path src`.
+- Cet outil permet de créer de nouveaux projets, réordonner les galeries par flèches (`◀` / `▶`), définir l'image de couverture (`⭐ Couv.`), gérer les sauvegardes dans `src/json/backups/` et auditer les dossiers orphelins.
 
 ---
 
@@ -104,8 +104,8 @@ Toute contribution visuelle ou stylistique doit respecter les standards établis
 | **Couleurs** | Strictement monochromes : `#FFFFFF`, `#000000`, surface subtile `#F8F8F8`. |
 | **Coins** | Angles droits stricts (`--radius-none: 0px`). Aucun `border-radius` arrondi. |
 | **Filets** | Filets noirs nets (`border: 1px solid #000000` ou `2px solid #000000`). |
-| **Typographie** | Fonte locale `Special Gothic` (déclarée dans `style/fonts.css`). |
-| **Tokens CSS** | Utilisation exclusive des variables de `style/design-tokens.css`. |
+| **Typographie** | Fonte locale `Special Gothic` (déclarée dans `src/style/fonts.css`). |
+| **Tokens CSS** | Utilisation exclusive des variables de `src/style/design-tokens.css`. |
 | **Images** | Format `.webp` optimisé avec attributs `width`, `height` et `loading="lazy"`. |
 | **Accessibilité** | Contraste conforme WCAG AA/AAA, navigation clavier et support `prefers-reduced-motion`. |
 
@@ -139,13 +139,13 @@ Consultez le manifeste complet sur [`da.html`](https://sacez53.github.io/Portfol
    ```
 
 4. **Pousser la branche et ouvrir une Pull Request** :
-   - Remplir le formulaire standardisé proposé par [`.github/PULL_REQUEST_TEMPLATE.md`](./.github/PULL_REQUEST_TEMPLATE.md).
+   - Remplir le formulaire standardisé proposé par [`.github/PULL_REQUEST_TEMPLATE.md`](../.github/PULL_REQUEST_TEMPLATE.md).
    - Décrire clairement les modifications et fournir des captures d'écran si l'affichage est modifié.
 
 ---
 
 ## 📸 Droits d'Auteur et Propriété Intellectuelle
 
-- **Code Source** : Libre et ouvert sous licence [MIT](./LICENSE).
+- **Code Source** : Libre et ouvert sous licence [MIT](../LICENSE).
 - **Médias & Visuels** : L'ensemble des photographies (animaux, portraits, événements musicaux, galas de danse), tirages d'art et créations graphiques de Sacha GUITTER sont **strictement protégés par le droit d'auteur (Tous droits réservés © 2026 Sacha GUITTER)**.
 - Toute réutilisation, reproduction, diffusion publique ou modification non autorisée de ces médias est strictement interdite sans consentement écrit préalable.

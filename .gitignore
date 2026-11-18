@@ -26,8 +26,8 @@ bundle.js
 **/bundle.js
 
 # 4. Fichiers volumineux (> 100 Mo interdits par GitHub)
-pdf/Portfolio-Sacha-Guitter-Edition-Papier.pdf
-pdf/*-Edition-Papier*.pdf
+src/pdf/Portfolio-Sacha-Guitter-Edition-Papier.pdf
+src/pdf/*-Edition-Papier*.pdf
 dist/pdf/Portfolio-Sacha-Guitter-Edition-Papier.pdf
 
 # 5. Fichiers d'environnement, secrets et mots de passe
@@ -41,7 +41,7 @@ config.mail.php
 .env.*.local
 
 # 6. Sauvegardes locales de données
-json/backups/
+src/json/backups/
 **/backups/
 
 # 7. Journaux d'exécution et logs
@@ -87,3 +87,6 @@ $RECYCLE.BIN/
 .agent/scratch/
 .agents/scratch/
 *.session.json
+
+# Aperçus et contrôles locaux
+/output/
