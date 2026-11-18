@@ -68,3 +68,14 @@ test('keeps local tools, email templates, previews and backups outside productio
         assert.equal(existsSync(join(dist, name)), false, name);
     }
 });
+
+test('publishes the portfolio HTML through one GitHub Pages workflow', () => {
+    const workflows = join(root, '.github/workflows');
+    const publishers = readdirSync(workflows).filter(name => /\.ya?ml$/.test(name))
+        .map(name => readFileSync(join(workflows, name), 'utf8'))
+        .filter(text => /uses:\s*actions\/deploy-pages@/.test(text));
+    assert.equal(publishers.length, 1, 'Multiple workflows can replace the published portfolio');
+    assert.match(publishers[0], /path:\s*['"]?\.\/dist/);
+    assert.doesNotMatch(publishers[0], /jekyll-build-pages/);
+    assert.match(readFileSync(join(dist, 'index.html'), 'utf8'), /class="hero-wrapper"/);
+});
