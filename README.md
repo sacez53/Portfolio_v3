@@ -80,7 +80,7 @@ Voir le [guide du gestionnaire](tools/projectmanager/README.md).
 
 ## Publication
 
-La configuration GitHub Actions compile le site puis publie uniquement `dist/`. Les commandes restent lancées depuis la racine du dépôt. Les URL publiques existantes sont conservées.
+La configuration GitHub Actions compile le site puis publie uniquement `dist/`. Le fichier `index.html` à la racine du dépôt ouvre `src/index.html` si GitHub Pages publie directement la branche ; il évite alors que le README devienne la page d’accueil. Le build Vite conserve sa propre page d’accueil issue de `src/index.html`. Les commandes restent lancées depuis la racine du dépôt. Les URL publiques existantes sont conservées.
 
 La prévisualisation locale répond aussi en Markdown pour l’accueil et les erreurs 404 selon l’en-tête `Accept`. GitHub Pages ne fournit pas cette négociation ; les versions Markdown restent disponibles via `index.md` et `404.md`.
 
