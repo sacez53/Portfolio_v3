@@ -3663,3 +3663,276 @@ body.has-bottom-nav .toast-notification {
     max-height: 80dvh;
   }
 }
+
+/* ══════════════════════════════════════════════════════════════
+   COMPOSITION TÉLÉPHONE : même charte, mise en page pensée au doigt
+   ══════════════════════════════════════════════════════════════ */
+
+/* Les titres de chapitre s'alignent sur le contenu au lieu de coller au bord */
+@media (max-width: 900px) {
+  .chapter-break {
+    padding-left: var(--container-pad);
+    padding-right: var(--container-pad);
+  }
+}
+
+/* Couverture en affiche : la photo remplit l'écran, le titre prend toute la largeur */
+@media (max-width: 640px) and (orientation: portrait) {
+  .hero-wrapper {
+    padding-top: 0.35rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .hero-visual-stage {
+    justify-content: flex-end;
+    min-height: 0;
+    padding: 0;
+  }
+
+  .hero-photo-container {
+    flex: 1 1 auto;
+    width: 100%;
+    height: auto;
+    min-height: 170px;
+    margin-bottom: -2rem;
+  }
+
+  .hero-photo-img {
+    position: absolute;
+    inset: 0;
+  }
+
+  .hero-author-name {
+    padding-left: var(--container-pad);
+    font-size: clamp(0.92rem, 4.3vw, 1.2rem);
+  }
+
+  .hero-role-title {
+    padding-right: var(--container-pad);
+    font-size: clamp(0.72rem, 3.2vw, 0.95rem);
+  }
+
+  .hero-bird {
+    width: 26px;
+  }
+
+  .hero-title-text {
+    font-size: calc((100vw - 2rem) / 6.7);
+  }
+}
+
+@media (max-width: 640px) {
+  /* Rythme et hiérarchie typographique */
+  .section {
+    padding-top: 1.75rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .chapter-break {
+    padding-top: 1.35rem;
+    padding-bottom: 0.9rem;
+  }
+
+  .chapter-number {
+    font-size: clamp(1.5rem, 7vw, 2.2rem);
+  }
+
+  .chapter-title {
+    font-size: clamp(1.95rem, 9.6vw, 3.4rem);
+    line-height: 0.98;
+    word-break: normal;
+    text-wrap: balance;
+  }
+
+  .subsection-title {
+    font-size: clamp(1.25rem, 5.6vw, 1.7rem);
+    text-wrap: balance;
+  }
+
+  .subsection-lead-text {
+    font-size: 0.98rem;
+    line-height: 1.55;
+    text-wrap: pretty;
+  }
+
+  .about-body-paper,
+  .editorial-callout-text,
+  .project-lead-text {
+    text-wrap: pretty;
+  }
+
+  .editorial-quote-spread {
+    margin: 1.25rem 0;
+    padding: 1.25rem 0;
+  }
+
+  .quote-paper-sculpted {
+    font-size: clamp(1.45rem, 6.6vw, 2.1rem);
+    line-height: 1.12;
+    word-break: normal;
+    text-wrap: balance;
+  }
+
+  /* À propos : l'accroche d'abord, puis la photo pleine largeur */
+  .about-paper-spread {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .about-paper-col {
+    display: contents;
+  }
+
+  .about-lead-paper {
+    order: 1;
+    font-size: clamp(1.2rem, 5.4vw, 1.45rem);
+    line-height: 1.32;
+    text-wrap: pretty;
+  }
+
+  .about-paper-col > .about-photo-frame {
+    order: 2;
+    margin-left: calc(var(--container-pad) * -1);
+    margin-right: calc(var(--container-pad) * -1);
+    border-left: none;
+    border-right: none;
+  }
+
+  .about-body-paper {
+    order: 3;
+  }
+
+  .about-profile-group {
+    order: 4;
+    margin-top: 0.25rem;
+  }
+
+  /* Série unique : image bord à bord */
+  .galerie-grid-1 {
+    margin-left: calc(var(--container-pad) * -1);
+    margin-right: calc(var(--container-pad) * -1);
+    max-width: none;
+  }
+
+  .galerie-grid-1 .project-card-visual {
+    border-left: none;
+    border-right: none;
+  }
+
+  .galerie-grid-1 .project-card-visual:not(.aspect-poster) {
+    aspect-ratio: 4 / 3;
+  }
+
+  /* Séries multiples : défilement horizontal au doigt, la carte suivante reste visible */
+  .galerie-grid-2,
+  .galerie-grid-3 {
+    grid-template-columns: none;
+    grid-auto-flow: column;
+    grid-auto-columns: 84%;
+    gap: 0.75rem;
+    margin-left: calc(var(--container-pad) * -1);
+    margin-right: calc(var(--container-pad) * -1);
+    padding: 0.25rem var(--container-pad);
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: var(--container-pad);
+    scrollbar-width: none;
+  }
+
+  .galerie-grid-2::-webkit-scrollbar,
+  .galerie-grid-3::-webkit-scrollbar {
+    display: none;
+  }
+
+  .galerie-grid-2 > *,
+  .galerie-grid-3 > * {
+    min-width: 0;
+    scroll-snap-align: start;
+  }
+
+  .galerie-grid-2 .project-card-visual:focus-visible,
+  .galerie-grid-3 .project-card-visual:focus-visible {
+    outline-offset: -4px;
+  }
+
+  .project-visual-meta {
+    min-width: 0;
+  }
+
+  /* Contact : l'ancre conserve le grand titre du chapitre sous la barre fixe */
+  div#contact {
+    scroll-margin-top: clamp(15rem, 76vw, 18.5rem);
+  }
+
+  .contact-grid {
+    gap: 1.25rem;
+  }
+
+  .contact-form {
+    padding: 1.15rem 1rem;
+  }
+
+  .form-group textarea {
+    min-height: 120px;
+  }
+
+  .contact-map {
+    margin-left: calc(var(--container-pad) * -1);
+    margin-right: calc(var(--container-pad) * -1);
+    border-left: none;
+    border-right: none;
+  }
+
+  /* Pied de page monumental */
+  .footer-the-end-monumental {
+    font-size: clamp(3rem, 15.5vw, 5rem);
+    word-break: normal;
+  }
+
+  /* Page projet : photographies bord à bord */
+  .project-page-title {
+    font-size: clamp(2rem, 9.4vw, 3rem);
+    overflow-wrap: break-word;
+    text-wrap: balance;
+  }
+
+  .project-master-frame {
+    width: auto;
+    align-self: stretch;
+    margin-left: calc(var(--container-pad) * -1);
+    margin-right: calc(var(--container-pad) * -1);
+    padding: 0 0 0.7rem;
+    border-left: none;
+    border-right: none;
+    box-shadow: none;
+  }
+
+  .master-caption {
+    margin: 0.7rem var(--container-pad) 0;
+    padding-top: 0;
+    border-top: none;
+  }
+
+  .project-gallery-curated,
+  .curated-diptych,
+  .curated-contact-sheet {
+    gap: 0.85rem;
+  }
+
+  .gallery-item {
+    margin-left: calc(var(--container-pad) * -1);
+    margin-right: calc(var(--container-pad) * -1);
+    padding: 0 0 0.5rem;
+    border-left: none;
+    border-right: none;
+  }
+
+  .gallery-item-caption {
+    margin: 0.5rem var(--container-pad) 0;
+    padding-top: 0;
+    border-top: none;
+  }
+}
