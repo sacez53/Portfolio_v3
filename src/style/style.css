@@ -3370,3 +3370,296 @@ body.has-bottom-nav .toast-notification {
     --container-pad: 0.85rem;
   }
 }
+
+/* ══════════════════════════════════════════════════════════════
+   AJUSTEMENTS TÉLÉPHONE (mise en page uniquement, charte inchangée)
+   ══════════════════════════════════════════════════════════════ */
+
+/* Écrans tactiles : pas d'état « survol » qui reste collé après un appui */
+@media (hover: none) {
+  .nav-burger-btn:hover:not(.is-active) {
+    background: transparent;
+    color: #000000;
+  }
+
+  .nav-burger-btn:hover:not(.is-active) .burger-bar {
+    background-color: #000000;
+  }
+
+  .project-card-visual:hover {
+    box-shadow: none;
+  }
+
+  .project-card-visual:hover:not(:active) {
+    transform: none;
+  }
+
+  .gallery-item:hover,
+  .modal-project-card:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .modal-project-card.is-current:hover {
+    box-shadow: inset 4px 0 0 0 #000000;
+  }
+
+  .project-card-visual:hover .project-visual-img,
+  .about-photo-frame:hover img,
+  .master-img-wrapper:hover .master-img,
+  .modal-project-card:hover .modal-project-thumb-img,
+  .project-card-visual:hover .project-visual-arrow,
+  .modal-project-card:hover .modal-project-arrow {
+    transform: none;
+  }
+}
+
+/* Cibles tactiles confortables */
+@media (max-width: 860px), (pointer: coarse) {
+  .hero-scroll-btn,
+  .btn-cv-mini,
+  .project-modal-home-btn {
+    min-height: 44px;
+  }
+
+  .project-modal-close-btn {
+    width: 44px;
+    height: 44px;
+  }
+
+  .modal-filter-chip {
+    min-height: 40px;
+  }
+
+  .footer-summary {
+    min-height: 48px;
+  }
+
+  .footer-dropdown-links li a,
+  .footer-dropdown-links li span {
+    min-height: 40px;
+  }
+}
+
+@media (max-width: 640px) {
+  /* Barre supérieure : le bouton Menu reste entier sur les petits écrans */
+  .nav-container {
+    gap: 0.5rem;
+  }
+
+  .nav-brand {
+    flex-shrink: 1;
+    min-width: 0;
+  }
+
+  .nav-brand-icon {
+    flex-shrink: 0;
+  }
+
+  .nav-brand-name {
+    font-size: clamp(0.8rem, 4vw, 1.05rem);
+    white-space: nowrap;
+  }
+
+  .nav-burger-btn {
+    flex-shrink: 0;
+  }
+
+  /* Modale projets : titres lisibles sur plusieurs lignes */
+  .modal-project-title {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    overflow-wrap: break-word;
+    font-size: 0.76rem;
+  }
+
+  /* L'ancre Contact garde le titre du chapitre visible sous la barre fixe */
+  div#contact {
+    scroll-margin-top: 12.5rem;
+  }
+
+  /* Pages dont le conteneur centré se calait sur la largeur de son contenu */
+  .da-container,
+  .legal-page {
+    width: 100%;
+    min-width: 0;
+  }
+
+  /* Couverture : la photo occupe l'espace disponible */
+  .hero-meta-bar > * {
+    min-width: 0;
+  }
+
+  #hero-live-clock {
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
+
+  .hero-photo-container {
+    width: 88vw;
+    height: clamp(170px, 40dvh, 420px);
+  }
+
+  /* Barre de navigation inférieure : colonnes égales, rien ne déborde */
+  .top-nav {
+    padding: 0.3rem 0.25rem;
+  }
+
+  .top-nav ul {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(0, 1fr);
+    gap: 0;
+  }
+
+  .top-nav li {
+    min-width: 0;
+  }
+
+  .top-nav a,
+  .top-nav .top-nav-btn {
+    width: 100%;
+    min-width: 0;
+    padding: 0.4rem 0.1rem;
+  }
+
+  .top-nav .nav-text {
+    max-width: 100%;
+    font-size: clamp(0.53rem, 2.55vw, 0.62rem);
+    letter-spacing: 0;
+    white-space: nowrap;
+  }
+
+  /* Page projet */
+  .project-hairline-mesange {
+    margin-top: 1.35rem;
+  }
+
+  .hairline-bird {
+    width: 26px;
+  }
+
+  .gallery-section-header,
+  .notebook-header {
+    flex-wrap: wrap;
+    gap: 0.35rem 0.75rem;
+  }
+
+  .gallery-title {
+    min-width: 0;
+    overflow-wrap: anywhere;
+    font-size: clamp(1.15rem, 5.4vw, 1.35rem);
+    line-height: 1.15;
+  }
+
+  .gallery-count {
+    font-size: 0.75rem;
+  }
+
+  .notebook-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  /* Formulaire : libellé du bouton sur une seule ligne */
+  .submit-btn {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: clamp(0.78rem, 3.6vw, 0.95rem);
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+  }
+
+  /* Modale projets : en-tête tenant sur les petits écrans */
+  .project-modal-header {
+    gap: 0.5rem;
+  }
+
+  .project-modal-heading-block {
+    min-width: 0;
+  }
+
+  .project-modal-header-actions {
+    flex-shrink: 0;
+    gap: 0.4rem;
+  }
+
+  .modal-filter-chip {
+    flex-shrink: 0;
+  }
+
+  .modal-project-info {
+    min-width: 0;
+  }
+}
+
+@media (max-width: 374px) {
+  div#contact {
+    scroll-margin-top: 15rem;
+  }
+}
+
+/* Téléphone en paysage : la couverture tient dans la hauteur de l'écran */
+@media (max-height: 520px) and (orientation: landscape) {
+  .hero-wrapper {
+    min-height: 100dvh;
+    padding-top: 0.35rem;
+    padding-bottom: 0.35rem;
+  }
+
+  .hero-meta-bar {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+  }
+
+  .hero-visual-stage {
+    padding: 0;
+  }
+
+  .hero-photo-container {
+    width: min(460px, 62vw);
+    height: 34dvh;
+    margin-bottom: -1.25rem;
+  }
+
+  .hero-title-monumental {
+    margin: 0.25rem 0;
+  }
+
+  .hero-title-text {
+    font-size: clamp(2rem, 14dvh, 3.5rem);
+  }
+
+  .hero-footer-cta {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 0;
+  }
+
+  .mobile-drawer-content {
+    justify-content: flex-start;
+  }
+
+  .mobile-drawer-nav {
+    flex: 0 0 auto;
+    margin: 0.5rem 0;
+  }
+
+  .mobile-drawer-link {
+    padding: 0.65rem 0;
+  }
+
+  .lightbox-frame {
+    max-height: 94dvh;
+  }
+
+  .lightbox-content {
+    max-height: 96dvh;
+  }
+
+  .lightbox-image {
+    max-width: 82vw;
+    max-height: 80dvh;
+  }
+}
